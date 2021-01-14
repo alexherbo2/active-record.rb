@@ -9,6 +9,14 @@ module ActiveRecord::Support::Inflector
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#pluralize
   def self.pluralize(string)
+    # Categor[y] ⇒ Categor[ies]
+    return string.sub(/y\z/, 'ies') if string.end_with?('y')
+    # Weakne[ss] ⇒ Weakness[es]
+    return string + 'es' if string.end_with?('ss')
+    # Stat[s] ⇒ Stats
+    return string if string.end_with?('s')
+    # Pokemon ⇒ Pokemon[s]
+    return string + 's'
   end
 
   # The `singularize` method is the inverse of `pluralize`.
@@ -21,6 +29,14 @@ module ActiveRecord::Support::Inflector
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#singularize
   def self.singularize(string)
+    # Categor[ies] ⇒ Categor[y]
+    return string.sub(/ies\z/, 'y') if string.end_with?('ies')
+    # Weakne[sses] ⇒ Weakness
+    return string.sub(/sses\z/, 'ss') if string.end_with?('sses')
+    # Weakne[ss] ⇒ Weakness
+    return string if string.end_with?('ss')
+    # Pokemon[s] ⇒ Pokemon
+    return string.sub(/s\z/, '')
   end
 
   # The method `camelize` returns its receiver in camel case.
@@ -30,6 +46,7 @@ module ActiveRecord::Support::Inflector
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#camelize
   def self.camelize(string)
+    string.split('_').map(&:capitalize).join
   end
 
   # The method `underscore` goes the other way around, from camel case to paths.
@@ -39,6 +56,10 @@ module ActiveRecord::Support::Inflector
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#underscore
   def self.underscorize(string)
+    head, tail = string.split('', 2)
+    new_head = head.downcase
+    new_tail = tail.gsub(/[A-Z]/) { |match| '_' + match.downcase }
+    new_head + new_tail
   end
 
   # Given a string with a qualified constant name, `demodulize` returns the very constant name, that is, the rightmost part of it.
@@ -48,6 +69,7 @@ module ActiveRecord::Support::Inflector
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#demodulize
   def self.demodulize(string)
+    string.split('::').last
   end
 
   # The method `tableize` is `underscore` followed by `pluralize`.
@@ -57,6 +79,7 @@ module ActiveRecord::Support::Inflector
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#tableize
   def self.tableize(string)
+    pluralize(underscorize(string))
   end
 
   # The method `classify` is the inverse of `tableize`.
@@ -67,6 +90,7 @@ module ActiveRecord::Support::Inflector
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#classify
   def self.classify(string)
+    singularize(camelize(string))
   end
 
   # The method `constantize` resolves the constant reference expression in its receiver.
@@ -76,6 +100,7 @@ module ActiveRecord::Support::Inflector
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#constantize
   def self.constantize(string)
+    Kernel.const_get(string)
   end
 
   # The method `foreign_key` gives a foreign key column name from a class name.
@@ -86,5 +111,6 @@ module ActiveRecord::Support::Inflector
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#foreign-key
   def self.foreign_key(string)
+    underscorize(demodulize(string)) + '_id'
   end
 end
