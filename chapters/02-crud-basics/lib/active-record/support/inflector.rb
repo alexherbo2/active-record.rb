@@ -1,4 +1,6 @@
 module ActiveRecord::Support::Inflector
+  extend self
+
   # The method `pluralize` returns the plural of its receiver.
   #
   # Examples:
@@ -8,7 +10,7 @@ module ActiveRecord::Support::Inflector
   # – Pokemon ⇒ Pokemon[s]
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#pluralize
-  def self.pluralize(string)
+  def pluralize(string)
     # Categor[y] ⇒ Categor[ies]
     return string.sub(/y\z/, 'ies') if string.end_with?('y')
     # Weakne[ss] ⇒ Weakness[es]
@@ -28,7 +30,7 @@ module ActiveRecord::Support::Inflector
   # – Pokemon[s] ⇒ Pokemon
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#singularize
-  def self.singularize(string)
+  def singularize(string)
     # Categor[ies] ⇒ Categor[y]
     return string.sub(/ies\z/, 'y') if string.end_with?('ies')
     # Weakne[sses] ⇒ Weakness
@@ -45,7 +47,7 @@ module ActiveRecord::Support::Inflector
   # – pokemon_shiny ⇒ PokemonShiny
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#camelize
-  def self.camelize(string)
+  def camelize(string)
     string.split('_').map(&:capitalize).join
   end
 
@@ -55,7 +57,7 @@ module ActiveRecord::Support::Inflector
   # – PokemonShiny ⇒ pokemon_shiny
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#underscore
-  def self.underscorize(string)
+  def underscorize(string)
     head, tail = string.split('', 2)
     new_head = head.downcase
     new_tail = tail.gsub(/[A-Z]/) { |match| '_' + match.downcase }
@@ -68,7 +70,7 @@ module ActiveRecord::Support::Inflector
   # – PokemonGo::Trainer ⇒ Trainer
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#demodulize
-  def self.demodulize(string)
+  def demodulize(string)
     string.split('::').last
   end
 
@@ -78,7 +80,7 @@ module ActiveRecord::Support::Inflector
   # – PokemonShiny ⇒ pokemon_shinies
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#tableize
-  def self.tableize(string)
+  def tableize(string)
     pluralize(underscorize(string))
   end
 
@@ -89,7 +91,7 @@ module ActiveRecord::Support::Inflector
   # – pokemon_shinies ⇒ PokemonShiny
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#classify
-  def self.classify(string)
+  def classify(string)
     singularize(camelize(string))
   end
 
@@ -99,7 +101,7 @@ module ActiveRecord::Support::Inflector
   # – "Pokemon" ⇒ Pokemon
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#constantize
-  def self.constantize(string)
+  def constantize(string)
     Kernel.const_get(string)
   end
 
@@ -110,7 +112,7 @@ module ActiveRecord::Support::Inflector
   # – PokemonGo::Trainer ⇒ trainer_id
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#foreign-key
-  def self.foreign_key(string)
+  def foreign_key(string)
     underscorize(demodulize(string)) + '_id'
   end
 end

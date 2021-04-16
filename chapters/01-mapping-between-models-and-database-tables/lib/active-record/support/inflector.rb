@@ -1,4 +1,6 @@
 module ActiveRecord::Support::Inflector
+  extend self
+
   # The method `pluralize` returns the plural of its receiver.
   #
   # Examples:
@@ -8,7 +10,7 @@ module ActiveRecord::Support::Inflector
   # – Pokemon ⇒ Pokemon[s]
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#pluralize
-  def self.pluralize(string)
+  def pluralize(string)
   end
 
   # The `singularize` method is the inverse of `pluralize`.
@@ -20,7 +22,7 @@ module ActiveRecord::Support::Inflector
   # – Pokemon[s] ⇒ Pokemon
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#singularize
-  def self.singularize(string)
+  def singularize(string)
   end
 
   # The method `camelize` returns its receiver in camel case.
@@ -29,7 +31,7 @@ module ActiveRecord::Support::Inflector
   # – pokemon_shiny ⇒ PokemonShiny
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#camelize
-  def self.camelize(string)
+  def camelize(string)
   end
 
   # The method `underscore` goes the other way around, from camel case to paths.
@@ -38,7 +40,7 @@ module ActiveRecord::Support::Inflector
   # – PokemonShiny ⇒ pokemon_shiny
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#underscore
-  def self.underscorize(string)
+  def underscorize(string)
   end
 
   # Given a string with a qualified constant name, `demodulize` returns the very constant name, that is, the rightmost part of it.
@@ -47,7 +49,7 @@ module ActiveRecord::Support::Inflector
   # – PokemonGo::Trainer ⇒ Trainer
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#demodulize
-  def self.demodulize(string)
+  def demodulize(string)
   end
 
   # The method `tableize` is `underscore` followed by `pluralize`.
@@ -56,7 +58,7 @@ module ActiveRecord::Support::Inflector
   # – PokemonShiny ⇒ pokemon_shinies
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#tableize
-  def self.tableize(string)
+  def tableize(string)
   end
 
   # The method `classify` is the inverse of `tableize`.
@@ -66,7 +68,7 @@ module ActiveRecord::Support::Inflector
   # – pokemon_shinies ⇒ PokemonShiny
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#classify
-  def self.classify(string)
+  def classify(string)
   end
 
   # The method `constantize` resolves the constant reference expression in its receiver.
@@ -75,7 +77,7 @@ module ActiveRecord::Support::Inflector
   # – "Pokemon" ⇒ Pokemon
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#constantize
-  def self.constantize(string)
+  def constantize(string)
   end
 
   # The method `foreign_key` gives a foreign key column name from a class name.
@@ -85,6 +87,6 @@ module ActiveRecord::Support::Inflector
   # – PokemonGo::Trainer ⇒ trainer_id
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#foreign-key
-  def self.foreign_key(string)
+  def foreign_key(string)
   end
 end
