@@ -21,12 +21,22 @@ class Pokemon
   #   pokemon.name = 'Pikachu'
   # end
   def initialize(id: nil, index: nil, name: nil, &block)
+    # Properties
+    @id = id
+    @index = index
+    @name = name
+
+    # Accepts a block
+    if block_given?
+      yield self
+    end
   end
 
   # Creates and saves a new record into the database.
   #
   # Does .new and .save.
   def self.create(...)
+    new(...).save
   end
 
   # Finds a record by its ID.
@@ -35,6 +45,7 @@ class Pokemon
   #
   # pikachu = Pokemon.find(25)
   def self.find(id)
+    find_by('id = ?', id)
   end
 
   # Returns all records.
@@ -43,6 +54,16 @@ class Pokemon
   #
   # pokemons = Pokemon.all
   def self.all
+    # Get all records
+    rows = DB.execute <<~SQL
+      SELECT *
+      FROM "pokemons"
+    SQL
+
+    # Build records
+    rows.collect do |row|
+      build_record(row)
+    end
   end
 
   # Returns all records matching the specified conditions.
@@ -59,6 +80,19 @@ class Pokemon
   #
   # pokemons = Pokemon.where('name = :name', name: 'Pikachu')
   def self.where(clause, *bind_variables)
+    # Get all records matching the WHERE clause.
+    statement = DB.prepare <<~SQL
+      SELECT *
+      FROM "pokemons"
+      WHERE #{clause}
+    SQL
+
+    rows = statement.execute(bind_variables).to_a
+
+    # Build records
+    rows.collect do |row|
+      build_record(row)
+    end
   end
 
   # Finds the first record matching the specified conditions.
@@ -75,6 +109,21 @@ class Pokemon
   #
   # pikachu = Pokemon.find_by('name = :name', name: 'Pikachu')
   def self.find_by(clause, *bind_variables)
+    # Get all records matching the WHERE clause with a LIMIT set to 1.
+    statement = DB.prepare <<~SQL
+      SELECT *
+      FROM "pokemons"
+      WHERE #{clause}
+      LIMIT 1
+    SQL
+
+    rows = statement.execute(bind_variables).to_a
+
+    # Returns nil if no result
+    return nil if rows.empty?
+
+    # Build the first record
+    build_record(rows.first)
   end
 
   # Counts the number of records.
@@ -84,6 +133,16 @@ class Pokemon
   # pokemon_count = Pokemon.count
   # ⇒ 151
   def self.count
+    # Get count
+    rows = DB.execute <<~SQL
+      SELECT COUNT(id)
+      FROM "pokemons"
+    SQL
+
+    count = rows[0][0]
+
+    # Returns the number of records.
+    count
   end
 
   # Saves (creates or updates) a record into the database.
@@ -100,12 +159,22 @@ class Pokemon
   # pikachu.name = 'Pika'
   # pikachu.save
   def save
+    if @id
+      save_record
+    else
+      save_new_record
+    end
   end
 
   # Updates attributes and saves the record.
   #
   # Updates and .save.
   def update(index: @index, name: @name)
+    # Properties
+    @index = index
+    @name = name
+
+    save
   end
 
   # Inserts the record into the database,
@@ -113,12 +182,28 @@ class Pokemon
   #
   # Private method called on #save.
   private def save_new_record
+    statement = DB.prepare <<~SQL
+      INSERT INTO "pokemons" ("index", "name")
+      VALUES (:index, :name)
+    SQL
+
+    statement.execute(index: @index, name: @name)
+
+    # Assign the ID set by SQLite
+    @id = DB.last_insert_row_id
   end
 
   # Updates the record to the database.
   #
   # Private method called on #save.
   private def save_record
+    statement = DB.prepare <<~SQL
+      UPDATE "pokemons"
+      SET "index" = :index, "name" = :name
+      WHERE "id" = :id
+    SQL
+
+    statement.execute(id: @id, index: @index, name: @name)
   end
 
   # Deletes the record from the database.
@@ -136,6 +221,16 @@ class Pokemon
   # pikachu.name = 'Pika'
   # ⇒ Raise an error, because the object has been frozen.
   def destroy
+    # Delete the associated row in the database.
+    statement = DB.prepare <<~SQL
+      DELETE FROM "pokemons"
+      WHERE "id" = :id
+    SQL
+
+    statement.execute(id: @id)
+
+    # Freeze the record
+    freeze
   end
 
   # Reloads the Pokémon from the database.
@@ -145,6 +240,7 @@ class Pokemon
   #
   # pokemon = pokemon.reload
   def reload
+    Pokemon.find(@id)
   end
 
   # Checks a Pokémon exists in the database.
@@ -154,6 +250,7 @@ class Pokemon
   # Pokemon.exists?(25)
   # ⇒ true
   def self.exists?(id)
+    find(id) != nil
   end
 
   # Checks the Pokémon is persisted in the database.
@@ -168,23 +265,36 @@ class Pokemon
   # pikachu.persisted?
   # ⇒ false
   def persisted?
+    Pokemon.exists?(@id)
   end
 
   # Creates a new instance from a database row.
   #
   # Calls .new with named arguments.
   def self.build_record(row)
+    case row
+    when SQLite3::ResultSet::ArrayWithTypesAndFields
+      build_record_from_array(row)
+    when SQLite3::ResultSet::HashWithTypesAndFields
+      build_record_from_hash(row)
+    end
   end
 
   # Creates a new instance from a database row as array.
   #
   # Internal method called on .build_record.
   def self.build_record_from_array(row)
+    row_as_hash = row.fields.zip(row).to_h
+
+    build_record_from_hash(row_as_hash)
   end
 
   # Creates a new instance from a database row as hash.
   #
   # Internal method called on .build_record.
   def self.build_record_from_hash(row)
+    attributes = row.transform_keys(&:to_sym)
+
+    new(attributes)
   end
 end
