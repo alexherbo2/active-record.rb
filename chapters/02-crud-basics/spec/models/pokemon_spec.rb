@@ -12,7 +12,8 @@ describe Pokemon do
     IO.copy_stream('db/development.sqlite3', DB.filename)
   end
 
-  # The `pokemon` subject is a Pokémon.
+  # The `pokemon` subject is a `Pokemon`.
+  # It has an `index` and a `name`.
   shared_examples 'a Pokémon' do
     it 'is a Pokémon' do
       expect(pokemon).to be_a Pokemon
@@ -28,6 +29,7 @@ describe Pokemon do
   end
 
   # Creates a new Pokémon.
+  # It `perform` a change with an expected result.
   shared_examples 'creates a new Pokémon' do
     it 'increments the number of Pokémon by 1' do
       expect { perform }.to change { Pokemon.count }.by(1)
@@ -168,7 +170,7 @@ describe Pokemon do
   end
 
   describe '.count' do
-    subject(:count) do
+    let(:count) do
       Pokemon.count
     end
 
