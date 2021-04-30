@@ -295,6 +295,6 @@ class Pokemon
   def self.build_record_from_hash(row)
     attributes = row.transform_keys(&:to_sym)
 
-    new(attributes)
+    new(**attributes)
   end
 end
