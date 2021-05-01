@@ -1,5 +1,7 @@
 require 'sqlite3'
 
+# Active Record
+# https://guides.rubyonrails.org/active_record_basics.html
 class ActiveRecord::Base
   # Modules
   include ActiveRecord::Associations
