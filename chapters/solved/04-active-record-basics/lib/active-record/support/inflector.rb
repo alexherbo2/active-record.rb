@@ -11,6 +11,9 @@ module ActiveRecord::Support::Inflector
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#pluralize
   def pluralize(string)
+    # Force type coercion
+    string = string.to_s
+
     # Categor[y] ⇒ Categor[ies]
     return string.sub(/y\z/, 'ies') if string.end_with?('y')
     # Weakne[ss] ⇒ Weakness[es]
@@ -31,6 +34,9 @@ module ActiveRecord::Support::Inflector
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#singularize
   def singularize(string)
+    # Force type coercion
+    string = string.to_s
+
     # Categor[ies] ⇒ Categor[y]
     return string.sub(/ies\z/, 'y') if string.end_with?('ies')
     # Weakne[sses] ⇒ Weakness
@@ -48,7 +54,7 @@ module ActiveRecord::Support::Inflector
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#camelize
   def camelize(string)
-    string.split('_').map(&:capitalize).join
+    string.to_s.split('_').map(&:capitalize).join
   end
 
   # The method `underscore` goes the other way around, from camel case to paths.
@@ -58,7 +64,7 @@ module ActiveRecord::Support::Inflector
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#underscore
   def underscorize(string)
-    head, tail = string.split('', 2)
+    head, tail = string.to_s.split('', 2)
     new_head = head.downcase
     new_tail = tail.gsub(/[A-Z]/) { |match| '_' + match.downcase }
     new_head + new_tail
@@ -71,7 +77,7 @@ module ActiveRecord::Support::Inflector
   #
   # https://guides.rubyonrails.org/active_support_core_extensions.html#demodulize
   def demodulize(string)
-    string.split('::').last
+    string.to_s.split('::').last
   end
 
   # The method `tableize` is `underscore` followed by `pluralize`.

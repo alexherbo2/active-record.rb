@@ -1,8 +1,19 @@
 require 'active-record'
 require 'json'
 
+# Ensures methods work with symbols.
+#
+# Example:
+#
+# ActiveRecord::Support::Inflector.classify(:pokemon)
 data = File.open('spec/data/inflections.json') do |file|
-  JSON.parse(file.read, symbolize_names: true)
+  JSON.parse(file.read, symbolize_names: true).tap do |data|
+    data.each do |example_name, expectations|
+      expectations.each do |expectation|
+        expectation[0] = expectation[0].to_sym
+      end
+    end
+  end
 end
 
 describe ActiveRecord::Support::Inflector do
