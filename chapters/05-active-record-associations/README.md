@@ -11,6 +11,17 @@ See [Associations] for a complete reference.
 
 [Associations]: https://guides.rubyonrails.org/association_basics.html
 
+## Updating data
+
+It’s time to update our [data] with [Puppeteer].
+
+[Data]: data/pokemon.json
+[Puppeteer]: https://pptr.dev
+
+See [Web scraping with Puppeteer] for more details.
+
+[Web scraping with Puppeteer]: ../optional/web-scraping-with-puppeteer
+
 ## The `belongs_to` association
 
 A [`belongs_to`] association sets up a connection with another model,
