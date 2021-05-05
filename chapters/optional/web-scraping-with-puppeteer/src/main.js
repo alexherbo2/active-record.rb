@@ -30,12 +30,18 @@ const main = async () => {
       const getEvolutions = () => {
         const evolutions = []
 
-        const evolutionElement = Array.from(document.querySelectorAll('.evolution-profile a')).find((link) => link.href === location.href).parentElement.nextElementSibling
+        // A Pokémon might not have an evolution profile.
+        // Example: Farfetch’d (https://www.pokemon.com/us/pokedex/farfetchd)
+        const profileElement = document.querySelector('.evolution-profile')
 
-        if (evolutionElement) {
-          const pokemonNames = Array.from(evolutionElement.querySelectorAll('a h3'), (element) => element.firstChild.textContent.trim())
+        if (profileElement) {
+          const evolutionElement = Array.from(profileElement.querySelectorAll('a')).find((link) => link.href === location.href).parentElement.nextElementSibling
 
-          evolutions.push(...pokemonNames)
+          if (evolutionElement) {
+            const pokemonNames = Array.from(evolutionElement.querySelectorAll('a h3'), (element) => element.firstChild.textContent.trim())
+
+            evolutions.push(...pokemonNames)
+          }
         }
 
         return evolutions
