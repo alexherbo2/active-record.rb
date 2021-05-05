@@ -13,40 +13,63 @@ environment = ENV['ENVIRONMENT']
 # Connect to the database
 DB = SQLite3::Database.new("db/#{environment}.sqlite3")
 
-# Load Pokémon from JSON
-pokemons = File.open('data/pokemon.json') do |file|
+# Load Pokémon tables from JSON
+tables = File.open('db/pokemon.json') do |file|
   JSON.load(file)
 end
 
-# SQL statement to reset AUTOINCREMENT of the table columns,
+# Resets auto-increment of the table columns,
 # so that we have a clean state.
 #
 # https://sqlite.org/autoinc.html
-reset_auto_increment_statement = DB.prepare <<~SQL
-  DELETE FROM "sqlite_sequence"
-SQL
+def reset_auto_increment
+  DB.execute <<~SQL
+    DELETE FROM "sqlite_sequence"
+  SQL
+end
 
-# SQL statement to delete all Pokémon from the database,
-# so that we have a clean state.
-delete_pokemons_statement = DB.prepare <<~SQL
-  DELETE FROM "pokemons"
-SQL
+# Clears the given table.
+def clear_table(table_name)
+  DB.execute <<~SQL
+    DELETE FROM "#{table_name}"
+  SQL
+end
 
-# SQL statement to insert a Pokémon into the database.
-insert_pokemon_statement = DB.prepare <<~SQL
-  INSERT INTO "pokemons" ("index", "name")
-  VALUES (:index, :name)
-SQL
+# Inserts a new record.
+def seed(table_name, attributes)
+  column_names = attributes.keys
 
-# Seed data
+  column_identifiers_fragment = column_names.map do |name|
+    %["#{name}"]
+  end.join(',')
+
+  column_placeholders_fragment = column_names.map do |name|
+    ":#{name}"
+  end.join(',')
+
+  statement = DB.prepare <<~SQL
+    INSERT INTO "#{table_name}" (#{column_identifiers_fragment})
+    VALUES (#{column_placeholders_fragment})
+  SQL
+
+  statement.execute(attributes)
+end
+
+# Seed database.
 # Use a transaction to bulk insert data.
 DB.transaction do
-  # Clean
-  reset_auto_increment_statement.execute
-  delete_pokemons_statement.execute
+  # Reset auto-increment state
+  reset_auto_increment
 
-  # Insert
-  pokemons.each do |pokemon|
-    insert_pokemon_statement.execute(pokemon)
+  # Clear tables
+  tables.keys.each do |table_name|
+    clear_table(table_name)
+  end
+
+  # Seed database
+  tables.each do |table_name, records|
+    records.each do |record|
+      seed(table_name, record)
+    end
   end
 end
