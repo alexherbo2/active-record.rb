@@ -18,6 +18,9 @@ db-create:
 db-drop:
 	sqlite3 db/$(environment).sqlite3 < db/drop.sql
 
+db-prepare:
+	ruby db/prepare.rb
+
 db-seed:
 	ENVIRONMENT="$(environment)" ruby db/seeds.rb
 
