@@ -1,10 +1,12 @@
 # active-record.rb
 
-Implementation of the [active record pattern] for educational purposes.
+A step-by-step implementation of the [active record pattern] for educational purposes.
 
 [Active record pattern]: https://en.wikipedia.org/wiki/Active_record_pattern
 
 > A memo for myself when I forget how things work.
+
+Send me your completed solution and I will add a link to the repository!
 
 ## Prerequisites
 
