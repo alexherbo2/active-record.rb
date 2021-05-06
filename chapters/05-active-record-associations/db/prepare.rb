@@ -1,4 +1,5 @@
 # Prepare the tables for seeding.
+# Reads data/pokemon.json and writes prepared tables to db/pokemon.json.
 
 require 'json'
 

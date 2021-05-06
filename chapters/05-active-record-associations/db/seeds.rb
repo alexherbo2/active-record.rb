@@ -1,5 +1,8 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the `make db-seed` command (or created alongside the database with `db-setup`).
+#
+# Reads db/pokemon.json tables and writes to db/{environment}.sqlite3,
+# where {environment} is `development` or `test`.
 
 require 'sqlite3'
 require 'json'
