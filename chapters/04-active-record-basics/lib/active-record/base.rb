@@ -3,6 +3,9 @@ require 'sqlite3'
 # Active Record
 # https://guides.rubyonrails.org/active_record_basics.html
 class ActiveRecord::Base
+  # Modules
+  include Comparable
+
   # Returns the table name.
   #
   # Example:
@@ -245,5 +248,9 @@ class ActiveRecord::Base
   #
   # Internal method called on .build_record.
   def self.build_record_from_hash(row)
+  end
+
+  # Ensures instances that have the same attributes are the same.
+  def <=>(other)
   end
 end

@@ -4,6 +4,7 @@ require 'sqlite3'
 # https://guides.rubyonrails.org/active_record_basics.html
 class ActiveRecord::Base
   # Modules
+  include Comparable
   extend ActiveRecord::Associations
 
   # Returns the table name.
@@ -386,5 +387,10 @@ class ActiveRecord::Base
     attributes = row.transform_keys(&:to_sym)
 
     new(**attributes)
+  end
+
+  # Ensures instances that have the same attributes are the same.
+  def <=>(other)
+    attributes <=> other&.attributes
   end
 end
