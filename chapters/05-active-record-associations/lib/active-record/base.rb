@@ -4,7 +4,7 @@ require 'sqlite3'
 # https://guides.rubyonrails.org/active_record_basics.html
 class ActiveRecord::Base
   # Modules
-  include ActiveRecord::Associations
+  extend ActiveRecord::Associations
 
   # Returns the table name.
   #

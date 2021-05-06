@@ -40,7 +40,7 @@ module ActiveRecord::Associations
   # Category.find(pokemon.category_id)
   #
   # https://guides.rubyonrails.org/association_basics.html#the-belongs-to-association
-  def self.belongs_to(association_name,
+  def belongs_to(association_name,
     class_name: ActiveRecord::Support::Inflector.classify(association_name),
     foreign_key: ActiveRecord::Support::Inflector.foreign_key(association_name)
   )
@@ -92,7 +92,7 @@ module ActiveRecord::Associations
   # SignatureMove.find_by('"pokemon_id" = ?', pokemon.id)
   #
   # https://guides.rubyonrails.org/association_basics.html#the-has-one-association
-  def self.has_one(association_name,
+  def has_one(association_name,
     class_name: ActiveRecord::Support::Inflector.classify(association_name),
     foreign_key: ActiveRecord::Support::Inflector.foreign_key(name)
   )
@@ -142,7 +142,7 @@ module ActiveRecord::Associations
   # SignatureMove.where('"pokemon_id" = ?', pokemon.id)
   #
   # https://guides.rubyonrails.org/association_basics.html#the-has-many-association
-  def self.has_many(association_name,
+  def has_many(association_name,
     class_name: ActiveRecord::Support::Inflector.classify(association_name),
     foreign_key: ActiveRecord::Support::Inflector.foreign_key(name)
   )
@@ -202,7 +202,7 @@ module ActiveRecord::Associations
   # end
   #
   # https://guides.rubyonrails.org/association_basics.html#the-has-many-through-association
-  def self.has_many_through(association_name, through_association_name,
+  def has_many_through(association_name, through_association_name,
     source: ActiveRecord::Support::Inflector.singularize(association_name)
   )
     define_method(association_name) do
@@ -260,7 +260,7 @@ module ActiveRecord::Associations
   # pokemon.pokemon_signature_move.signature_move
   #
   # https://guides.rubyonrails.org/association_basics.html#the-has-one-through-association
-  def self.has_one_through(association_name, through_association_name,
+  def has_one_through(association_name, through_association_name,
     source: association_name
   )
     define_method(association_name) do
