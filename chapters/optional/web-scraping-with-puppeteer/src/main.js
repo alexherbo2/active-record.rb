@@ -18,12 +18,12 @@ const main = async () => {
 
       // Gets attributes by name:
       const getAttributesByName = (name) => {
-        return Array.from(Array.from(document.querySelectorAll('.pokemon-ability-info .attribute-title')).find((element) => element.textContent === name).parentElement.querySelectorAll('.attribute-value'), (element) => element.textContent.trim())
+        return Array.from(Array.from(document.querySelectorAll('.pokemon-ability-info.active .attribute-title')).find((element) => element.textContent === name).parentElement.querySelectorAll('.attribute-value'), (element) => element.textContent.trim())
       }
 
       // Gets a specific stat by name:
       const getStatByName = (name) => {
-        return Number(Array.from(document.querySelectorAll('.pokemon-stats-info > ul > li')).find((element) => element.querySelector('span').textContent === name).querySelector('.meter').dataset.value)
+        return Number(Array.from(document.querySelectorAll('.pokemon-stats-info.active > ul > li')).find((element) => element.querySelector('span').textContent === name).querySelector('.meter').dataset.value)
       }
 
       // Gets evolutions:
@@ -52,8 +52,8 @@ const main = async () => {
       pokemon.name = document.querySelector('.pokedex-pokemon-pagination-title div').firstChild.textContent.trim()
       pokemon.category = getAttributesByName('Category')[0]
       pokemon.abilities = getAttributesByName('Abilities')
-      pokemon.type = Array.from(document.querySelectorAll('.dtm-type li a'), (link) => link.textContent.trim())
-      pokemon.weaknesses = Array.from(document.querySelectorAll('.dtm-weaknesses li a'), (link) => link.textContent.trim())
+      pokemon.type = Array.from(document.querySelectorAll('.pokedex-pokemon-attributes.active .dtm-type li a'), (link) => link.textContent.trim())
+      pokemon.weaknesses = Array.from(document.querySelectorAll('.pokedex-pokemon-attributes.active .dtm-weaknesses li a'), (link) => link.textContent.trim())
       pokemon.stats = {}
       pokemon.stats.hp = getStatByName('HP')
       pokemon.stats.attack = getStatByName('Attack')
