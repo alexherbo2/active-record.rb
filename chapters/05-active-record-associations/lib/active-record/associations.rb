@@ -1,5 +1,6 @@
 # Associations
 # https://guides.rubyonrails.org/association_basics.html
+# https://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html
 module ActiveRecord::Associations
   # A `belongs_to` association sets up a connection with another model,
   # such that each instance of the declaring model “belongs to” one instance of the other model.
