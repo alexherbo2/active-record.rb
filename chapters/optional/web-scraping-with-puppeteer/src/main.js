@@ -5,7 +5,7 @@ const fs = require('fs')
 // https://pptr.dev
 // https://www.pokemon.com
 //
-// Writes to data/pokemon.json.
+// Writes the first 151 Pokémon to data/pokemon.json.
 //
 // Note: Pokémon have multiple versions, where the selected version is marked with the active class.
 
@@ -19,6 +19,7 @@ const main = async () => {
   // Pokémon
   const pokemons = []
 
+  // Iterates the first 151 Pokémon
   for (let index = 1; index <= 151; index++) {
     const { pokemon, nextPageURL } = await page.evaluate(() => {
       // Pokémon
