@@ -45,10 +45,16 @@ module ActiveRecord::Associations
     class_name: ActiveRecord::Support::Inflector.classify(association_name),
     foreign_key: ActiveRecord::Support::Inflector.foreign_key(association_name)
   )
+    # Getter
     define_method(association_name) do
       association_model = ActiveRecord::Support::Inflector.constantize(class_name)
       association_id = send(foreign_key)
       association_model.find(association_id)
+    end
+
+    # Setter
+    define_method("#{association_name}=") do |new_association|
+      update(foreign_key => new_association.id)
     end
   end
 
@@ -97,9 +103,27 @@ module ActiveRecord::Associations
     class_name: ActiveRecord::Support::Inflector.classify(association_name),
     foreign_key: ActiveRecord::Support::Inflector.foreign_key(name)
   )
+    # Getter
     define_method(association_name) do
       association_model = ActiveRecord::Support::Inflector.constantize(class_name)
       association_model.find_by(%["#{foreign_key}" = ?], id)
+    end
+
+    # Setter
+    define_method("#{association_name}=") do |new_association|
+      association = send(association_name)
+
+      # Skips same association
+      return if association == new_association
+
+      # Deletes orphaned association
+      association.destroy
+
+      # Skips nil association
+      return unless new_association
+
+      # Creates new association
+      new_association.update(foreign_key => id)
     end
   end
 
@@ -147,9 +171,25 @@ module ActiveRecord::Associations
     class_name: ActiveRecord::Support::Inflector.classify(association_name),
     foreign_key: ActiveRecord::Support::Inflector.foreign_key(name)
   )
+    # Getter
     define_method(association_name) do
       association_model = ActiveRecord::Support::Inflector.constantize(class_name)
       association_model.where(%["#{foreign_key}" = ?], id)
+    end
+
+    # Setter
+    define_method("#{association_name}=") do |new_collection|
+      collection = send(association_name)
+
+      # Deletes orphaned associations
+      (collection - new_collection).each do |association|
+        association.destroy
+      end
+
+      # Creates new associations
+      (new_collection - collection).each do |association|
+        association.update(foreign_key => id)
+      end
     end
   end
 
@@ -188,6 +228,8 @@ module ActiveRecord::Associations
   #
   # Options ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
   #
+  # class_name: PokemonMove
+  # foreign_key: pokemon_id
   # source: move
   #
   # Expansions ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -204,11 +246,31 @@ module ActiveRecord::Associations
   #
   # https://guides.rubyonrails.org/association_basics.html#the-has-many-through-association
   def has_many_through(association_name, through_association_name,
+    class_name: ActiveRecord::Support::Inflector.classify(through_association_name),
+    foreign_key: ActiveRecord::Support::Inflector.foreign_key(name),
     source: ActiveRecord::Support::Inflector.singularize(association_name)
   )
+    # Getter
     define_method(association_name) do
       send(through_association_name).map do |through_association|
         through_association.send(source)
+      end
+    end
+
+    # Setter
+    define_method("#{association_name}=") do |new_collection|
+      through_model = ActiveRecord::Support::Inflector.constantize(class_name)
+
+      # Deletes orphaned associations, i.e. through the third associations.
+      send(through_association_name).each do |through_association|
+        association = through_association.send(source)
+        matched = new_collection.delete(association)
+        through_association.destroy unless matched
+      end
+
+      # Creates new associations, with the third model.
+      new_collection.each do |association|
+        through_model.create(foreign_key => id, source => association)
       end
     end
   end
@@ -248,6 +310,8 @@ module ActiveRecord::Associations
   #
   # Options ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
   #
+  # class_name: PokemonSignatureMove
+  # foreign_key: pokemon_id
   # source: signature_move
   #
   # Expansions ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -262,10 +326,33 @@ module ActiveRecord::Associations
   #
   # https://guides.rubyonrails.org/association_basics.html#the-has-one-through-association
   def has_one_through(association_name, through_association_name,
+    class_name: ActiveRecord::Support::Inflector.classify(through_association_name),
+    foreign_key: ActiveRecord::Support::Inflector.foreign_key(name),
     source: association_name
   )
+    # Getter
     define_method(association_name) do
       send(through_association_name)&.send(source)
+    end
+
+    # Setter
+    define_method("#{association_name}=") do |new_association|
+      # Third model and association
+      through_model = ActiveRecord::Support::Inflector.constantize(class_name)
+      association = send(association_name)
+
+      # Skips same association
+      return if association == new_association
+
+      # Deletes orphaned association, i.e. through the third association.
+      through_association = send(through_association_name)
+      through_association&.destroy
+
+      # Skips nil association
+      return unless new_association
+
+      # Creates new association, with the third model.
+      through_model.create(foreign_key => id, source => new_association)
     end
   end
 end

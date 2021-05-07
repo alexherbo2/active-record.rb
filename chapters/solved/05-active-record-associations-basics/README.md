@@ -225,6 +225,8 @@ pokemon_moves:
 **Options**
 
 ``` yaml
+class_name: PokemonMove
+foreign_key: pokemon_id
 source: move
 ```
 
@@ -288,6 +290,8 @@ pokemon_signature_moves:
 **Options**
 
 ``` yaml
+class_name: PokemonSignatureMove
+foreign_key: pokemon_id
 source: signature_move
 ```
 
@@ -307,7 +311,7 @@ pokemon.pokemon_signature_move.signature_move
 
 ## Challenge
 
-Implement the methods (use [`define_method`]), run specs and play with the REPL.
+Implement the getter and setter methods (use [`define_method`]), run specs and play with the REPL.
 
 [`define_method`]: https://ruby-doc.org/core/Module.html#method-i-define_method
 
