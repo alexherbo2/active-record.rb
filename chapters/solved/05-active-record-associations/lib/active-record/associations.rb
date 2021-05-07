@@ -41,7 +41,15 @@ module ActiveRecord::Associations
   # Category.find(pokemon.category_id)
   #
   # https://guides.rubyonrails.org/association_basics.html#the-belongs-to-association
-  def belongs_to(association_name, class_name:, foreign_key:)
+  def belongs_to(association_name,
+    class_name: ActiveRecord::Support::Inflector.classify(association_name),
+    foreign_key: ActiveRecord::Support::Inflector.foreign_key(association_name)
+  )
+    define_method(association_name) do
+      association_model = ActiveRecord::Support::Inflector.constantize(class_name)
+      association_id = send(foreign_key)
+      association_model.find(association_id)
+    end
   end
 
   # A `has_one` association indicates that one other model has a reference to this model.
@@ -85,7 +93,14 @@ module ActiveRecord::Associations
   # SignatureMove.find_by('"pokemon_id" = ?', pokemon.id)
   #
   # https://guides.rubyonrails.org/association_basics.html#the-has-one-association
-  def has_one(association_name, class_name:, foreign_key:)
+  def has_one(association_name,
+    class_name: ActiveRecord::Support::Inflector.classify(association_name),
+    foreign_key: ActiveRecord::Support::Inflector.foreign_key(name)
+  )
+    define_method(association_name) do
+      association_model = ActiveRecord::Support::Inflector.constantize(class_name)
+      association_model.find_by(%["#{foreign_key}" = ?], id)
+    end
   end
 
   # A `has_many` association is similar to `has_one`, but indicates a one-to-many connection with another model.
@@ -128,7 +143,14 @@ module ActiveRecord::Associations
   # SignatureMove.where('"pokemon_id" = ?', pokemon.id)
   #
   # https://guides.rubyonrails.org/association_basics.html#the-has-many-association
-  def has_many(association_name, class_name:, foreign_key:)
+  def has_many(association_name,
+    class_name: ActiveRecord::Support::Inflector.classify(association_name),
+    foreign_key: ActiveRecord::Support::Inflector.foreign_key(name)
+  )
+    define_method(association_name) do
+      association_model = ActiveRecord::Support::Inflector.constantize(class_name)
+      association_model.where(%["#{foreign_key}" = ?], id)
+    end
   end
 
   # A `has_many :through` association is often used to set up a many-to-many connection with another model.
@@ -181,7 +203,14 @@ module ActiveRecord::Associations
   # end
   #
   # https://guides.rubyonrails.org/association_basics.html#the-has-many-through-association
-  def has_many_through(association_name, through_association_name, source:)
+  def has_many_through(association_name, through_association_name,
+    source: ActiveRecord::Support::Inflector.singularize(association_name)
+  )
+    define_method(association_name) do
+      send(through_association_name).map do |model|
+        model.send(source)
+      end
+    end
   end
 
   # A `has_one :through` association sets up a one-to-one connection with another model.
@@ -232,6 +261,11 @@ module ActiveRecord::Associations
   # pokemon.pokemon_signature_move.signature_move
   #
   # https://guides.rubyonrails.org/association_basics.html#the-has-one-through-association
-  def has_one_through(association_name, through_association_name, source:)
+  def has_one_through(association_name, through_association_name,
+    source: association_name
+  )
+    define_method(association_name) do
+      send(through_association_name)&.send(source)
+    end
   end
 end
