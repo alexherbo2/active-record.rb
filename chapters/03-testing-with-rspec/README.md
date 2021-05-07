@@ -287,3 +287,9 @@ Open [`app/models/pokemon.rb`], [`spec/models/pokemon_spec.rb`] and [`data/pokem
 [`app/models/pokemon.rb`]: app/models/pokemon.rb
 [`spec/models/pokemon_spec.rb`]: spec/models/pokemon_spec.rb
 [`data/pokemon.json`]: data/pokemon.json
+
+## Solution
+
+[Download solution].
+
+[Download solution]: ../solved/03-testing-with-rspec

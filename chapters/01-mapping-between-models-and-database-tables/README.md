@@ -85,3 +85,9 @@ Open [`lib/active-record/support/inflector.rb`], [`spec/active-record/support/in
 [`lib/active-record/support/inflector.rb`]: lib/active-record/support/inflector.rb
 [`spec/active-record/support/inflector_spec.rb`]: spec/active-record/support/inflector_spec.rb
 [`spec/data/inflections.json`]: spec/data/inflections.json
+
+## Solution
+
+[Download solution].
+
+[Download solution]: ../solved/01-mapping-between-models-and-database-tables

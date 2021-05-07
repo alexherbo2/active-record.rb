@@ -91,6 +91,12 @@ SQL
 statement.columns # ["id", "index", "name"]
 ```
 
+## Solution
+
+[Download solution].
+
+[Download solution]: ../solved/04-active-record-basics
+
 ## Credits
 
 This challenge was an exercise I had at [Le Wagon] – Batch `#440`, and motivated me to write this tutorial.
