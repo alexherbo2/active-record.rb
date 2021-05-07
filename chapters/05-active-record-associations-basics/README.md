@@ -1,4 +1,4 @@
-# Active Record – Associations
+# Active Record – Associations – Basics
 
 What good is an active record library if you can’t connect models?
 
