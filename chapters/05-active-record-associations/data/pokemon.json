@@ -66,21 +66,9 @@
     ],
     "type": [
       "Grass",
-      "Poison",
-      "Grass",
-      "Poison",
-      "Grass",
       "Poison"
     ],
     "weaknesses": [
-      "Fire",
-      "Psychic",
-      "Flying",
-      "Ice",
-      "Fire",
-      "Psychic",
-      "Flying",
-      "Ice",
       "Fire",
       "Psychic",
       "Flying",
@@ -159,24 +147,9 @@
     ],
     "type": [
       "Fire",
-      "Flying",
-      "Fire",
-      "Dragon",
-      "Fire",
-      "Flying",
-      "Fire",
       "Flying"
     ],
     "weaknesses": [
-      "Water",
-      "Electric",
-      "Rock",
-      "Ground",
-      "Rock",
-      "Dragon",
-      "Water",
-      "Electric",
-      "Rock",
       "Water",
       "Electric",
       "Rock"
@@ -251,15 +224,9 @@
       "Torrent"
     ],
     "type": [
-      "Water",
-      "Water",
       "Water"
     ],
     "weaknesses": [
-      "Grass",
-      "Electric",
-      "Grass",
-      "Electric",
       "Grass",
       "Electric"
     ],
@@ -336,16 +303,9 @@
     ],
     "type": [
       "Bug",
-      "Flying",
-      "Bug",
       "Flying"
     ],
     "weaknesses": [
-      "Fire",
-      "Flying",
-      "Electric",
-      "Ice",
-      "Rock",
       "Fire",
       "Flying",
       "Electric",
@@ -429,15 +389,9 @@
     ],
     "type": [
       "Bug",
-      "Poison",
-      "Bug",
       "Poison"
     ],
     "weaknesses": [
-      "Fire",
-      "Psychic",
-      "Flying",
-      "Rock",
       "Fire",
       "Psychic",
       "Flying",
@@ -521,14 +475,9 @@
     ],
     "type": [
       "Normal",
-      "Flying",
-      "Normal",
       "Flying"
     ],
     "weaknesses": [
-      "Electric",
-      "Ice",
-      "Rock",
       "Electric",
       "Ice",
       "Rock"
@@ -552,14 +501,9 @@
       "Guts"
     ],
     "type": [
-      "Normal",
-      "Dark",
       "Normal"
     ],
     "weaknesses": [
-      "Fighting",
-      "Fairy",
-      "Bug",
       "Fighting"
     ],
     "stats": {
@@ -583,14 +527,9 @@
       "Guts"
     ],
     "type": [
-      "Normal",
-      "Dark",
       "Normal"
     ],
     "weaknesses": [
-      "Fighting",
-      "Fairy",
-      "Bug",
       "Fighting"
     ],
     "stats": {
@@ -717,11 +656,9 @@
       "Static"
     ],
     "type": [
-      "Electric",
       "Electric"
     ],
     "weaknesses": [
-      "Ground",
       "Ground"
     ],
     "stats": {
@@ -744,15 +681,9 @@
       "Static"
     ],
     "type": [
-      "Electric",
-      "Electric",
-      "Psychic"
+      "Electric"
     ],
     "weaknesses": [
-      "Ground",
-      "Ghost",
-      "Dark",
-      "Bug",
       "Ground"
     ],
     "stats": {
@@ -773,17 +704,12 @@
       "Sand Veil"
     ],
     "type": [
-      "Ground",
-      "Ice",
-      "Steel"
+      "Ground"
     ],
     "weaknesses": [
       "Water",
       "Grass",
-      "Ice",
-      "Fire",
-      "Fighting",
-      "Ground"
+      "Ice"
     ],
     "stats": {
       "hp": 3,
@@ -805,17 +731,12 @@
       "Sand Veil"
     ],
     "type": [
-      "Ground",
-      "Ice",
-      "Steel"
+      "Ground"
     ],
     "weaknesses": [
       "Water",
       "Grass",
-      "Ice",
-      "Fire",
-      "Fighting",
-      "Ground"
+      "Ice"
     ],
     "stats": {
       "hp": 5,
@@ -1051,16 +972,11 @@
       "Flash Fire"
     ],
     "type": [
-      "Fire",
-      "Ice"
+      "Fire"
     ],
     "weaknesses": [
       "Water",
       "Ground",
-      "Rock",
-      "Fire",
-      "Steel",
-      "Fighting",
       "Rock"
     ],
     "stats": {
@@ -1083,17 +999,11 @@
       "Flash Fire"
     ],
     "type": [
-      "Fire",
-      "Ice",
-      "Fairy"
+      "Fire"
     ],
     "weaknesses": [
       "Water",
       "Ground",
-      "Rock",
-      "Fire",
-      "Steel",
-      "Poison",
       "Rock"
     ],
     "stats": {
@@ -1435,18 +1345,12 @@
       "Arena Trap"
     ],
     "type": [
-      "Ground",
-      "Ground",
-      "Steel"
+      "Ground"
     ],
     "weaknesses": [
       "Water",
       "Grass",
-      "Ice",
-      "Fire",
-      "Water",
-      "Fighting",
-      "Ground"
+      "Ice"
     ],
     "stats": {
       "hp": 1,
@@ -1469,18 +1373,12 @@
       "Arena Trap"
     ],
     "type": [
-      "Ground",
-      "Ground",
-      "Steel"
+      "Ground"
     ],
     "weaknesses": [
       "Water",
       "Grass",
-      "Ice",
-      "Fire",
-      "Water",
-      "Fighting",
-      "Ground"
+      "Ice"
     ],
     "stats": {
       "hp": 3,
@@ -1501,19 +1399,9 @@
       "Technician"
     ],
     "type": [
-      "Normal",
-      "Dark",
-      "Steel",
       "Normal"
     ],
     "weaknesses": [
-      "Fighting",
-      "Fairy",
-      "Bug",
-      "Fighting",
-      "Fire",
-      "Fighting",
-      "Ground",
       "Fighting"
     ],
     "stats": {
@@ -1537,13 +1425,9 @@
       "Limber"
     ],
     "type": [
-      "Normal",
-      "Dark"
+      "Normal"
     ],
     "weaknesses": [
-      "Fighting",
-      "Fairy",
-      "Bug",
       "Fighting"
     ],
     "stats": {
@@ -1867,13 +1751,9 @@
       "Synchronize"
     ],
     "type": [
-      "Psychic",
       "Psychic"
     ],
     "weaknesses": [
-      "Ghost",
-      "Dark",
-      "Bug",
       "Ghost",
       "Dark",
       "Bug"
@@ -1953,13 +1833,9 @@
       "No Guard"
     ],
     "type": [
-      "Fighting",
       "Fighting"
     ],
     "weaknesses": [
-      "Psychic",
-      "Flying",
-      "Fairy",
       "Psychic",
       "Flying",
       "Fairy"
@@ -2125,9 +2001,7 @@
     ],
     "type": [
       "Rock",
-      "Ground",
-      "Rock",
-      "Electric"
+      "Ground"
     ],
     "weaknesses": [
       "Steel",
@@ -2135,10 +2009,6 @@
       "Water",
       "Ice",
       "Grass",
-      "Ground",
-      "Water",
-      "Grass",
-      "Fighting",
       "Ground"
     ],
     "stats": {
@@ -2163,9 +2033,7 @@
     ],
     "type": [
       "Rock",
-      "Ground",
-      "Rock",
-      "Electric"
+      "Ground"
     ],
     "weaknesses": [
       "Steel",
@@ -2173,10 +2041,6 @@
       "Water",
       "Ice",
       "Grass",
-      "Ground",
-      "Water",
-      "Grass",
-      "Fighting",
       "Ground"
     ],
     "stats": {
@@ -2201,9 +2065,7 @@
     ],
     "type": [
       "Rock",
-      "Ground",
-      "Rock",
-      "Electric"
+      "Ground"
     ],
     "weaknesses": [
       "Steel",
@@ -2211,10 +2073,6 @@
       "Water",
       "Ice",
       "Grass",
-      "Ground",
-      "Water",
-      "Grass",
-      "Fighting",
       "Ground"
     ],
     "stats": {
@@ -2236,16 +2094,12 @@
       "Flash Fire"
     ],
     "type": [
-      "Fire",
-      "Psychic"
+      "Fire"
     ],
     "weaknesses": [
       "Water",
       "Ground",
-      "Rock",
-      "Ghost",
-      "Dark",
-      "Bug"
+      "Rock"
     ],
     "stats": {
       "hp": 3,
@@ -2268,17 +2122,12 @@
       "Flash Fire"
     ],
     "type": [
-      "Fire",
-      "Psychic",
-      "Fairy"
+      "Fire"
     ],
     "weaknesses": [
       "Water",
       "Ground",
-      "Rock",
-      "Ghost",
-      "Steel",
-      "Poison"
+      "Rock"
     ],
     "stats": {
       "hp": 4,
@@ -2300,7 +2149,6 @@
     ],
     "type": [
       "Water",
-      "Psychic",
       "Psychic"
     ],
     "weaknesses": [
@@ -2308,9 +2156,6 @@
       "Dark",
       "Grass",
       "Electric",
-      "Bug",
-      "Ghost",
-      "Dark",
       "Bug"
     ],
     "stats": {
@@ -2336,10 +2181,6 @@
     ],
     "type": [
       "Water",
-      "Psychic",
-      "Water",
-      "Psychic",
-      "Poison",
       "Psychic"
     ],
     "weaknesses": [
@@ -2347,15 +2188,7 @@
       "Dark",
       "Grass",
       "Electric",
-      "Bug",
-      "Ghost",
-      "Dark",
-      "Grass",
-      "Electric",
-      "Bug",
-      "Ghost",
-      "Dark",
-      "Ground"
+      "Bug"
     ],
     "stats": {
       "hp": 6,
@@ -2437,16 +2270,12 @@
     ],
     "type": [
       "Normal",
-      "Flying",
-      "Fighting"
+      "Flying"
     ],
     "weaknesses": [
       "Electric",
       "Ice",
-      "Rock",
-      "Psychic",
-      "Flying",
-      "Fairy"
+      "Rock"
     ],
     "stats": {
       "hp": 4,
@@ -2578,13 +2407,10 @@
       "Sticky Hold"
     ],
     "type": [
-      "Poison",
-      "Poison",
-      "Dark"
+      "Poison"
     ],
     "weaknesses": [
       "Psychic",
-      "Ground",
       "Ground"
     ],
     "stats": {
@@ -2608,13 +2434,10 @@
       "Sticky Hold"
     ],
     "type": [
-      "Poison",
-      "Poison",
-      "Dark"
+      "Poison"
     ],
     "weaknesses": [
       "Psychic",
-      "Ground",
       "Ground"
     ],
     "stats": {
@@ -2749,21 +2572,9 @@
     ],
     "type": [
       "Ghost",
-      "Poison",
-      "Ghost",
-      "Poison",
-      "Ghost",
       "Poison"
     ],
     "weaknesses": [
-      "Ghost",
-      "Dark",
-      "Psychic",
-      "Ground",
-      "Ghost",
-      "Dark",
-      "Psychic",
-      "Ground",
       "Ghost",
       "Dark",
       "Psychic",
@@ -2901,12 +2712,9 @@
       "Hyper Cutter"
     ],
     "type": [
-      "Water",
       "Water"
     ],
     "weaknesses": [
-      "Grass",
-      "Electric",
       "Grass",
       "Electric"
     ],
@@ -3011,9 +2819,7 @@
     ],
     "type": [
       "Grass",
-      "Psychic",
-      "Grass",
-      "Dragon"
+      "Psychic"
     ],
     "weaknesses": [
       "Ghost",
@@ -3022,12 +2828,6 @@
       "Ice",
       "Dark",
       "Poison",
-      "Bug",
-      "Flying",
-      "Ice",
-      "Dragon",
-      "Poison",
-      "Fairy",
       "Bug"
     ],
     "stats": {
@@ -3077,19 +2877,12 @@
       "Lightning Rod"
     ],
     "type": [
-      "Ground",
-      "Fire",
-      "Ghost"
+      "Ground"
     ],
     "weaknesses": [
       "Water",
       "Grass",
-      "Ice",
-      "Water",
-      "Ghost",
-      "Ground",
-      "Dark",
-      "Rock"
+      "Ice"
     ],
     "stats": {
       "hp": 4,
@@ -3219,14 +3012,9 @@
       "Neutralizing Gas"
     ],
     "type": [
-      "Poison",
-      "Poison",
-      "Fairy"
+      "Poison"
     ],
     "weaknesses": [
-      "Psychic",
-      "Ground",
-      "Steel",
       "Psychic",
       "Ground"
     ],
@@ -3369,11 +3157,9 @@
       "Scrappy"
     ],
     "type": [
-      "Normal",
       "Normal"
     ],
     "weaknesses": [
-      "Fighting",
       "Fighting"
     ],
     "stats": {
@@ -3558,20 +3344,12 @@
     ],
     "type": [
       "Psychic",
-      "Fairy",
-      "Ice",
-      "Psychic"
+      "Fairy"
     ],
     "weaknesses": [
       "Ghost",
       "Steel",
-      "Poison",
-      "Steel",
-      "Ghost",
-      "Fire",
-      "Dark",
-      "Rock",
-      "Bug"
+      "Poison"
     ],
     "stats": {
       "hp": 3,
@@ -3705,18 +3483,11 @@
       "Mold Breaker"
     ],
     "type": [
-      "Bug",
-      "Bug",
-      "Flying"
+      "Bug"
     ],
     "weaknesses": [
       "Fire",
       "Flying",
-      "Rock",
-      "Fire",
-      "Flying",
-      "Electric",
-      "Ice",
       "Rock"
     ],
     "stats": {
@@ -3788,18 +3559,11 @@
     ],
     "type": [
       "Water",
-      "Flying",
-      "Water",
-      "Dark"
+      "Flying"
     ],
     "weaknesses": [
       "Electric",
-      "Rock",
-      "Fairy",
-      "Grass",
-      "Electric",
-      "Fighting",
-      "Bug"
+      "Rock"
     ],
     "stats": {
       "hp": 6,
@@ -3821,15 +3585,9 @@
     ],
     "type": [
       "Water",
-      "Ice",
-      "Water",
       "Ice"
     ],
     "weaknesses": [
-      "Grass",
-      "Electric",
-      "Fighting",
-      "Rock",
       "Grass",
       "Electric",
       "Fighting",
@@ -3877,11 +3635,9 @@
       "Adaptability"
     ],
     "type": [
-      "Normal",
       "Normal"
     ],
     "weaknesses": [
-      "Fighting",
       "Fighting"
     ],
     "stats": {
@@ -4133,16 +3889,9 @@
     ],
     "type": [
       "Rock",
-      "Flying",
-      "Rock",
       "Flying"
     ],
     "weaknesses": [
-      "Steel",
-      "Water",
-      "Electric",
-      "Ice",
-      "Rock",
       "Steel",
       "Water",
       "Electric",
@@ -4168,11 +3917,9 @@
       "Immunity"
     ],
     "type": [
-      "Normal",
       "Normal"
     ],
     "weaknesses": [
-      "Fighting",
       "Fighting"
     ],
     "stats": {
@@ -4194,19 +3941,12 @@
     ],
     "type": [
       "Ice",
-      "Flying",
-      "Psychic",
       "Flying"
     ],
     "weaknesses": [
       "Steel",
       "Fire",
       "Electric",
-      "Rock",
-      "Ghost",
-      "Dark",
-      "Electric",
-      "Ice",
       "Rock"
     ],
     "stats": {
@@ -4228,18 +3968,11 @@
     ],
     "type": [
       "Electric",
-      "Flying",
-      "Fighting",
       "Flying"
     ],
     "weaknesses": [
       "Ice",
-      "Rock",
-      "Psychic",
-      "Flying",
-      "Fairy",
-      "Electric",
-      "Ice"
+      "Rock"
     ],
     "stats": {
       "hp": 6,
@@ -4260,17 +3993,11 @@
     ],
     "type": [
       "Fire",
-      "Flying",
-      "Dark",
       "Flying"
     ],
     "weaknesses": [
       "Water",
       "Electric",
-      "Rock",
-      "Fairy",
-      "Electric",
-      "Ice",
       "Rock"
     ],
     "stats": {
@@ -4372,18 +4099,9 @@
       "Pressure"
     ],
     "type": [
-      "Psychic",
-      "Psychic",
-      "Fighting",
       "Psychic"
     ],
     "weaknesses": [
-      "Ghost",
-      "Dark",
-      "Bug",
-      "Ghost",
-      "Fairy",
-      "Flying",
       "Ghost",
       "Dark",
       "Bug"
