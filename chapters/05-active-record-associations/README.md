@@ -321,6 +321,18 @@ make test
 make play
 ```
 
+**Browser**
+
+Inspect the database with [SQLite Browser]:
+
+``` sh
+make db-browse
+```
+
+[SQLite Browser]: https://sqlitebrowser.org
+
+Note: Don’t forget to set up the database before.
+
 ### Quick start
 
 Open [`lib/active-record/associations.rb`], [`lib/active-record/base.rb`], [`lib/active-record/support/inflector.rb`], [`app/models/pokemon.rb`], [`spec/models/pokemon_spec.rb`] and [`data/pokemon.json`].
