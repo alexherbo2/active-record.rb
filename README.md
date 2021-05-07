@@ -4,7 +4,10 @@ A step-by-step implementation of the [active record pattern] for educational pur
 
 [Active record pattern]: https://en.wikipedia.org/wiki/Active_record_pattern
 
-> A memo for myself when I forget how things work.
+> A memo for myself when I forget how things work,
+> or [me using Active Record].
+
+[Me using Active Record]: https://tiktok.com/@jackiegansky/video/6823555448776559877
 
 Send me your completed solution and I will add a link to the repository!
 
