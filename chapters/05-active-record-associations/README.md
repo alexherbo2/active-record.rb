@@ -307,7 +307,9 @@ pokemon.pokemon_signature_move.signature_move
 
 ## Challenge
 
-Implement the methods, run specs and play with the REPL.
+Implement the methods (use [`define_method`]), run specs and play with the REPL.
+
+[`define_method`]: https://ruby-doc.org/core/Module.html#method-i-define_method
 
 **Specs**
 
