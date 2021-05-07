@@ -61,13 +61,12 @@ DB.transaction do
   # Reset auto-increment state
   reset_auto_increment
 
-  # Clear tables
-  tables.keys.each do |table_name|
-    clear_table(table_name)
-  end
-
-  # Seed database
+  # Seed tables of the database
   tables.each do |table_name, records|
+    # Clear the table, so that we have a clean state.
+    clear_table(table_name)
+
+    # Seed records into the database
     records.each do |record|
       seed(table_name, record)
     end
