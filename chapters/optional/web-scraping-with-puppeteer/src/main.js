@@ -1,6 +1,12 @@
 const puppeteer = require('puppeteer')
 const fs = require('fs')
 
+// Web scraping of Pokémon with Puppeteer.
+// https://pptr.dev
+// https://www.pokemon.com
+//
+// Note: Pokémon have multiple versions, where the selected version is marked with the active class.
+
 const main = async () => {
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
