@@ -5,6 +5,8 @@ const fs = require('fs')
 // https://pptr.dev
 // https://www.pokemon.com
 //
+// Writes to data/pokemon.json.
+//
 // Note: Pokémon have multiple versions, where the selected version is marked with the active class.
 
 const main = async () => {
