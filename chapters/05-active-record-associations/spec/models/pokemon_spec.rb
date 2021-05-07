@@ -358,4 +358,161 @@ describe Pokemon do
       end
     end
   end
+
+  # Associations ───────────────────────────────────────────────────────────────
+
+  describe '#category' do
+    context 'with category' do
+      # Attributes
+      let(:id) { 25 }
+      let(:index) { 25 }
+      let(:name) { 'Pikachu' }
+      let(:category) {
+        Category.find_by('name = "Mouse"')
+      }
+
+      subject(:pokemon) do
+        Pokemon.find(id)
+      end
+
+      it 'returns the category' do
+        expect(pokemon.category).to eq category
+      end
+    end
+
+    context 'without category' do
+      subject(:pokemon) do
+        Pokemon.new
+      end
+
+      it 'returns nil' do
+        expect(pokemon.category).to be nil
+      end
+    end
+  end
+
+  describe '#abilities' do
+    context 'with abilities' do
+      # Attributes
+      let(:id) { 25 }
+      let(:index) { 25 }
+      let(:name) { 'Pikachu' }
+      let(:abilities) {
+        Ability.where('name = "Static"')
+      }
+
+      subject(:pokemon) do
+        Pokemon.find(id)
+      end
+
+      it 'returns abilities' do
+        expect(pokemon.abilities).to eq abilities
+      end
+    end
+
+    context 'without abilities' do
+      subject(:pokemon) do
+        Pokemon.new
+      end
+
+      it 'returns an empty array' do
+        expect(pokemon.abilities).to eq []
+      end
+    end
+  end
+
+  describe '#types' do
+    context 'with types' do
+      # Attributes
+      let(:id) { 25 }
+      let(:index) { 25 }
+      let(:name) { 'Pikachu' }
+      let(:types) {
+        Type.where('name = "Electric"')
+      }
+
+      subject(:pokemon) do
+        Pokemon.find(id)
+      end
+
+      it 'returns types' do
+        expect(pokemon.types).to eq types
+      end
+    end
+
+    context 'without types' do
+      subject(:pokemon) do
+        Pokemon.new
+      end
+
+      it 'returns an empty array' do
+        expect(pokemon.types).to eq []
+      end
+    end
+  end
+
+  describe '#stats' do
+    context 'with stats' do
+      # Attributes
+      let(:id) { 25 }
+      let(:index) { 25 }
+      let(:name) { 'Pikachu' }
+      let(:stats) {
+        Stats.find_by("pokemon_id = #{id}")
+      }
+
+      subject(:pokemon) do
+        Pokemon.find(id)
+      end
+
+      it 'returns stats' do
+        expect(pokemon.stats).to eq stats
+      end
+    end
+
+    context 'without stats' do
+      subject(:pokemon) do
+        Pokemon.new
+      end
+
+      it 'returns nil' do
+        expect(pokemon.stats).to be nil
+      end
+    end
+  end
+
+  describe '#evolutions' do
+    context 'with evolutions' do
+      # Attributes
+      let(:id) { 133 }
+      let(:index) { 133 }
+      let(:name) { 'Eevee' }
+      let(:evolutions) {
+        Evolution.where("pokemon_id = #{id}")
+      }
+
+      subject(:pokemon) do
+        Pokemon.find(id)
+      end
+
+      it 'returns evolutions' do
+        expect(pokemon.evolutions).to eq evolutions
+      end
+    end
+
+    context 'without evolutions' do
+      # Attributes
+      let(:id) { 83 }
+      let(:index) { 83 }
+      let(:name) { 'Farfetch’d' }
+
+      subject(:pokemon) do
+        Pokemon.find(id)
+      end
+
+      it 'returns an empty array' do
+        expect(pokemon.evolutions).to eq []
+      end
+    end
+  end
 end

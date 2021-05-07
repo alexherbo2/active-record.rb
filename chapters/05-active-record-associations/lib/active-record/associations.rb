@@ -265,7 +265,7 @@ module ActiveRecord::Associations
     source: association_name
   )
     define_method(association_name) do
-      send(through_association_name).send(source)
+      send(through_association_name)&.send(source)
     end
   end
 end
