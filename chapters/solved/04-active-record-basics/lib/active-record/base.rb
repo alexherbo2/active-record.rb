@@ -390,6 +390,11 @@ class ActiveRecord::Base
 
   # Ensures instances that have the same attributes are the same.
   def <=>(other)
-    attributes <=> other&.attributes
+    case other
+    when self.class
+      attributes <=> other.attributes
+    else
+      nil
+    end
   end
 end
