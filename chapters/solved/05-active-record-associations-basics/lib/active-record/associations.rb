@@ -207,8 +207,8 @@ module ActiveRecord::Associations
     source: ActiveRecord::Support::Inflector.singularize(association_name)
   )
     define_method(association_name) do
-      send(through_association_name).map do |model|
-        model.send(source)
+      send(through_association_name).map do |through_association|
+        through_association.send(source)
       end
     end
   end
