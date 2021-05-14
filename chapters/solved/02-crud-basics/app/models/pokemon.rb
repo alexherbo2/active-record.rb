@@ -250,7 +250,7 @@ class Pokemon
   # Pokemon.exists?(25)
   # ⇒ true
   def self.exists?(id)
-    find(id) != nil
+    find(id).instance_of?(self)
   end
 
   # Checks the Pokémon is persisted in the database.
