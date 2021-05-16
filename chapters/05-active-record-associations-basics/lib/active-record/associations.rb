@@ -166,6 +166,8 @@ module ActiveRecord::Associations
   #
   # Options ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
   #
+  # class_name: PokemonMove
+  # foreign_key: pokemon_id
   # source: move
   #
   # Expansions ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -181,7 +183,7 @@ module ActiveRecord::Associations
   # end
   #
   # https://guides.rubyonrails.org/association_basics.html#the-has-many-through-association
-  def has_many_through(association_name, through_association_name, source:)
+  def has_many_through(association_name, through_association_name, class_name:, foreign_key:, source:)
   end
 
   # A `has_one :through` association sets up a one-to-one connection with another model.
@@ -219,6 +221,8 @@ module ActiveRecord::Associations
   #
   # Options ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
   #
+  # class_name: PokemonSignatureMove
+  # foreign_key: pokemon_id
   # source: signature_move
   #
   # Expansions ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -232,6 +236,6 @@ module ActiveRecord::Associations
   # pokemon.pokemon_signature_move.signature_move
   #
   # https://guides.rubyonrails.org/association_basics.html#the-has-one-through-association
-  def has_one_through(association_name, through_association_name, source:)
+  def has_one_through(association_name, through_association_name, class_name:, foreign_key:, source:)
   end
 end

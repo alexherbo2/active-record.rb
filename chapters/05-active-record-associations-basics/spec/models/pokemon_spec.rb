@@ -391,6 +391,55 @@ describe Pokemon do
     end
   end
 
+  describe '#category=' do
+    context 'with a different category' do
+      # Attributes
+      let(:id) { 6 }
+      let(:index) { 6 }
+      let(:name) { 'Charizard' }
+      let(:category) {
+        Category.find_by('name = "Flame"')
+      }
+      let(:new_category) {
+        Category.find_by('name = "Dragon"')
+      }
+
+      subject(:pokemon) do
+        Pokemon.find(id)
+      end
+
+      subject(:perform) do
+        pokemon.category = new_category
+      end
+
+      it 'changes the category' do
+        expect { perform }.to change { pokemon.reload.category }.from(category).to(new_category)
+      end
+    end
+
+    context 'with nil' do
+      # Attributes
+      let(:id) { 6 }
+      let(:index) { 6 }
+      let(:name) { 'Charizard' }
+      let(:category) {
+        Category.find_by('name = "Flame"')
+      }
+
+      subject(:pokemon) do
+        Pokemon.find(id)
+      end
+
+      subject(:perform) do
+        pokemon.category = nil
+      end
+
+      it 'removes the category' do
+        expect { perform }.to change { pokemon.reload.category }.from(category).to(nil)
+      end
+    end
+  end
+
   describe '#abilities' do
     context 'with abilities' do
       # Attributes
@@ -417,6 +466,55 @@ describe Pokemon do
 
       it 'returns an empty array' do
         expect(pokemon.abilities).to eq []
+      end
+    end
+  end
+
+  describe '#abilities=' do
+    context 'with new abilities' do
+      # Attributes
+      let(:id) { 25 }
+      let(:index) { 25 }
+      let(:name) { 'Pikachu' }
+      let(:abilities) {
+        Ability.where('name = "Static"')
+      }
+      let(:new_abilities) {
+        Ability.where('name = "Run Away"')
+      }
+
+      subject(:pokemon) do
+        Pokemon.find(id)
+      end
+
+      subject(:perform) do
+        pokemon.abilities += new_abilities
+      end
+
+      it 'adds abilities' do
+        expect { perform }.to change { pokemon.reload.abilities }.from(abilities).to(abilities + new_abilities)
+      end
+    end
+
+    context 'with an empty array' do
+      # Attributes
+      let(:id) { 25 }
+      let(:index) { 25 }
+      let(:name) { 'Pikachu' }
+      let(:abilities) {
+        Ability.where('name = "Static"')
+      }
+
+      subject(:pokemon) do
+        Pokemon.find(id)
+      end
+
+      subject(:perform) do
+        pokemon.abilities = []
+      end
+
+      it 'removes all abilities' do
+        expect { perform }.to change { pokemon.reload.abilities }.from(abilities).to([])
       end
     end
   end
@@ -451,6 +549,55 @@ describe Pokemon do
     end
   end
 
+  describe '#types=' do
+    context 'with new types' do
+      # Attributes
+      let(:id) { 4 }
+      let(:index) { 4 }
+      let(:name) { 'Charmander' }
+      let(:types) {
+        Type.where('name = "Fire"')
+      }
+      let(:new_types) {
+        Type.where('name = "Dragon"')
+      }
+
+      subject(:pokemon) do
+        Pokemon.find(id)
+      end
+
+      subject(:perform) do
+        pokemon.types += new_types
+      end
+
+      it 'adds types' do
+        expect { perform }.to change { pokemon.reload.types }.from(types).to(types + new_types)
+      end
+    end
+
+    context 'with an empty array' do
+      # Attributes
+      let(:id) { 4 }
+      let(:index) { 4 }
+      let(:name) { 'Charmander' }
+      let(:types) {
+        Type.where('name = "Fire"')
+      }
+
+      subject(:pokemon) do
+        Pokemon.find(id)
+      end
+
+      subject(:perform) do
+        pokemon.types = []
+      end
+
+      it 'removes all types' do
+        expect { perform }.to change { pokemon.reload.types }.from(types).to([])
+      end
+    end
+  end
+
   describe '#stats' do
     context 'with stats' do
       # Attributes
@@ -477,6 +624,66 @@ describe Pokemon do
 
       it 'returns nil' do
         expect(pokemon.stats).to be nil
+      end
+    end
+  end
+
+  describe '#stats=' do
+    context 'with different stats' do
+      # Attributes
+      let(:id) { 25 }
+      let(:index) { 25 }
+      let(:name) { 'Pikachu' }
+      let(:stats) {
+        Stats.find_by("pokemon_id = #{id}")
+      }
+      let(:new_stats) {
+        {
+          hp: 0,
+          attack: 0,
+          defense: 0,
+          special_attack: 0,
+          special_defense: 0,
+          speed: 0
+        }
+      }
+
+      subject(:pokemon) do
+        Pokemon.find(id)
+      end
+
+      subject(:perform) do
+        pokemon.stats.update(**new_stats)
+      end
+
+      def serialize(stats)
+        stats.attributes.except('id', 'pokemon_id').transform_keys(&:to_sym)
+      end
+
+      it 'changes the stats' do
+        expect { perform }.to change { serialize(pokemon.reload.stats) }.from(serialize(stats)).to(new_stats)
+      end
+    end
+
+    context 'with nil' do
+      # Attributes
+      let(:id) { 25 }
+      let(:index) { 25 }
+      let(:name) { 'Pikachu' }
+      let(:stats) {
+        Stats.find_by("pokemon_id = #{id}")
+      }
+
+      subject(:pokemon) do
+        Pokemon.find(id)
+      end
+
+      subject(:perform) do
+        pokemon.stats = nil
+      end
+
+      it 'removes the stats' do
+        expect { perform }.to change { pokemon.reload.stats }.from(stats).to(nil)
       end
     end
   end
@@ -512,6 +719,58 @@ describe Pokemon do
 
       it 'returns an empty array' do
         expect(pokemon.evolutions).to eq []
+      end
+    end
+  end
+
+  describe '#evolutions=' do
+    context 'with a set of evolutions' do
+      # Attributes
+      let(:id) { 132 }
+      let(:index) { 132 }
+      let(:name) { 'Ditto' }
+      let(:eevee_evolutions) {
+        Evolution.where('pokemon_id = 133')
+      }
+
+      subject(:pokemon) do
+        Pokemon.find(id)
+      end
+
+      subject(:perform) do
+        pokemon.evolutions = eevee_evolutions
+      end
+
+      def serialize(evolutions)
+        evolutions.map do |evolution|
+          evolution.pokemon.name
+        end
+      end
+
+      it 'sets evolutions' do
+        expect { perform }.to change { serialize(pokemon.reload.evolutions) }.from([]).to(serialize(eevee_evolutions))
+      end
+    end
+
+    context 'with an empty array' do
+      # Attributes
+      let(:id) { 133 }
+      let(:index) { 133 }
+      let(:name) { 'Eevee' }
+      let(:evolutions) {
+        Evolution.where("pokemon_id = #{id}")
+      }
+
+      subject(:pokemon) do
+        Pokemon.find(id)
+      end
+
+      subject(:perform) do
+        pokemon.evolutions = []
+      end
+
+      it 'removes all evolutions' do
+        expect { perform }.to change { pokemon.reload.evolutions }.from(evolutions).to([])
       end
     end
   end
