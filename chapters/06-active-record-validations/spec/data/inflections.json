@@ -1,0 +1,32 @@
+{
+  "singular_to_plural": [
+    ["category", "categories"],
+    ["weakness", "weaknesses"],
+    ["stats", "stats"],
+    ["pokemon", "pokemons"]
+  ],
+  "plural_to_singular": [
+    ["categories", "category"],
+    ["weaknesses", "weakness"],
+    ["weakness", "weakness"],
+    ["pokemons", "pokemon"]
+  ],
+  "underscore_to_camelcase": [
+    ["pokemon_shiny", "PokemonShiny"]
+  ],
+  "camelcase_to_underscore": [
+    ["PokemonShiny", "pokemon_shiny"]
+  ],
+  "module_name_to_constant_name": [
+    ["PokemonGo::Trainer", "Trainer"]
+  ],
+  "class_name_to_table_name": [
+    ["PokemonShiny", "pokemon_shinies"]
+  ],
+  "table_name_to_class_name": [
+    ["pokemon_shinies", "PokemonShiny"]
+  ],
+  "class_name_to_foreign_key": [
+    ["PokemonGo::Trainer", "trainer_id"]
+  ]
+}

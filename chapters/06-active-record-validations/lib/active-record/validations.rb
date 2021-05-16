@@ -1,9 +1,33 @@
 # Validations
 # https://guides.rubyonrails.org/active_record_validations.html
 module ActiveRecord::Validations
-  # List of method names to call for #valid?
-  def self.validations
-    @validations ||= []
+  # Add class methods
+  def self.included(base)
+    base.extend ClassMethods
+  end
+
+  module ClassMethods
+    # List of method names to call for #valid?
+    def validations
+      @validations ||= []
+    end
+
+    # Adds a validation method to the class.
+    #
+    # Example:
+    #
+    # class Pokemon < ActiveRecord::Base
+    #   validate :valid_name?
+    #
+    #   def valid_name?
+    #     name.is_a?(String) && !name.empty? && uniq?(:name)
+    #   end
+    # end
+    #
+    # https://guides.rubyonrails.org/active_record_validations.html#custom-methods
+    def validate(method_name)
+      validations << method_name
+    end
   end
 
   # Runs all validations and returns a boolean.
@@ -14,23 +38,6 @@ module ActiveRecord::Validations
     self.class.validations.all? do |validation|
       send(validation)
     end
-  end
-
-  # Adds a validation method to the class.
-  #
-  # Example:
-  #
-  # class Pokemon < ActiveRecord::Base
-  #   validate :valid_name?
-  #
-  #   def valid_name?
-  #     name.is_a?(String) && !name.empty? && uniq?(:name)
-  #   end
-  # end
-  #
-  # https://guides.rubyonrails.org/active_record_validations.html#custom-methods
-  def self.validate(method_name)
-    validations << method_name
   end
 
   # Validates whether the value of the specified attributes are unique across the system.
@@ -68,7 +75,7 @@ module ActiveRecord::Validations
 
     # Returns a boolean, true if unique, false otherwise.
     if persisted?
-      count == 1
+      count.between?(0, 1)
     else
       count.zero?
     end
