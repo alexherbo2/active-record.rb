@@ -5,7 +5,7 @@ require 'sqlite3'
 class ActiveRecord::Base
   # Modules
   include Comparable
-  extend ActiveRecord::Associations
+  include ActiveRecord::Associations
 
   # Returns the table name.
   #
