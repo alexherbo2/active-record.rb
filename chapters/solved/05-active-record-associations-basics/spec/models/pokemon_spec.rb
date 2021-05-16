@@ -63,8 +63,8 @@ describe Pokemon do
 
   describe '.create' do
     # Attributes
-    let(:index) { 25 }
-    let(:name) { 'Pikachu' }
+    let(:index) { 152 }
+    let(:name) { 'Chikorita' }
 
     context 'with parameters' do
       subject(:perform) do
