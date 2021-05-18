@@ -159,10 +159,10 @@ class Pokemon
   # pikachu.name = 'Pika'
   # pikachu.save
   def save
-    if @id
-      save_record
-    else
+    if new_record?
       save_new_record
+    else
+      save_record
     end
   end
 
@@ -175,6 +175,12 @@ class Pokemon
     @name = name
 
     save
+  end
+
+  # Returns true if this object hasn’t been saved yet.
+  # Otherwise, returns false.
+  def new_record?
+    !@id
   end
 
   # Inserts the record into the database,

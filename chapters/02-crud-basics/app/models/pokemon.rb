@@ -108,6 +108,11 @@ class Pokemon
   def update(index: @index, name: @name)
   end
 
+  # Returns true if this object hasn’t been saved yet.
+  # Otherwise, returns false.
+  def new_record?
+  end
+
   # Inserts the record into the database,
   # and assigns the ID set by SQLite.
   #
