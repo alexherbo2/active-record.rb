@@ -64,7 +64,9 @@ See [Inflections] for a complete reference.
 
 ## Challenge
 
-Implement the methods, run specs and play with the REPL.
+Implement the [`ActiveRecord::Support::Inflector`] class, run specs and play with the REPL.
+
+[`ActiveRecord::Support::Inflector`]: lib/active-record/support/inflector.rb
 
 **Specs**
 

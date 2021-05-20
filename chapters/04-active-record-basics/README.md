@@ -25,8 +25,9 @@ end
 
 ## Challenge
 
-Implement the `ActiveRecord::Base` class, so that it has all the behavior expected from a model, as described in the [CRUD: Reading and writing data] document.
+Implement the [`ActiveRecord::Base`] class, so that it has all the behavior expected from a model, as described in the [CRUD: Reading and writing data] document.
 
+[`ActiveRecord::Base`]: lib/active-record/base.rb
 [CRUD: Reading and writing data]: https://guides.rubyonrails.org/active_record_basics.html#crud-reading-and-writing-data
 
 **Example**

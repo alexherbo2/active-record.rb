@@ -311,8 +311,9 @@ pokemon.pokemon_signature_move.signature_move
 
 ## Challenge
 
-Implement the getter and setter methods (use [`define_method`]), run specs and play with the REPL.
+Implement the [`ActiveRecord::Associations`] getter and setter methods (use [`define_method`]), run specs and play with the REPL.
 
+[`ActiveRecord::Associations`]: lib/active-record/associations.rb
 [`define_method`]: https://ruby-doc.org/core/Module.html#method-i-define_method
 
 **Specs**
