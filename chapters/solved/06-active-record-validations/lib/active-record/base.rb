@@ -237,7 +237,11 @@ class ActiveRecord::Base
   #
   # pikachu.name = 'Pika'
   # pikachu.save
-  def save
+  def save(validate: true)
+    if validate
+      raise 'Invalid record' unless valid?
+    end
+
     if new_record?
       save_new_record
     else
