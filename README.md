@@ -5,7 +5,7 @@ A step-by-step implementation of the [active record pattern] for educational pur
 [Active record pattern]: https://en.wikipedia.org/wiki/Active_record_pattern
 
 > A memo for myself when I forget how things work,
-> or [me using Active Record].
+> or [me using Active Record] before writing this tutorial.
 
 [Me using Active Record]: https://tiktok.com/@jackiegansky/video/6823555448776559877
 
