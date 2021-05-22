@@ -1,0 +1,4144 @@
+[
+  {
+    "index": 1,
+    "name": "Bulbasaur",
+    "category": "Seed",
+    "abilities": [
+      "Overgrow"
+    ],
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Psychic",
+      "Flying",
+      "Ice"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 3,
+      "defense": 3,
+      "special_attack": 4,
+      "special_defense": 4,
+      "speed": 3
+    },
+    "evolutions": [
+      "Ivysaur"
+    ]
+  },
+  {
+    "index": 2,
+    "name": "Ivysaur",
+    "category": "Seed",
+    "abilities": [
+      "Overgrow"
+    ],
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Psychic",
+      "Flying",
+      "Ice"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 4,
+      "defense": 4,
+      "special_attack": 5,
+      "special_defense": 5,
+      "speed": 4
+    },
+    "evolutions": [
+      "Venusaur"
+    ]
+  },
+  {
+    "index": 3,
+    "name": "Venusaur",
+    "category": "Seed",
+    "abilities": [
+      "Overgrow"
+    ],
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Psychic",
+      "Flying",
+      "Ice"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 5,
+      "defense": 5,
+      "special_attack": 6,
+      "special_defense": 6,
+      "speed": 5
+    },
+    "evolutions": []
+  },
+  {
+    "index": 4,
+    "name": "Charmander",
+    "category": "Lizard",
+    "abilities": [
+      "Blaze"
+    ],
+    "type": [
+      "Fire"
+    ],
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 4,
+      "defense": 3,
+      "special_attack": 4,
+      "special_defense": 3,
+      "speed": 4
+    },
+    "evolutions": [
+      "Charmeleon"
+    ]
+  },
+  {
+    "index": 5,
+    "name": "Charmeleon",
+    "category": "Flame",
+    "abilities": [
+      "Blaze"
+    ],
+    "type": [
+      "Fire"
+    ],
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 4,
+      "defense": 4,
+      "special_attack": 5,
+      "special_defense": 4,
+      "speed": 5
+    },
+    "evolutions": [
+      "Charizard"
+    ]
+  },
+  {
+    "index": 6,
+    "name": "Charizard",
+    "category": "Flame",
+    "abilities": [
+      "Blaze"
+    ],
+    "type": [
+      "Fire",
+      "Flying"
+    ],
+    "weaknesses": [
+      "Water",
+      "Electric",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 5,
+      "defense": 5,
+      "special_attack": 7,
+      "special_defense": 5,
+      "speed": 6
+    },
+    "evolutions": []
+  },
+  {
+    "index": 7,
+    "name": "Squirtle",
+    "category": "Tiny Turtle",
+    "abilities": [
+      "Torrent"
+    ],
+    "type": [
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 3,
+      "defense": 4,
+      "special_attack": 3,
+      "special_defense": 4,
+      "speed": 3
+    },
+    "evolutions": [
+      "Wartortle"
+    ]
+  },
+  {
+    "index": 8,
+    "name": "Wartortle",
+    "category": "Turtle",
+    "abilities": [
+      "Torrent"
+    ],
+    "type": [
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 4,
+      "defense": 5,
+      "special_attack": 4,
+      "special_defense": 5,
+      "speed": 4
+    },
+    "evolutions": [
+      "Blastoise"
+    ]
+  },
+  {
+    "index": 9,
+    "name": "Blastoise",
+    "category": "Shellfish",
+    "abilities": [
+      "Torrent"
+    ],
+    "type": [
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 5,
+      "defense": 6,
+      "special_attack": 5,
+      "special_defense": 7,
+      "speed": 5
+    },
+    "evolutions": []
+  },
+  {
+    "index": 10,
+    "name": "Caterpie",
+    "category": "Worm",
+    "abilities": [
+      "Shield Dust"
+    ],
+    "type": [
+      "Bug"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 2,
+      "defense": 3,
+      "special_attack": 2,
+      "special_defense": 2,
+      "speed": 3
+    },
+    "evolutions": [
+      "Metapod"
+    ]
+  },
+  {
+    "index": 11,
+    "name": "Metapod",
+    "category": "Cocoon",
+    "abilities": [
+      "Shed Skin"
+    ],
+    "type": [
+      "Bug"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 2,
+      "defense": 4,
+      "special_attack": 2,
+      "special_defense": 2,
+      "speed": 2
+    },
+    "evolutions": [
+      "Butterfree"
+    ]
+  },
+  {
+    "index": 12,
+    "name": "Butterfree",
+    "category": "Butterfly",
+    "abilities": [
+      "Compound Eyes"
+    ],
+    "type": [
+      "Bug",
+      "Flying"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Electric",
+      "Ice",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 3,
+      "defense": 3,
+      "special_attack": 6,
+      "special_defense": 5,
+      "speed": 5
+    },
+    "evolutions": []
+  },
+  {
+    "index": 13,
+    "name": "Weedle",
+    "category": "Hairy Bug",
+    "abilities": [
+      "Shield Dust"
+    ],
+    "type": [
+      "Bug",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Psychic",
+      "Flying",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 3,
+      "defense": 2,
+      "special_attack": 2,
+      "special_defense": 2,
+      "speed": 3
+    },
+    "evolutions": [
+      "Kakuna"
+    ]
+  },
+  {
+    "index": 14,
+    "name": "Kakuna",
+    "category": "Cocoon",
+    "abilities": [
+      "Shed Skin"
+    ],
+    "type": [
+      "Bug",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Psychic",
+      "Flying",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 2,
+      "defense": 3,
+      "special_attack": 2,
+      "special_defense": 2,
+      "speed": 3
+    },
+    "evolutions": [
+      "Beedrill"
+    ]
+  },
+  {
+    "index": 15,
+    "name": "Beedrill",
+    "category": "Poison Bee",
+    "abilities": [
+      "Swarm"
+    ],
+    "type": [
+      "Bug",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Psychic",
+      "Flying",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 6,
+      "defense": 3,
+      "special_attack": 3,
+      "special_defense": 5,
+      "speed": 5
+    },
+    "evolutions": []
+  },
+  {
+    "index": 16,
+    "name": "Pidgey",
+    "category": "Tiny Bird",
+    "abilities": [
+      "Keen Eye",
+      "Tangled Feet"
+    ],
+    "type": [
+      "Normal",
+      "Flying"
+    ],
+    "weaknesses": [
+      "Electric",
+      "Ice",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 3,
+      "defense": 3,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 4
+    },
+    "evolutions": [
+      "Pidgeotto"
+    ]
+  },
+  {
+    "index": 17,
+    "name": "Pidgeotto",
+    "category": "Bird",
+    "abilities": [
+      "Keen Eye",
+      "Tangled Feet"
+    ],
+    "type": [
+      "Normal",
+      "Flying"
+    ],
+    "weaknesses": [
+      "Electric",
+      "Ice",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 4,
+      "defense": 4,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 5
+    },
+    "evolutions": [
+      "Pidgeot"
+    ]
+  },
+  {
+    "index": 18,
+    "name": "Pidgeot",
+    "category": "Bird",
+    "abilities": [
+      "Keen Eye",
+      "Tangled Feet"
+    ],
+    "type": [
+      "Normal",
+      "Flying"
+    ],
+    "weaknesses": [
+      "Electric",
+      "Ice",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 5,
+      "defense": 5,
+      "special_attack": 5,
+      "special_defense": 5,
+      "speed": 6
+    },
+    "evolutions": []
+  },
+  {
+    "index": 19,
+    "name": "Rattata",
+    "category": "Mouse",
+    "abilities": [
+      "Run Away",
+      "Guts"
+    ],
+    "type": [
+      "Normal"
+    ],
+    "weaknesses": [
+      "Fighting"
+    ],
+    "stats": {
+      "hp": 2,
+      "attack": 4,
+      "defense": 3,
+      "special_attack": 2,
+      "special_defense": 3,
+      "speed": 5
+    },
+    "evolutions": [
+      "Raticate"
+    ]
+  },
+  {
+    "index": 20,
+    "name": "Raticate",
+    "category": "Mouse",
+    "abilities": [
+      "Run Away",
+      "Guts"
+    ],
+    "type": [
+      "Normal"
+    ],
+    "weaknesses": [
+      "Fighting"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 5,
+      "defense": 4,
+      "special_attack": 3,
+      "special_defense": 5,
+      "speed": 6
+    },
+    "evolutions": []
+  },
+  {
+    "index": 21,
+    "name": "Spearow",
+    "category": "Tiny Bird",
+    "abilities": [
+      "Keen Eye"
+    ],
+    "type": [
+      "Normal",
+      "Flying"
+    ],
+    "weaknesses": [
+      "Electric",
+      "Ice",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 4,
+      "defense": 2,
+      "special_attack": 2,
+      "special_defense": 2,
+      "speed": 5
+    },
+    "evolutions": [
+      "Fearow"
+    ]
+  },
+  {
+    "index": 22,
+    "name": "Fearow",
+    "category": "Beak",
+    "abilities": [
+      "Keen Eye"
+    ],
+    "type": [
+      "Normal",
+      "Flying"
+    ],
+    "weaknesses": [
+      "Electric",
+      "Ice",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 6,
+      "defense": 4,
+      "special_attack": 4,
+      "special_defense": 4,
+      "speed": 6
+    },
+    "evolutions": []
+  },
+  {
+    "index": 23,
+    "name": "Ekans",
+    "category": "Snake",
+    "abilities": [
+      "Shed Skin",
+      "Intimidate"
+    ],
+    "type": [
+      "Poison"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 4,
+      "defense": 3,
+      "special_attack": 3,
+      "special_defense": 4,
+      "speed": 4
+    },
+    "evolutions": [
+      "Arbok"
+    ]
+  },
+  {
+    "index": 24,
+    "name": "Arbok",
+    "category": "Cobra",
+    "abilities": [
+      "Shed Skin",
+      "Intimidate"
+    ],
+    "type": [
+      "Poison"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 6,
+      "defense": 5,
+      "special_attack": 4,
+      "special_defense": 5,
+      "speed": 5
+    },
+    "evolutions": []
+  },
+  {
+    "index": 25,
+    "name": "Pikachu",
+    "category": "Mouse",
+    "abilities": [
+      "Static"
+    ],
+    "type": [
+      "Electric"
+    ],
+    "weaknesses": [
+      "Ground"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 4,
+      "defense": 3,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 6
+    },
+    "evolutions": [
+      "Raichu"
+    ]
+  },
+  {
+    "index": 26,
+    "name": "Raichu",
+    "category": "Mouse",
+    "abilities": [
+      "Static"
+    ],
+    "type": [
+      "Electric"
+    ],
+    "weaknesses": [
+      "Ground"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 6,
+      "defense": 4,
+      "special_attack": 6,
+      "special_defense": 5,
+      "speed": 7
+    },
+    "evolutions": []
+  },
+  {
+    "index": 27,
+    "name": "Sandshrew",
+    "category": "Mouse",
+    "abilities": [
+      "Sand Veil"
+    ],
+    "type": [
+      "Ground"
+    ],
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 5,
+      "defense": 5,
+      "special_attack": 2,
+      "special_defense": 2,
+      "speed": 3
+    },
+    "evolutions": [
+      "Sandslash"
+    ]
+  },
+  {
+    "index": 28,
+    "name": "Sandslash",
+    "category": "Mouse",
+    "abilities": [
+      "Sand Veil"
+    ],
+    "type": [
+      "Ground"
+    ],
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 6,
+      "defense": 7,
+      "special_attack": 3,
+      "special_defense": 4,
+      "speed": 4
+    },
+    "evolutions": []
+  },
+  {
+    "index": 29,
+    "name": "Nidoran♀",
+    "category": "Poison Pin",
+    "abilities": [
+      "Poison Point",
+      "Rivalry"
+    ],
+    "type": [
+      "Poison"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 3,
+      "defense": 4,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 3
+    },
+    "evolutions": [
+      "Nidorina"
+    ]
+  },
+  {
+    "index": 30,
+    "name": "Nidorina",
+    "category": "Poison Pin",
+    "abilities": [
+      "Poison Point",
+      "Rivalry"
+    ],
+    "type": [
+      "Poison"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 4,
+      "defense": 4,
+      "special_attack": 4,
+      "special_defense": 4,
+      "speed": 4
+    },
+    "evolutions": [
+      "Nidoqueen"
+    ]
+  },
+  {
+    "index": 31,
+    "name": "Nidoqueen",
+    "category": "Drill",
+    "abilities": [
+      "Poison Point",
+      "Rivalry"
+    ],
+    "type": [
+      "Poison",
+      "Ground"
+    ],
+    "weaknesses": [
+      "Water",
+      "Psychic",
+      "Ice",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 6,
+      "attack": 6,
+      "defense": 6,
+      "special_attack": 5,
+      "special_defense": 5,
+      "speed": 5
+    },
+    "evolutions": []
+  },
+  {
+    "index": 32,
+    "name": "Nidoran♂",
+    "category": "Poison Pin",
+    "abilities": [
+      "Poison Point",
+      "Rivalry"
+    ],
+    "type": [
+      "Poison"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 4,
+      "defense": 3,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 3
+    },
+    "evolutions": [
+      "Nidorino"
+    ]
+  },
+  {
+    "index": 33,
+    "name": "Nidorino",
+    "category": "Poison Pin",
+    "abilities": [
+      "Poison Point",
+      "Rivalry"
+    ],
+    "type": [
+      "Poison"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 5,
+      "defense": 4,
+      "special_attack": 4,
+      "special_defense": 4,
+      "speed": 4
+    },
+    "evolutions": [
+      "Nidoking"
+    ]
+  },
+  {
+    "index": 34,
+    "name": "Nidoking",
+    "category": "Drill",
+    "abilities": [
+      "Poison Point",
+      "Rivalry"
+    ],
+    "type": [
+      "Poison",
+      "Ground"
+    ],
+    "weaknesses": [
+      "Water",
+      "Psychic",
+      "Ice",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 6,
+      "defense": 5,
+      "special_attack": 5,
+      "special_defense": 5,
+      "speed": 5
+    },
+    "evolutions": []
+  },
+  {
+    "index": 35,
+    "name": "Clefairy",
+    "category": "Fairy",
+    "abilities": [
+      "Cute Charm",
+      "Magic Guard"
+    ],
+    "type": [
+      "Fairy"
+    ],
+    "weaknesses": [
+      "Steel",
+      "Poison"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 3,
+      "defense": 3,
+      "special_attack": 4,
+      "special_defense": 4,
+      "speed": 3
+    },
+    "evolutions": [
+      "Clefable"
+    ]
+  },
+  {
+    "index": 36,
+    "name": "Clefable",
+    "category": "Fairy",
+    "abilities": [
+      "Cute Charm",
+      "Magic Guard"
+    ],
+    "type": [
+      "Fairy"
+    ],
+    "weaknesses": [
+      "Steel",
+      "Poison"
+    ],
+    "stats": {
+      "hp": 6,
+      "attack": 5,
+      "defense": 5,
+      "special_attack": 6,
+      "special_defense": 6,
+      "speed": 4
+    },
+    "evolutions": []
+  },
+  {
+    "index": 37,
+    "name": "Vulpix",
+    "category": "Fox",
+    "abilities": [
+      "Flash Fire"
+    ],
+    "type": [
+      "Fire"
+    ],
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 3,
+      "defense": 3,
+      "special_attack": 3,
+      "special_defense": 4,
+      "speed": 4
+    },
+    "evolutions": [
+      "Ninetales"
+    ]
+  },
+  {
+    "index": 38,
+    "name": "Ninetales",
+    "category": "Fox",
+    "abilities": [
+      "Flash Fire"
+    ],
+    "type": [
+      "Fire"
+    ],
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 5,
+      "defense": 5,
+      "special_attack": 5,
+      "special_defense": 6,
+      "speed": 6
+    },
+    "evolutions": []
+  },
+  {
+    "index": 39,
+    "name": "Jigglypuff",
+    "category": "Balloon",
+    "abilities": [
+      "Cute Charm",
+      "Competitive"
+    ],
+    "type": [
+      "Normal",
+      "Fairy"
+    ],
+    "weaknesses": [
+      "Steel",
+      "Poison"
+    ],
+    "stats": {
+      "hp": 7,
+      "attack": 3,
+      "defense": 2,
+      "special_attack": 3,
+      "special_defense": 2,
+      "speed": 2
+    },
+    "evolutions": [
+      "Wigglytuff"
+    ]
+  },
+  {
+    "index": 40,
+    "name": "Wigglytuff",
+    "category": "Balloon",
+    "abilities": [
+      "Cute Charm",
+      "Competitive"
+    ],
+    "type": [
+      "Normal",
+      "Fairy"
+    ],
+    "weaknesses": [
+      "Steel",
+      "Poison"
+    ],
+    "stats": {
+      "hp": 9,
+      "attack": 5,
+      "defense": 3,
+      "special_attack": 5,
+      "special_defense": 3,
+      "speed": 3
+    },
+    "evolutions": []
+  },
+  {
+    "index": 41,
+    "name": "Zubat",
+    "category": "Bat",
+    "abilities": [
+      "Inner Focus"
+    ],
+    "type": [
+      "Poison",
+      "Flying"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Electric",
+      "Ice",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 3,
+      "defense": 3,
+      "special_attack": 2,
+      "special_defense": 3,
+      "speed": 4
+    },
+    "evolutions": [
+      "Golbat"
+    ]
+  },
+  {
+    "index": 42,
+    "name": "Golbat",
+    "category": "Bat",
+    "abilities": [
+      "Inner Focus"
+    ],
+    "type": [
+      "Poison",
+      "Flying"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Electric",
+      "Ice",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 5,
+      "defense": 5,
+      "special_attack": 4,
+      "special_defense": 5,
+      "speed": 6
+    },
+    "evolutions": [
+      "Crobat"
+    ]
+  },
+  {
+    "index": 43,
+    "name": "Oddish",
+    "category": "Weed",
+    "abilities": [
+      "Chlorophyll"
+    ],
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Psychic",
+      "Flying",
+      "Ice"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 3,
+      "defense": 4,
+      "special_attack": 5,
+      "special_defense": 4,
+      "speed": 2
+    },
+    "evolutions": [
+      "Gloom"
+    ]
+  },
+  {
+    "index": 44,
+    "name": "Gloom",
+    "category": "Weed",
+    "abilities": [
+      "Chlorophyll"
+    ],
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Psychic",
+      "Flying",
+      "Ice"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 4,
+      "defense": 5,
+      "special_attack": 5,
+      "special_defense": 5,
+      "speed": 3
+    },
+    "evolutions": [
+      "Vileplume",
+      "Bellossom"
+    ]
+  },
+  {
+    "index": 45,
+    "name": "Vileplume",
+    "category": "Flower",
+    "abilities": [
+      "Chlorophyll"
+    ],
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Psychic",
+      "Flying",
+      "Ice"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 5,
+      "defense": 5,
+      "special_attack": 7,
+      "special_defense": 6,
+      "speed": 3
+    },
+    "evolutions": [
+      "Bellossom"
+    ]
+  },
+  {
+    "index": 46,
+    "name": "Paras",
+    "category": "Mushroom",
+    "abilities": [
+      "Effect Spore",
+      "Dry Skin"
+    ],
+    "type": [
+      "Bug",
+      "Grass"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison",
+      "Rock",
+      "Bug"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 5,
+      "defense": 4,
+      "special_attack": 3,
+      "special_defense": 4,
+      "speed": 2
+    },
+    "evolutions": [
+      "Parasect"
+    ]
+  },
+  {
+    "index": 47,
+    "name": "Parasect",
+    "category": "Mushroom",
+    "abilities": [
+      "Effect Spore",
+      "Dry Skin"
+    ],
+    "type": [
+      "Bug",
+      "Grass"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison",
+      "Rock",
+      "Bug"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 6,
+      "defense": 5,
+      "special_attack": 4,
+      "special_defense": 5,
+      "speed": 2
+    },
+    "evolutions": []
+  },
+  {
+    "index": 48,
+    "name": "Venonat",
+    "category": "Insect",
+    "abilities": [
+      "Compound Eyes",
+      "Tinted Lens"
+    ],
+    "type": [
+      "Bug",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Psychic",
+      "Flying",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 4,
+      "defense": 3,
+      "special_attack": 3,
+      "special_defense": 4,
+      "speed": 3
+    },
+    "evolutions": [
+      "Venomoth"
+    ]
+  },
+  {
+    "index": 49,
+    "name": "Venomoth",
+    "category": "Poison Moth",
+    "abilities": [
+      "Shield Dust",
+      "Tinted Lens"
+    ],
+    "type": [
+      "Bug",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Psychic",
+      "Flying",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 4,
+      "defense": 4,
+      "special_attack": 6,
+      "special_defense": 5,
+      "speed": 6
+    },
+    "evolutions": []
+  },
+  {
+    "index": 50,
+    "name": "Diglett",
+    "category": "Mole",
+    "abilities": [
+      "Sand Veil",
+      "Arena Trap"
+    ],
+    "type": [
+      "Ground"
+    ],
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice"
+    ],
+    "stats": {
+      "hp": 1,
+      "attack": 4,
+      "defense": 2,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 6
+    },
+    "evolutions": [
+      "Dugtrio"
+    ]
+  },
+  {
+    "index": 51,
+    "name": "Dugtrio",
+    "category": "Mole",
+    "abilities": [
+      "Sand Veil",
+      "Arena Trap"
+    ],
+    "type": [
+      "Ground"
+    ],
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 6,
+      "defense": 3,
+      "special_attack": 3,
+      "special_defense": 5,
+      "speed": 8
+    },
+    "evolutions": []
+  },
+  {
+    "index": 52,
+    "name": "Meowth",
+    "category": "Scratch Cat",
+    "abilities": [
+      "Pickup",
+      "Technician"
+    ],
+    "type": [
+      "Normal"
+    ],
+    "weaknesses": [
+      "Fighting"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 3,
+      "defense": 3,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 6
+    },
+    "evolutions": [
+      "Persian"
+    ]
+  },
+  {
+    "index": 53,
+    "name": "Persian",
+    "category": "Classy Cat",
+    "abilities": [
+      "Technician",
+      "Limber"
+    ],
+    "type": [
+      "Normal"
+    ],
+    "weaknesses": [
+      "Fighting"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 5,
+      "defense": 4,
+      "special_attack": 4,
+      "special_defense": 4,
+      "speed": 7
+    },
+    "evolutions": []
+  },
+  {
+    "index": 54,
+    "name": "Psyduck",
+    "category": "Duck",
+    "abilities": [
+      "Damp",
+      "Cloud Nine"
+    ],
+    "type": [
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 4,
+      "defense": 3,
+      "special_attack": 4,
+      "special_defense": 3,
+      "speed": 4
+    },
+    "evolutions": [
+      "Golduck"
+    ]
+  },
+  {
+    "index": 55,
+    "name": "Golduck",
+    "category": "Duck",
+    "abilities": [
+      "Damp",
+      "Cloud Nine"
+    ],
+    "type": [
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 5,
+      "defense": 5,
+      "special_attack": 6,
+      "special_defense": 5,
+      "speed": 5
+    },
+    "evolutions": []
+  },
+  {
+    "index": 56,
+    "name": "Mankey",
+    "category": "Pig Monkey",
+    "abilities": [
+      "Vital Spirit",
+      "Anger Point"
+    ],
+    "type": [
+      "Fighting"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Flying",
+      "Fairy"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 5,
+      "defense": 3,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 5
+    },
+    "evolutions": [
+      "Primeape"
+    ]
+  },
+  {
+    "index": 57,
+    "name": "Primeape",
+    "category": "Pig Monkey",
+    "abilities": [
+      "Vital Spirit",
+      "Anger Point"
+    ],
+    "type": [
+      "Fighting"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Flying",
+      "Fairy"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 7,
+      "defense": 4,
+      "special_attack": 4,
+      "special_defense": 5,
+      "speed": 6
+    },
+    "evolutions": []
+  },
+  {
+    "index": 58,
+    "name": "Growlithe",
+    "category": "Puppy",
+    "abilities": [
+      "Intimidate",
+      "Flash Fire"
+    ],
+    "type": [
+      "Fire"
+    ],
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 5,
+      "defense": 3,
+      "special_attack": 5,
+      "special_defense": 3,
+      "speed": 4
+    },
+    "evolutions": [
+      "Arcanine"
+    ]
+  },
+  {
+    "index": 59,
+    "name": "Arcanine",
+    "category": "Legendary",
+    "abilities": [
+      "Intimidate",
+      "Flash Fire"
+    ],
+    "type": [
+      "Fire"
+    ],
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 6,
+      "attack": 7,
+      "defense": 5,
+      "special_attack": 6,
+      "special_defense": 5,
+      "speed": 6
+    },
+    "evolutions": []
+  },
+  {
+    "index": 60,
+    "name": "Poliwag",
+    "category": "Tadpole",
+    "abilities": [
+      "Damp",
+      "Water Absorb"
+    ],
+    "type": [
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 3,
+      "defense": 3,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 6
+    },
+    "evolutions": [
+      "Poliwhirl"
+    ]
+  },
+  {
+    "index": 61,
+    "name": "Poliwhirl",
+    "category": "Tadpole",
+    "abilities": [
+      "Damp",
+      "Water Absorb"
+    ],
+    "type": [
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 4,
+      "defense": 4,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 6
+    },
+    "evolutions": [
+      "Poliwrath",
+      "Politoed"
+    ]
+  },
+  {
+    "index": 62,
+    "name": "Poliwrath",
+    "category": "Tadpole",
+    "abilities": [
+      "Damp",
+      "Water Absorb"
+    ],
+    "type": [
+      "Water",
+      "Fighting"
+    ],
+    "weaknesses": [
+      "Fairy",
+      "Grass",
+      "Flying",
+      "Psychic",
+      "Electric"
+    ],
+    "stats": {
+      "hp": 6,
+      "attack": 6,
+      "defense": 6,
+      "special_attack": 5,
+      "special_defense": 6,
+      "speed": 5
+    },
+    "evolutions": [
+      "Politoed"
+    ]
+  },
+  {
+    "index": 63,
+    "name": "Abra",
+    "category": "Psi",
+    "abilities": [
+      "Inner Focus",
+      "Synchronize"
+    ],
+    "type": [
+      "Psychic"
+    ],
+    "weaknesses": [
+      "Ghost",
+      "Dark",
+      "Bug"
+    ],
+    "stats": {
+      "hp": 2,
+      "attack": 2,
+      "defense": 1,
+      "special_attack": 7,
+      "special_defense": 4,
+      "speed": 6
+    },
+    "evolutions": [
+      "Kadabra"
+    ]
+  },
+  {
+    "index": 64,
+    "name": "Kadabra",
+    "category": "Psi",
+    "abilities": [
+      "Inner Focus",
+      "Synchronize"
+    ],
+    "type": [
+      "Psychic"
+    ],
+    "weaknesses": [
+      "Ghost",
+      "Dark",
+      "Bug"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 3,
+      "defense": 2,
+      "special_attack": 8,
+      "special_defense": 5,
+      "speed": 7
+    },
+    "evolutions": [
+      "Alakazam"
+    ]
+  },
+  {
+    "index": 65,
+    "name": "Alakazam",
+    "category": "Psi",
+    "abilities": [
+      "Inner Focus",
+      "Synchronize"
+    ],
+    "type": [
+      "Psychic"
+    ],
+    "weaknesses": [
+      "Ghost",
+      "Dark",
+      "Bug"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 3,
+      "defense": 3,
+      "special_attack": 8,
+      "special_defense": 6,
+      "speed": 8
+    },
+    "evolutions": []
+  },
+  {
+    "index": 66,
+    "name": "Machop",
+    "category": "Superpower",
+    "abilities": [
+      "Guts",
+      "No Guard"
+    ],
+    "type": [
+      "Fighting"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Flying",
+      "Fairy"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 5,
+      "defense": 3,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 3
+    },
+    "evolutions": [
+      "Machoke"
+    ]
+  },
+  {
+    "index": 67,
+    "name": "Machoke",
+    "category": "Superpower",
+    "abilities": [
+      "Guts",
+      "No Guard"
+    ],
+    "type": [
+      "Fighting"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Flying",
+      "Fairy"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 6,
+      "defense": 5,
+      "special_attack": 3,
+      "special_defense": 4,
+      "speed": 3
+    },
+    "evolutions": [
+      "Machamp"
+    ]
+  },
+  {
+    "index": 68,
+    "name": "Machamp",
+    "category": "Superpower",
+    "abilities": [
+      "Guts",
+      "No Guard"
+    ],
+    "type": [
+      "Fighting"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Flying",
+      "Fairy"
+    ],
+    "stats": {
+      "hp": 6,
+      "attack": 8,
+      "defense": 5,
+      "special_attack": 4,
+      "special_defense": 5,
+      "speed": 4
+    },
+    "evolutions": []
+  },
+  {
+    "index": 69,
+    "name": "Bellsprout",
+    "category": "Flower",
+    "abilities": [
+      "Chlorophyll"
+    ],
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Psychic",
+      "Flying",
+      "Ice"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 5,
+      "defense": 3,
+      "special_attack": 5,
+      "special_defense": 2,
+      "speed": 3
+    },
+    "evolutions": [
+      "Weepinbell"
+    ]
+  },
+  {
+    "index": 70,
+    "name": "Weepinbell",
+    "category": "Flycatcher",
+    "abilities": [
+      "Chlorophyll"
+    ],
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Psychic",
+      "Flying",
+      "Ice"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 6,
+      "defense": 3,
+      "special_attack": 5,
+      "special_defense": 3,
+      "speed": 4
+    },
+    "evolutions": [
+      "Victreebel"
+    ]
+  },
+  {
+    "index": 71,
+    "name": "Victreebel",
+    "category": "Flycatcher",
+    "abilities": [
+      "Chlorophyll"
+    ],
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Psychic",
+      "Flying",
+      "Ice"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 7,
+      "defense": 4,
+      "special_attack": 6,
+      "special_defense": 5,
+      "speed": 5
+    },
+    "evolutions": []
+  },
+  {
+    "index": 72,
+    "name": "Tentacool",
+    "category": "Jellyfish",
+    "abilities": [
+      "Clear Body",
+      "Liquid Ooze"
+    ],
+    "type": [
+      "Water",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Electric",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 3,
+      "defense": 3,
+      "special_attack": 3,
+      "special_defense": 6,
+      "speed": 5
+    },
+    "evolutions": [
+      "Tentacruel"
+    ]
+  },
+  {
+    "index": 73,
+    "name": "Tentacruel",
+    "category": "Jellyfish",
+    "abilities": [
+      "Clear Body",
+      "Liquid Ooze"
+    ],
+    "type": [
+      "Water",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Electric",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 5,
+      "defense": 4,
+      "special_attack": 5,
+      "special_defense": 8,
+      "speed": 6
+    },
+    "evolutions": []
+  },
+  {
+    "index": 74,
+    "name": "Geodude",
+    "category": "Rock",
+    "abilities": [
+      "Rock Head",
+      "Sturdy"
+    ],
+    "type": [
+      "Rock",
+      "Ground"
+    ],
+    "weaknesses": [
+      "Steel",
+      "Fighting",
+      "Water",
+      "Ice",
+      "Grass",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 5,
+      "defense": 6,
+      "special_attack": 2,
+      "special_defense": 2,
+      "speed": 2
+    },
+    "evolutions": [
+      "Graveler"
+    ]
+  },
+  {
+    "index": 75,
+    "name": "Graveler",
+    "category": "Rock",
+    "abilities": [
+      "Rock Head",
+      "Sturdy"
+    ],
+    "type": [
+      "Rock",
+      "Ground"
+    ],
+    "weaknesses": [
+      "Steel",
+      "Fighting",
+      "Water",
+      "Ice",
+      "Grass",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 6,
+      "defense": 7,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 3
+    },
+    "evolutions": [
+      "Golem"
+    ]
+  },
+  {
+    "index": 76,
+    "name": "Golem",
+    "category": "Megaton",
+    "abilities": [
+      "Rock Head",
+      "Sturdy"
+    ],
+    "type": [
+      "Rock",
+      "Ground"
+    ],
+    "weaknesses": [
+      "Steel",
+      "Fighting",
+      "Water",
+      "Ice",
+      "Grass",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 8,
+      "defense": 8,
+      "special_attack": 4,
+      "special_defense": 4,
+      "speed": 3
+    },
+    "evolutions": []
+  },
+  {
+    "index": 77,
+    "name": "Ponyta",
+    "category": "Fire Horse",
+    "abilities": [
+      "Run Away",
+      "Flash Fire"
+    ],
+    "type": [
+      "Fire"
+    ],
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 5,
+      "defense": 4,
+      "special_attack": 4,
+      "special_defense": 4,
+      "speed": 6
+    },
+    "evolutions": [
+      "Rapidash"
+    ]
+  },
+  {
+    "index": 78,
+    "name": "Rapidash",
+    "category": "Fire Horse",
+    "abilities": [
+      "Run Away",
+      "Flash Fire"
+    ],
+    "type": [
+      "Fire"
+    ],
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 6,
+      "defense": 5,
+      "special_attack": 5,
+      "special_defense": 5,
+      "speed": 7
+    },
+    "evolutions": []
+  },
+  {
+    "index": 79,
+    "name": "Slowpoke",
+    "category": "Dopey",
+    "abilities": [
+      "Oblivious",
+      "Own Tempo"
+    ],
+    "type": [
+      "Water",
+      "Psychic"
+    ],
+    "weaknesses": [
+      "Ghost",
+      "Dark",
+      "Grass",
+      "Electric",
+      "Bug"
+    ],
+    "stats": {
+      "hp": 6,
+      "attack": 4,
+      "defense": 4,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 1
+    },
+    "evolutions": [
+      "Slowbro",
+      "Slowking"
+    ]
+  },
+  {
+    "index": 80,
+    "name": "Slowbro",
+    "category": "Hermit Crab",
+    "abilities": [
+      "Oblivious",
+      "Own Tempo"
+    ],
+    "type": [
+      "Water",
+      "Psychic"
+    ],
+    "weaknesses": [
+      "Ghost",
+      "Dark",
+      "Grass",
+      "Electric",
+      "Bug"
+    ],
+    "stats": {
+      "hp": 6,
+      "attack": 5,
+      "defense": 7,
+      "special_attack": 6,
+      "special_defense": 5,
+      "speed": 2
+    },
+    "evolutions": [
+      "Slowking"
+    ]
+  },
+  {
+    "index": 81,
+    "name": "Magnemite",
+    "category": "Magnet",
+    "abilities": [
+      "Sturdy",
+      "Magnet Pull"
+    ],
+    "type": [
+      "Electric",
+      "Steel"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Fighting",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 2,
+      "attack": 3,
+      "defense": 5,
+      "special_attack": 6,
+      "special_defense": 4,
+      "speed": 3
+    },
+    "evolutions": [
+      "Magneton"
+    ]
+  },
+  {
+    "index": 82,
+    "name": "Magneton",
+    "category": "Magnet",
+    "abilities": [
+      "Sturdy",
+      "Magnet Pull"
+    ],
+    "type": [
+      "Electric",
+      "Steel"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Fighting",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 4,
+      "defense": 6,
+      "special_attack": 8,
+      "special_defense": 5,
+      "speed": 5
+    },
+    "evolutions": [
+      "Magnezone"
+    ]
+  },
+  {
+    "index": 83,
+    "name": "Farfetch’d",
+    "category": "Wild Duck",
+    "abilities": [
+      "Keen Eye",
+      "Inner Focus"
+    ],
+    "type": [
+      "Normal",
+      "Flying"
+    ],
+    "weaknesses": [
+      "Electric",
+      "Ice",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 6,
+      "defense": 4,
+      "special_attack": 4,
+      "special_defense": 4,
+      "speed": 4
+    },
+    "evolutions": []
+  },
+  {
+    "index": 84,
+    "name": "Doduo",
+    "category": "Twin Bird",
+    "abilities": [
+      "Run Away",
+      "Early Bird"
+    ],
+    "type": [
+      "Normal",
+      "Flying"
+    ],
+    "weaknesses": [
+      "Electric",
+      "Ice",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 5,
+      "defense": 3,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 5
+    },
+    "evolutions": [
+      "Dodrio"
+    ]
+  },
+  {
+    "index": 85,
+    "name": "Dodrio",
+    "category": "Triple Bird",
+    "abilities": [
+      "Run Away",
+      "Early Bird"
+    ],
+    "type": [
+      "Normal",
+      "Flying"
+    ],
+    "weaknesses": [
+      "Electric",
+      "Ice",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 7,
+      "defense": 5,
+      "special_attack": 4,
+      "special_defense": 4,
+      "speed": 7
+    },
+    "evolutions": []
+  },
+  {
+    "index": 86,
+    "name": "Seel",
+    "category": "Sea Lion",
+    "abilities": [
+      "Thick Fat",
+      "Hydration"
+    ],
+    "type": [
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 3,
+      "defense": 4,
+      "special_attack": 3,
+      "special_defense": 5,
+      "speed": 3
+    },
+    "evolutions": [
+      "Dewgong"
+    ]
+  },
+  {
+    "index": 87,
+    "name": "Dewgong",
+    "category": "Sea Lion",
+    "abilities": [
+      "Thick Fat",
+      "Hydration"
+    ],
+    "type": [
+      "Water",
+      "Ice"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric",
+      "Fighting",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 6,
+      "attack": 5,
+      "defense": 5,
+      "special_attack": 5,
+      "special_defense": 6,
+      "speed": 5
+    },
+    "evolutions": []
+  },
+  {
+    "index": 88,
+    "name": "Grimer",
+    "category": "Sludge",
+    "abilities": [
+      "Stench",
+      "Sticky Hold"
+    ],
+    "type": [
+      "Poison"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 5,
+      "defense": 3,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 2
+    },
+    "evolutions": [
+      "Muk"
+    ]
+  },
+  {
+    "index": 89,
+    "name": "Muk",
+    "category": "Sludge",
+    "abilities": [
+      "Stench",
+      "Sticky Hold"
+    ],
+    "type": [
+      "Poison"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 7,
+      "attack": 7,
+      "defense": 5,
+      "special_attack": 4,
+      "special_defense": 6,
+      "speed": 3
+    },
+    "evolutions": []
+  },
+  {
+    "index": 90,
+    "name": "Shellder",
+    "category": "Bivalve",
+    "abilities": [
+      "Shell Armor",
+      "Skill Link"
+    ],
+    "type": [
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric"
+    ],
+    "stats": {
+      "hp": 2,
+      "attack": 4,
+      "defense": 6,
+      "special_attack": 3,
+      "special_defense": 2,
+      "speed": 3
+    },
+    "evolutions": [
+      "Cloyster"
+    ]
+  },
+  {
+    "index": 91,
+    "name": "Cloyster",
+    "category": "Bivalve",
+    "abilities": [
+      "Shell Armor",
+      "Skill Link"
+    ],
+    "type": [
+      "Water",
+      "Ice"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric",
+      "Fighting",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 6,
+      "defense": 11,
+      "special_attack": 5,
+      "special_defense": 3,
+      "speed": 5
+    },
+    "evolutions": []
+  },
+  {
+    "index": 92,
+    "name": "Gastly",
+    "category": "Gas",
+    "abilities": [
+      "Levitate"
+    ],
+    "type": [
+      "Ghost",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Ghost",
+      "Dark",
+      "Psychic",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 2,
+      "attack": 3,
+      "defense": 2,
+      "special_attack": 6,
+      "special_defense": 3,
+      "speed": 5
+    },
+    "evolutions": [
+      "Haunter"
+    ]
+  },
+  {
+    "index": 93,
+    "name": "Haunter",
+    "category": "Gas",
+    "abilities": [
+      "Levitate"
+    ],
+    "type": [
+      "Ghost",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Ghost",
+      "Dark",
+      "Psychic",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 3,
+      "defense": 3,
+      "special_attack": 7,
+      "special_defense": 4,
+      "speed": 6
+    },
+    "evolutions": [
+      "Gengar"
+    ]
+  },
+  {
+    "index": 94,
+    "name": "Gengar",
+    "category": "Shadow",
+    "abilities": [
+      "Cursed Body"
+    ],
+    "type": [
+      "Ghost",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Ghost",
+      "Dark",
+      "Psychic",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 4,
+      "defense": 4,
+      "special_attack": 8,
+      "special_defense": 5,
+      "speed": 7
+    },
+    "evolutions": []
+  },
+  {
+    "index": 95,
+    "name": "Onix",
+    "category": "Rock Snake",
+    "abilities": [
+      "Rock Head",
+      "Sturdy"
+    ],
+    "type": [
+      "Rock",
+      "Ground"
+    ],
+    "weaknesses": [
+      "Steel",
+      "Fighting",
+      "Water",
+      "Ice",
+      "Grass",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 3,
+      "defense": 10,
+      "special_attack": 2,
+      "special_defense": 3,
+      "speed": 5
+    },
+    "evolutions": [
+      "Steelix"
+    ]
+  },
+  {
+    "index": 96,
+    "name": "Drowzee",
+    "category": "Hypnosis",
+    "abilities": [
+      "Insomnia",
+      "Forewarn"
+    ],
+    "type": [
+      "Psychic"
+    ],
+    "weaknesses": [
+      "Ghost",
+      "Dark",
+      "Bug"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 3,
+      "defense": 3,
+      "special_attack": 3,
+      "special_defense": 6,
+      "speed": 3
+    },
+    "evolutions": [
+      "Hypno"
+    ]
+  },
+  {
+    "index": 97,
+    "name": "Hypno",
+    "category": "Hypnosis",
+    "abilities": [
+      "Insomnia",
+      "Forewarn"
+    ],
+    "type": [
+      "Psychic"
+    ],
+    "weaknesses": [
+      "Ghost",
+      "Dark",
+      "Bug"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 5,
+      "defense": 5,
+      "special_attack": 5,
+      "special_defense": 7,
+      "speed": 4
+    },
+    "evolutions": []
+  },
+  {
+    "index": 98,
+    "name": "Krabby",
+    "category": "River Crab",
+    "abilities": [
+      "Shell Armor",
+      "Hyper Cutter"
+    ],
+    "type": [
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric"
+    ],
+    "stats": {
+      "hp": 2,
+      "attack": 7,
+      "defense": 6,
+      "special_attack": 2,
+      "special_defense": 2,
+      "speed": 3
+    },
+    "evolutions": [
+      "Kingler"
+    ]
+  },
+  {
+    "index": 99,
+    "name": "Kingler",
+    "category": "Pincer",
+    "abilities": [
+      "Shell Armor",
+      "Hyper Cutter"
+    ],
+    "type": [
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 8,
+      "defense": 7,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 5
+    },
+    "evolutions": []
+  },
+  {
+    "index": 100,
+    "name": "Voltorb",
+    "category": "Ball",
+    "abilities": [
+      "Static",
+      "Soundproof"
+    ],
+    "type": [
+      "Electric"
+    ],
+    "weaknesses": [
+      "Ground"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 2,
+      "defense": 3,
+      "special_attack": 4,
+      "special_defense": 4,
+      "speed": 6
+    },
+    "evolutions": [
+      "Electrode"
+    ]
+  },
+  {
+    "index": 101,
+    "name": "Electrode",
+    "category": "Ball",
+    "abilities": [
+      "Static",
+      "Soundproof"
+    ],
+    "type": [
+      "Electric"
+    ],
+    "weaknesses": [
+      "Ground"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 3,
+      "defense": 5,
+      "special_attack": 5,
+      "special_defense": 5,
+      "speed": 9
+    },
+    "evolutions": []
+  },
+  {
+    "index": 102,
+    "name": "Exeggcute",
+    "category": "Egg",
+    "abilities": [
+      "Chlorophyll"
+    ],
+    "type": [
+      "Grass",
+      "Psychic"
+    ],
+    "weaknesses": [
+      "Ghost",
+      "Fire",
+      "Flying",
+      "Ice",
+      "Dark",
+      "Poison",
+      "Bug"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 3,
+      "defense": 5,
+      "special_attack": 4,
+      "special_defense": 3,
+      "speed": 3
+    },
+    "evolutions": [
+      "Exeggutor"
+    ]
+  },
+  {
+    "index": 103,
+    "name": "Exeggutor",
+    "category": "Coconut",
+    "abilities": [
+      "Chlorophyll"
+    ],
+    "type": [
+      "Grass",
+      "Psychic"
+    ],
+    "weaknesses": [
+      "Ghost",
+      "Fire",
+      "Flying",
+      "Ice",
+      "Dark",
+      "Poison",
+      "Bug"
+    ],
+    "stats": {
+      "hp": 6,
+      "attack": 6,
+      "defense": 5,
+      "special_attack": 8,
+      "special_defense": 5,
+      "speed": 4
+    },
+    "evolutions": []
+  },
+  {
+    "index": 104,
+    "name": "Cubone",
+    "category": "Lonely",
+    "abilities": [
+      "Rock Head",
+      "Lightning Rod"
+    ],
+    "type": [
+      "Ground"
+    ],
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 3,
+      "defense": 6,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 3
+    },
+    "evolutions": [
+      "Marowak"
+    ]
+  },
+  {
+    "index": 105,
+    "name": "Marowak",
+    "category": "Bone Keeper",
+    "abilities": [
+      "Rock Head",
+      "Lightning Rod"
+    ],
+    "type": [
+      "Ground"
+    ],
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 5,
+      "defense": 7,
+      "special_attack": 3,
+      "special_defense": 5,
+      "speed": 3
+    },
+    "evolutions": []
+  },
+  {
+    "index": 106,
+    "name": "Hitmonlee",
+    "category": "Kicking",
+    "abilities": [
+      "Limber",
+      "Reckless"
+    ],
+    "type": [
+      "Fighting"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Flying",
+      "Fairy"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 8,
+      "defense": 4,
+      "special_attack": 3,
+      "special_defense": 7,
+      "speed": 6
+    },
+    "evolutions": [
+      "Hitmonchan"
+    ]
+  },
+  {
+    "index": 107,
+    "name": "Hitmonchan",
+    "category": "Punching",
+    "abilities": [
+      "Keen Eye",
+      "Iron Fist"
+    ],
+    "type": [
+      "Fighting"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Flying",
+      "Fairy"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 7,
+      "defense": 5,
+      "special_attack": 3,
+      "special_defense": 7,
+      "speed": 5
+    },
+    "evolutions": [
+      "Hitmontop"
+    ]
+  },
+  {
+    "index": 108,
+    "name": "Lickitung",
+    "category": "Licking",
+    "abilities": [
+      "Oblivious",
+      "Own Tempo"
+    ],
+    "type": [
+      "Normal"
+    ],
+    "weaknesses": [
+      "Fighting"
+    ],
+    "stats": {
+      "hp": 6,
+      "attack": 4,
+      "defense": 5,
+      "special_attack": 4,
+      "special_defense": 5,
+      "speed": 2
+    },
+    "evolutions": [
+      "Lickilicky"
+    ]
+  },
+  {
+    "index": 109,
+    "name": "Koffing",
+    "category": "Poison Gas",
+    "abilities": [
+      "Levitate",
+      "Neutralizing Gas"
+    ],
+    "type": [
+      "Poison"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 4,
+      "defense": 6,
+      "special_attack": 4,
+      "special_defense": 3,
+      "speed": 3
+    },
+    "evolutions": [
+      "Weezing"
+    ]
+  },
+  {
+    "index": 110,
+    "name": "Weezing",
+    "category": "Poison Gas",
+    "abilities": [
+      "Levitate",
+      "Neutralizing Gas"
+    ],
+    "type": [
+      "Poison"
+    ],
+    "weaknesses": [
+      "Psychic",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 6,
+      "defense": 8,
+      "special_attack": 5,
+      "special_defense": 5,
+      "speed": 4
+    },
+    "evolutions": []
+  },
+  {
+    "index": 111,
+    "name": "Rhyhorn",
+    "category": "Spikes",
+    "abilities": [
+      "Rock Head",
+      "Lightning Rod"
+    ],
+    "type": [
+      "Ground",
+      "Rock"
+    ],
+    "weaknesses": [
+      "Steel",
+      "Ice",
+      "Water",
+      "Fighting",
+      "Grass",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 5,
+      "defense": 6,
+      "special_attack": 2,
+      "special_defense": 2,
+      "speed": 2
+    },
+    "evolutions": [
+      "Rhydon"
+    ]
+  },
+  {
+    "index": 112,
+    "name": "Rhydon",
+    "category": "Drill",
+    "abilities": [
+      "Rock Head",
+      "Lightning Rod"
+    ],
+    "type": [
+      "Ground",
+      "Rock"
+    ],
+    "weaknesses": [
+      "Steel",
+      "Ice",
+      "Water",
+      "Fighting",
+      "Grass",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 7,
+      "attack": 8,
+      "defense": 8,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 3
+    },
+    "evolutions": [
+      "Rhyperior"
+    ]
+  },
+  {
+    "index": 113,
+    "name": "Chansey",
+    "category": "Egg",
+    "abilities": [
+      "Natural Cure",
+      "Serene Grace"
+    ],
+    "type": [
+      "Normal"
+    ],
+    "weaknesses": [
+      "Fighting"
+    ],
+    "stats": {
+      "hp": 15,
+      "attack": 1,
+      "defense": 1,
+      "special_attack": 3,
+      "special_defense": 7,
+      "speed": 3
+    },
+    "evolutions": [
+      "Blissey"
+    ]
+  },
+  {
+    "index": 114,
+    "name": "Tangela",
+    "category": "Vine",
+    "abilities": [
+      "Chlorophyll",
+      "Leaf Guard"
+    ],
+    "type": [
+      "Grass"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison",
+      "Bug"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 4,
+      "defense": 7,
+      "special_attack": 6,
+      "special_defense": 3,
+      "speed": 4
+    },
+    "evolutions": [
+      "Tangrowth"
+    ]
+  },
+  {
+    "index": 115,
+    "name": "Kangaskhan",
+    "category": "Parent",
+    "abilities": [
+      "Early Bird",
+      "Scrappy"
+    ],
+    "type": [
+      "Normal"
+    ],
+    "weaknesses": [
+      "Fighting"
+    ],
+    "stats": {
+      "hp": 7,
+      "attack": 6,
+      "defense": 5,
+      "special_attack": 3,
+      "special_defense": 5,
+      "speed": 6
+    },
+    "evolutions": []
+  },
+  {
+    "index": 116,
+    "name": "Horsea",
+    "category": "Dragon",
+    "abilities": [
+      "Swift Swim",
+      "Sniper"
+    ],
+    "type": [
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric"
+    ],
+    "stats": {
+      "hp": 2,
+      "attack": 3,
+      "defense": 5,
+      "special_attack": 5,
+      "special_defense": 2,
+      "speed": 4
+    },
+    "evolutions": [
+      "Seadra"
+    ]
+  },
+  {
+    "index": 117,
+    "name": "Seadra",
+    "category": "Dragon",
+    "abilities": [
+      "Poison Point",
+      "Sniper"
+    ],
+    "type": [
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 4,
+      "defense": 6,
+      "special_attack": 6,
+      "special_defense": 3,
+      "speed": 5
+    },
+    "evolutions": [
+      "Kingdra"
+    ]
+  },
+  {
+    "index": 118,
+    "name": "Goldeen",
+    "category": "Goldfish",
+    "abilities": [
+      "Swift Swim",
+      "Water Veil"
+    ],
+    "type": [
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 4,
+      "defense": 4,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 4
+    },
+    "evolutions": [
+      "Seaking"
+    ]
+  },
+  {
+    "index": 119,
+    "name": "Seaking",
+    "category": "Goldfish",
+    "abilities": [
+      "Swift Swim",
+      "Water Veil"
+    ],
+    "type": [
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 6,
+      "defense": 4,
+      "special_attack": 4,
+      "special_defense": 5,
+      "speed": 4
+    },
+    "evolutions": []
+  },
+  {
+    "index": 120,
+    "name": "Staryu",
+    "category": "Star Shape",
+    "abilities": [
+      "Natural Cure",
+      "Illuminate"
+    ],
+    "type": [
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric"
+    ],
+    "stats": {
+      "hp": 2,
+      "attack": 3,
+      "defense": 4,
+      "special_attack": 5,
+      "special_defense": 4,
+      "speed": 5
+    },
+    "evolutions": [
+      "Starmie"
+    ]
+  },
+  {
+    "index": 121,
+    "name": "Starmie",
+    "category": "Mysterious",
+    "abilities": [
+      "Natural Cure",
+      "Illuminate"
+    ],
+    "type": [
+      "Water",
+      "Psychic"
+    ],
+    "weaknesses": [
+      "Ghost",
+      "Dark",
+      "Grass",
+      "Electric",
+      "Bug"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 5,
+      "defense": 5,
+      "special_attack": 6,
+      "special_defense": 5,
+      "speed": 7
+    },
+    "evolutions": []
+  },
+  {
+    "index": 122,
+    "name": "Mr. Mime",
+    "category": "Barrier",
+    "abilities": [
+      "Soundproof",
+      "Filter"
+    ],
+    "type": [
+      "Psychic",
+      "Fairy"
+    ],
+    "weaknesses": [
+      "Ghost",
+      "Steel",
+      "Poison"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 3,
+      "defense": 4,
+      "special_attack": 6,
+      "special_defense": 8,
+      "speed": 6
+    },
+    "evolutions": []
+  },
+  {
+    "index": 123,
+    "name": "Scyther",
+    "category": "Mantis",
+    "abilities": [
+      "Swarm",
+      "Technician"
+    ],
+    "type": [
+      "Bug",
+      "Flying"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Electric",
+      "Ice",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 7,
+      "defense": 5,
+      "special_attack": 4,
+      "special_defense": 5,
+      "speed": 7
+    },
+    "evolutions": [
+      "Scizor"
+    ]
+  },
+  {
+    "index": 124,
+    "name": "Jynx",
+    "category": "Human Shape",
+    "abilities": [
+      "Oblivious",
+      "Forewarn"
+    ],
+    "type": [
+      "Ice",
+      "Psychic"
+    ],
+    "weaknesses": [
+      "Steel",
+      "Ghost",
+      "Fire",
+      "Dark",
+      "Rock",
+      "Bug"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 3,
+      "defense": 3,
+      "special_attack": 7,
+      "special_defense": 6,
+      "speed": 6
+    },
+    "evolutions": []
+  },
+  {
+    "index": 125,
+    "name": "Electabuzz",
+    "category": "Electric",
+    "abilities": [
+      "Static"
+    ],
+    "type": [
+      "Electric"
+    ],
+    "weaknesses": [
+      "Ground"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 5,
+      "defense": 4,
+      "special_attack": 6,
+      "special_defense": 5,
+      "speed": 7
+    },
+    "evolutions": [
+      "Electivire"
+    ]
+  },
+  {
+    "index": 126,
+    "name": "Magmar",
+    "category": "Spitfire",
+    "abilities": [
+      "Flame Body"
+    ],
+    "type": [
+      "Fire"
+    ],
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 6,
+      "defense": 4,
+      "special_attack": 6,
+      "special_defense": 5,
+      "speed": 6
+    },
+    "evolutions": [
+      "Magmortar"
+    ]
+  },
+  {
+    "index": 127,
+    "name": "Pinsir",
+    "category": "Stag Beetle",
+    "abilities": [
+      "Hyper Cutter",
+      "Mold Breaker"
+    ],
+    "type": [
+      "Bug"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 8,
+      "defense": 6,
+      "special_attack": 4,
+      "special_defense": 5,
+      "speed": 5
+    },
+    "evolutions": []
+  },
+  {
+    "index": 128,
+    "name": "Tauros",
+    "category": "Wild Bull",
+    "abilities": [
+      "Intimidate",
+      "Anger Point"
+    ],
+    "type": [
+      "Normal"
+    ],
+    "weaknesses": [
+      "Fighting"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 6,
+      "defense": 6,
+      "special_attack": 3,
+      "special_defense": 5,
+      "speed": 7
+    },
+    "evolutions": []
+  },
+  {
+    "index": 129,
+    "name": "Magikarp",
+    "category": "Fish",
+    "abilities": [
+      "Swift Swim"
+    ],
+    "type": [
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric"
+    ],
+    "stats": {
+      "hp": 2,
+      "attack": 1,
+      "defense": 4,
+      "special_attack": 1,
+      "special_defense": 2,
+      "speed": 5
+    },
+    "evolutions": [
+      "Gyarados"
+    ]
+  },
+  {
+    "index": 130,
+    "name": "Gyarados",
+    "category": "Atrocious",
+    "abilities": [
+      "Intimidate"
+    ],
+    "type": [
+      "Water",
+      "Flying"
+    ],
+    "weaknesses": [
+      "Electric",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 6,
+      "attack": 8,
+      "defense": 5,
+      "special_attack": 4,
+      "special_defense": 6,
+      "speed": 5
+    },
+    "evolutions": []
+  },
+  {
+    "index": 131,
+    "name": "Lapras",
+    "category": "Transport",
+    "abilities": [
+      "Water Absorb",
+      "Shell Armor"
+    ],
+    "type": [
+      "Water",
+      "Ice"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric",
+      "Fighting",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 8,
+      "attack": 5,
+      "defense": 5,
+      "special_attack": 5,
+      "special_defense": 6,
+      "speed": 4
+    },
+    "evolutions": []
+  },
+  {
+    "index": 132,
+    "name": "Ditto",
+    "category": "Transform",
+    "abilities": [
+      "Limber"
+    ],
+    "type": [
+      "Normal"
+    ],
+    "weaknesses": [
+      "Fighting"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 3,
+      "defense": 3,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 3
+    },
+    "evolutions": []
+  },
+  {
+    "index": 133,
+    "name": "Eevee",
+    "category": "Evolution",
+    "abilities": [
+      "Run Away",
+      "Adaptability"
+    ],
+    "type": [
+      "Normal"
+    ],
+    "weaknesses": [
+      "Fighting"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 4,
+      "defense": 3,
+      "special_attack": 3,
+      "special_defense": 4,
+      "speed": 4
+    },
+    "evolutions": [
+      "Vaporeon",
+      "Jolteon",
+      "Flareon",
+      "Espeon",
+      "Umbreon",
+      "Leafeon",
+      "Glaceon",
+      "Sylveon"
+    ]
+  },
+  {
+    "index": 134,
+    "name": "Vaporeon",
+    "category": "Bubble Jet",
+    "abilities": [
+      "Water Absorb"
+    ],
+    "type": [
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric"
+    ],
+    "stats": {
+      "hp": 8,
+      "attack": 4,
+      "defense": 4,
+      "special_attack": 7,
+      "special_defense": 6,
+      "speed": 4
+    },
+    "evolutions": [
+      "Jolteon"
+    ]
+  },
+  {
+    "index": 135,
+    "name": "Jolteon",
+    "category": "Lightning",
+    "abilities": [
+      "Volt Absorb"
+    ],
+    "type": [
+      "Electric"
+    ],
+    "weaknesses": [
+      "Ground"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 4,
+      "defense": 4,
+      "special_attack": 7,
+      "special_defense": 6,
+      "speed": 8
+    },
+    "evolutions": [
+      "Flareon"
+    ]
+  },
+  {
+    "index": 136,
+    "name": "Flareon",
+    "category": "Flame",
+    "abilities": [
+      "Flash Fire"
+    ],
+    "type": [
+      "Fire"
+    ],
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 8,
+      "defense": 4,
+      "special_attack": 6,
+      "special_defense": 7,
+      "speed": 4
+    },
+    "evolutions": [
+      "Espeon"
+    ]
+  },
+  {
+    "index": 137,
+    "name": "Porygon",
+    "category": "Virtual",
+    "abilities": [
+      "Trace",
+      "Download"
+    ],
+    "type": [
+      "Normal"
+    ],
+    "weaknesses": [
+      "Fighting"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 4,
+      "defense": 5,
+      "special_attack": 5,
+      "special_defense": 5,
+      "speed": 3
+    },
+    "evolutions": [
+      "Porygon2"
+    ]
+  },
+  {
+    "index": 138,
+    "name": "Omanyte",
+    "category": "Spiral",
+    "abilities": [
+      "Shell Armor",
+      "Swift Swim"
+    ],
+    "type": [
+      "Rock",
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric",
+      "Fighting",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 3,
+      "defense": 6,
+      "special_attack": 6,
+      "special_defense": 4,
+      "speed": 3
+    },
+    "evolutions": [
+      "Omastar"
+    ]
+  },
+  {
+    "index": 139,
+    "name": "Omastar",
+    "category": "Spiral",
+    "abilities": [
+      "Shell Armor",
+      "Swift Swim"
+    ],
+    "type": [
+      "Rock",
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric",
+      "Fighting",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 4,
+      "defense": 8,
+      "special_attack": 7,
+      "special_defense": 5,
+      "speed": 4
+    },
+    "evolutions": []
+  },
+  {
+    "index": 140,
+    "name": "Kabuto",
+    "category": "Shellfish",
+    "abilities": [
+      "Swift Swim",
+      "Battle Armor"
+    ],
+    "type": [
+      "Rock",
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric",
+      "Fighting",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 2,
+      "attack": 5,
+      "defense": 6,
+      "special_attack": 4,
+      "special_defense": 3,
+      "speed": 4
+    },
+    "evolutions": [
+      "Kabutops"
+    ]
+  },
+  {
+    "index": 141,
+    "name": "Kabutops",
+    "category": "Shellfish",
+    "abilities": [
+      "Swift Swim",
+      "Battle Armor"
+    ],
+    "type": [
+      "Rock",
+      "Water"
+    ],
+    "weaknesses": [
+      "Grass",
+      "Electric",
+      "Fighting",
+      "Ground"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 7,
+      "defense": 7,
+      "special_attack": 4,
+      "special_defense": 5,
+      "speed": 5
+    },
+    "evolutions": []
+  },
+  {
+    "index": 142,
+    "name": "Aerodactyl",
+    "category": "Fossil",
+    "abilities": [
+      "Rock Head",
+      "Pressure"
+    ],
+    "type": [
+      "Rock",
+      "Flying"
+    ],
+    "weaknesses": [
+      "Steel",
+      "Water",
+      "Electric",
+      "Ice",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 5,
+      "attack": 7,
+      "defense": 4,
+      "special_attack": 4,
+      "special_defense": 5,
+      "speed": 8
+    },
+    "evolutions": []
+  },
+  {
+    "index": 143,
+    "name": "Snorlax",
+    "category": "Sleeping",
+    "abilities": [
+      "Thick Fat",
+      "Immunity"
+    ],
+    "type": [
+      "Normal"
+    ],
+    "weaknesses": [
+      "Fighting"
+    ],
+    "stats": {
+      "hp": 10,
+      "attack": 7,
+      "defense": 4,
+      "special_attack": 4,
+      "special_defense": 7,
+      "speed": 2
+    },
+    "evolutions": []
+  },
+  {
+    "index": 144,
+    "name": "Articuno",
+    "category": "Freeze",
+    "abilities": [
+      "Pressure"
+    ],
+    "type": [
+      "Ice",
+      "Flying"
+    ],
+    "weaknesses": [
+      "Steel",
+      "Fire",
+      "Electric",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 6,
+      "attack": 5,
+      "defense": 6,
+      "special_attack": 6,
+      "special_defense": 8,
+      "speed": 5
+    },
+    "evolutions": []
+  },
+  {
+    "index": 145,
+    "name": "Zapdos",
+    "category": "Electric",
+    "abilities": [
+      "Pressure"
+    ],
+    "type": [
+      "Electric",
+      "Flying"
+    ],
+    "weaknesses": [
+      "Ice",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 6,
+      "attack": 6,
+      "defense": 5,
+      "special_attack": 8,
+      "special_defense": 6,
+      "speed": 6
+    },
+    "evolutions": []
+  },
+  {
+    "index": 146,
+    "name": "Moltres",
+    "category": "Flame",
+    "abilities": [
+      "Pressure"
+    ],
+    "type": [
+      "Fire",
+      "Flying"
+    ],
+    "weaknesses": [
+      "Water",
+      "Electric",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 6,
+      "attack": 6,
+      "defense": 6,
+      "special_attack": 8,
+      "special_defense": 5,
+      "speed": 6
+    },
+    "evolutions": []
+  },
+  {
+    "index": 147,
+    "name": "Dratini",
+    "category": "Dragon",
+    "abilities": [
+      "Shed Skin"
+    ],
+    "type": [
+      "Dragon"
+    ],
+    "weaknesses": [
+      "Fairy",
+      "Ice",
+      "Dragon"
+    ],
+    "stats": {
+      "hp": 3,
+      "attack": 4,
+      "defense": 3,
+      "special_attack": 3,
+      "special_defense": 3,
+      "speed": 3
+    },
+    "evolutions": [
+      "Dragonair"
+    ]
+  },
+  {
+    "index": 148,
+    "name": "Dragonair",
+    "category": "Dragon",
+    "abilities": [
+      "Shed Skin"
+    ],
+    "type": [
+      "Dragon"
+    ],
+    "weaknesses": [
+      "Fairy",
+      "Ice",
+      "Dragon"
+    ],
+    "stats": {
+      "hp": 4,
+      "attack": 5,
+      "defense": 4,
+      "special_attack": 5,
+      "special_defense": 5,
+      "speed": 5
+    },
+    "evolutions": [
+      "Dragonite"
+    ]
+  },
+  {
+    "index": 149,
+    "name": "Dragonite",
+    "category": "Dragon",
+    "abilities": [
+      "Inner Focus"
+    ],
+    "type": [
+      "Dragon",
+      "Flying"
+    ],
+    "weaknesses": [
+      "Fairy",
+      "Dragon",
+      "Ice",
+      "Rock"
+    ],
+    "stats": {
+      "hp": 6,
+      "attack": 8,
+      "defense": 6,
+      "special_attack": 6,
+      "special_defense": 6,
+      "speed": 5
+    },
+    "evolutions": []
+  },
+  {
+    "index": 150,
+    "name": "Mewtwo",
+    "category": "Genetic",
+    "abilities": [
+      "Pressure"
+    ],
+    "type": [
+      "Psychic"
+    ],
+    "weaknesses": [
+      "Ghost",
+      "Dark",
+      "Bug"
+    ],
+    "stats": {
+      "hp": 7,
+      "attack": 7,
+      "defense": 6,
+      "special_attack": 10,
+      "special_defense": 6,
+      "speed": 8
+    },
+    "evolutions": []
+  },
+  {
+    "index": 151,
+    "name": "Mew",
+    "category": "New Species",
+    "abilities": [
+      "Synchronize"
+    ],
+    "type": [
+      "Psychic"
+    ],
+    "weaknesses": [
+      "Ghost",
+      "Dark",
+      "Bug"
+    ],
+    "stats": {
+      "hp": 6,
+      "attack": 6,
+      "defense": 6,
+      "special_attack": 6,
+      "special_defense": 6,
+      "speed": 6
+    },
+    "evolutions": []
+  }
+]

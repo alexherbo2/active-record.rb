@@ -1,0 +1,4 @@
+Gemfile.lock
+active-record-*.*.*.gem
+db/development.sqlite3
+db/test.sqlite3
