@@ -5,7 +5,7 @@ Web scraping of [Pokémon] with [Puppeteer].
 [Puppeteer]: https://pptr.dev
 [Pokémon]: https://www.pokemon.com
 
-See [source] for details.
+See the [source] for details.
 
 [Source]: src/main.js
 
