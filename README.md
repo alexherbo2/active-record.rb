@@ -30,3 +30,9 @@ A basic knowledge of [Ruby], [SQL] and Unix environment.
 [Ruby]: https://www.ruby-lang.org
 [SQLite]: https://sqlite.org
 [SQLite Browser]: https://sqlitebrowser.org
+
+## Resources
+
+- [rodloboz/ORM-challenge-advanced]
+
+[rodloboz/ORM-challenge-advanced]: https://github.com/rodloboz/ORM-challenge-advanced
