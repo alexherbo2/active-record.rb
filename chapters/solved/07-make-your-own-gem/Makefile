@@ -2,16 +2,16 @@
 environment ?= development
 
 build:
-	# Build the Ruby gem.
+	gem build active-record.gemspec
 
-install:
-	# Install the Ruby gem.
+install: build
+	gem install active-record-0.1.0.gem
 
 uninstall:
-	# Uninstall the Ruby gem.
+	gem uninstall active-record
 
 clean:
-	# Clean files.
+	rm -Rf Gemfile.lock active-record-*.*.*.gem
 
 test:
 	rspec

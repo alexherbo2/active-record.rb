@@ -16,3 +16,9 @@ Open [`Makefile`] and [`active-record.gemspec`].
 
 [`Makefile`]: Makefile
 [`active-record.gemspec`]: active-record.gemspec
+
+## Solution
+
+[Download solution].
+
+[Download solution]: ../solved/07-make-your-own-gem
