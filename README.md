@@ -27,6 +27,6 @@ A basic knowledge of [Ruby], [SQL] and Unix environment.
 - [SQLite]
 - [SQLite Browser] (Optional, for discoverability)
 
-[Ruby]: https://ruby-lang.org
+[Ruby]: https://www.ruby-lang.org
 [SQLite]: https://sqlite.org
 [SQLite Browser]: https://sqlitebrowser.org

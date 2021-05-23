@@ -10,5 +10,5 @@ get '/frank-says' do
 end
 ```
 
-[Ruby]: https://ruby-lang.org
+[Ruby]: https://www.ruby-lang.org
 [Sinatra]: http://sinatrarb.com

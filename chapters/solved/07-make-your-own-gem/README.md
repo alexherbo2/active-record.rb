@@ -8,7 +8,7 @@ An implementation of the [active record pattern] for educational purposes.
 
 - [Ruby]
 
-[Ruby]: https://ruby-lang.org
+[Ruby]: https://www.ruby-lang.org
 
 ## Installation
 
