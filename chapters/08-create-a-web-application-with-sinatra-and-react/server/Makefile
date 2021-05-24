@@ -4,11 +4,8 @@ environment ?= development
 install:
 	bundle install
 
-test:
-	rspec
-
-play:
-	irb -I lib -r ./repl/init.rb
+serve:
+	bundle exec ruby server.rb
 
 db-setup: db-drop db-create db-seed
 

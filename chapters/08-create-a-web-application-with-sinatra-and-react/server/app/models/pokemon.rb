@@ -1,4 +1,4 @@
-require './lib/active-record'
+require 'active-record'
 
 # Category
 require_relative 'category'
