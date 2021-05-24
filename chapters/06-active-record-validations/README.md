@@ -24,7 +24,9 @@ There are several ways.
 
 ### Database constraints
 
-Database constraints is the strongest way, but also the least flexible, as we want to abstract the database with models.
+Database constraints is the strongest way, but also the least flexible,
+as we want a layer on top of the database to abstract SQL queries with models
+(write Ruby code instead of SQL).
 
 ### Model-level validations
 
