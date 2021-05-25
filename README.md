@@ -6,11 +6,6 @@ A step-by-step implementation of the [active record pattern] for educational pur
 
 [![Preview](https://i.imgur.com/d8hS2DV.webp)](https://imgur.com/d8hS2DV)
 
-> A memo for myself when I forget how things work,
-> or [me using Active Record] before writing this tutorial.
-
-[Me using Active Record]: https://tiktok.com/@jackiegansky/video/6823555448776559877
-
 Send me your completed solution and I will add a link to the repository!
 
 ## Prerequisites
