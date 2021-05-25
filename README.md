@@ -4,6 +4,8 @@ A step-by-step implementation of the [active record pattern] for educational pur
 
 [Active record pattern]: https://en.wikipedia.org/wiki/Active_record_pattern
 
+[![Preview](https://i.imgur.com/d8hS2DV.webp)](https://imgur.com/d8hS2DV)
+
 > A memo for myself when I forget how things work,
 > or [me using Active Record] before writing this tutorial.
 
