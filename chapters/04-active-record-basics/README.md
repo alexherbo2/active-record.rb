@@ -1,5 +1,7 @@
 # Active Record – Basics
 
+###### [Previous chapter](../03-testing-with-rspec) | [Next chapter](../05-active-record-associations-basics)
+
 Congrats for reaching this exercise.  We will now do some [metaprogramming]; code that produces code.
 We can write code to dynamically generate classes, or methods inside a class.
 This is very powerful, and quite easily done with Ruby.

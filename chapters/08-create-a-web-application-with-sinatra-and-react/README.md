@@ -1,5 +1,7 @@
 # Create a web application with Sinatra and React
 
+###### [Previous chapter](../07-make-your-own-gem)
+
 Now [active-record.rb] has been implemented,
 we are going to use it to create a web application with [Sinatra] and [React].
 

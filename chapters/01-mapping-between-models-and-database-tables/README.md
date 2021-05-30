@@ -1,5 +1,7 @@
 # Mapping between models and database tables
 
+###### [Previous chapter](../00-introduction) | [Next chapter](../02-crud-basics)
+
 > By default, [Active Record] uses some naming conventions to find out how the mapping between models and database tables should be created.
 
 Model | Table | Foreign key

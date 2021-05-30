@@ -1,5 +1,7 @@
 # Active Record – Associations – Basics
 
+###### [Previous chapter](../04-active-record-basics) | [Next chapter](../06-active-record-validations)
+
 What good is an active record library if you can’t connect models?
 
 > Associations are a set of macro-like class methods for tying objects together through foreign keys.

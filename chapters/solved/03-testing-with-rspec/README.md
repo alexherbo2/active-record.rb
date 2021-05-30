@@ -1,5 +1,7 @@
 # Testing with RSpec
 
+###### [Previous chapter](../02-crud-basics) | [Next chapter](../04-active-record-basics)
+
 This part will be light on my side. 😁
 
 At least, I will not have to write tests.

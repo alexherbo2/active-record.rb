@@ -1,5 +1,7 @@
 # Make your own gem
 
+###### [Previous chapter](../06-active-record-validations) | [Next chapter](../08-create-a-web-application-with-sinatra-and-react)
+
 Read [Make your own gem].
 
 [Make your own gem]: https://guides.rubygems.org/make-your-own-gem/

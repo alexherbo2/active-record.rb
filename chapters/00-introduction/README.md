@@ -1,5 +1,7 @@
 # Introduction
 
+###### [Next chapter](../01-mapping-between-models-and-database-tables)
+
 ## Overview
 
 **Models**

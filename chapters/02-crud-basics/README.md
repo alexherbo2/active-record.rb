@@ -1,5 +1,7 @@
 # CRUD – Basics
 
+###### [Previous chapter](../01-mapping-between-models-and-database-tables) | [Next chapter](../03-testing-with-rspec)
+
 > CRUD is an acronym for the four verbs we use to operate on data: **C**reate, **R**ead, **U**pdate and **D**elete.
 > [Active Record] automatically creates methods to allow an application to read and manipulate data stored within its tables.
 

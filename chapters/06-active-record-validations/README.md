@@ -1,5 +1,7 @@
 # Active Record – Validations
 
+###### [Previous chapter](../05-active-record-associations-basics) | [Next chapter](../07-make-your-own-gem)
+
 > [Validations] are used to ensure that only valid data is saved into your database.
 
 [Validations]: https://guides.rubyonrails.org/active_record_validations.html
