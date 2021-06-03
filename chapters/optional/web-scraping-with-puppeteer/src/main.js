@@ -7,7 +7,8 @@ const fs = require('fs')
 //
 // Writes the first 151 Pokémon to data/pokemon.json.
 //
-// Note: Pokémon have multiple versions, where the selected version is marked with the active class.
+// Note: Pokémon have multiple versions (for example: Blue and Red),
+// where the selected version is marked with the `active` CSS class.
 
 const main = async () => {
   const browser = await puppeteer.launch()
