@@ -2,6 +2,11 @@
 
 ###### [Next chapter](../01-mapping-between-models-and-database-tables)
 
+After this guide, you will be able to implement your own [Active Record] with pure [Ruby].
+
+[Ruby]: https://www.ruby-lang.org
+[Active Record]: https://guides.rubyonrails.org/active_record_basics.html
+
 ## Overview
 
 **Models**
