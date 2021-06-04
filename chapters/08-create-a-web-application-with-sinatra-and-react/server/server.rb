@@ -30,16 +30,16 @@ end
 #
 # Response:
 #
-# [{ "index": 1, "name": "Bulbasaur", "types": ["Grass", "Poison"] }, ...]
+# [{ "pokemon_number": 1, "name": "Bulbasaur", "types": ["Grass", "Poison"] }, ...]
 get '/api/pokemons' do
   content_type 'application/json'
 
   Pokemon.all.map do |pokemon|
-    { index: pokemon.index, name: pokemon.name, types: pokemon.types.map(&:name) }
+    { pokemon_number: pokemon.pokemon_number, name: pokemon.name, types: pokemon.types.map(&:name) }
   end.to_json
 end
 
-# Get a Pokémon by its index.
+# Get a Pokémon by its National Pokédex number.
 #
 # Example:
 #
@@ -47,11 +47,11 @@ end
 #
 # Response:
 #
-# { "index": 25, "name": "Pikachu", "types": ["Electric"] }
-get '/api/pokemons/:index' do
+# { "pokemon_number": 25, "name": "Pikachu", "types": ["Electric"] }
+get '/api/pokemons/:pokemon_number' do
   content_type 'application/json'
 
-  pokemon = Pokemon.find_by('"index" = ?', params[:index])
+  pokemon = Pokemon.find_by('"pokemon_number" = ?', params[:pokemon_number])
 
-  { index: pokemon.index, name: pokemon.name, types: pokemon.types.map(&:name) }.to_json
+  { pokemon_number: pokemon.pokemon_number, name: pokemon.name, types: pokemon.types.map(&:name) }.to_json
 end

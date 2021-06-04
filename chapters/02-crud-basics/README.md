@@ -71,7 +71,7 @@ DB = SQLite3::Database.new('db/development.sqlite3')
 Everything is a list.
 Rows and columns.
 
-Giving the following `pokemons` table with `id`, `index` and `name`:
+Giving the following `pokemons` table with `id`, `pokemon_number` and `name`:
 
 ``` yaml
 - [1, 1, "Bulbasaur"]
@@ -133,9 +133,9 @@ And get instead:
 
 ``` json
 [
-  { "id": 1, "index": 1, "name": "Bulbasaur" },
-  { "id": 2, "index": 2, "name": "Ivysaur" },
-  { "id": 3, "index": 3, "name": "Venusaur" }
+  { "id": 1, "pokemon_number": 1, "name": "Bulbasaur" },
+  { "id": 2, "pokemon_number": 2, "name": "Ivysaur" },
+  { "id": 3, "pokemon_number": 3, "name": "Venusaur" }
 ]
 ```
 
@@ -144,7 +144,7 @@ I said array-like (and hash-like :p), because the rows are special objects:
 ``` ruby
 DB.execute("select * from pokemons").first.class # SQLite3::ResultSet::ArrayWithTypesAndFields
 DB.execute("select * from pokemons").first.types # ["INTEGER", "INTEGER", "TEXT"]
-DB.execute("select * from pokemons").first.fields # ["id", "index", "name"]
+DB.execute("select * from pokemons").first.fields # ["id", "pokemon_number", "name"]
 ```
 
 **ProTip!** SQL keywords can be lowercase and identifiers unquoted if they are not reserved keywords.
@@ -196,11 +196,11 @@ DB.execute("select count(id) from pokemons")[0][0] # 151 🤯
 
 ``` ruby
 statement = DB.prepare <<~SQL
-  INSERT INTO "pokemons" ("index", "name")
-  VALUES (:index, :name)
+  INSERT INTO "pokemons" ("pokemon_number", "name")
+  VALUES (:pokemon_number, :name)
 SQL
 
-statement.execute(index: 152, name: 'Chikorita')
+statement.execute(pokemon_number: 152, name: 'Chikorita')
 ```
 
 **ProTip!** Use `?` placeholders or named parameters.
@@ -216,11 +216,11 @@ id = DB.last_insert_row_id
 ``` ruby
 statement = DB.prepare <<~SQL
   UPDATE "pokemons"
-  SET "index" = :index, "name" = :name
+  SET "pokemon_number" = :pokemon_number, "name" = :name
   WHERE "id" = :id
 SQL
 
-statement.execute(id: 152, index: 152, name: 'Chika')
+statement.execute(id: 152, pokemon_number: 152, name: 'Chika')
 ```
 
 ## Deleting data
@@ -285,7 +285,7 @@ Implement the CRUD for a `Pokemon` model, as described in the [CRUD: Reading and
 
 ``` ruby
 pikachu = Pokemon.new do |pokemon|
-  pokemon.index = 25
+  pokemon.pokemon_number = 25
   pokemon.name = 'Pikachu'
 end
 

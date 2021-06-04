@@ -28,7 +28,7 @@ pokemons.each.with_index(1).reverse_each do |pokemon, id|
 
   pokemon_record = {}
   pokemon_record['id'] = id
-  pokemon_record['index'] = pokemon['index']
+  pokemon_record['pokemon_number'] = pokemon['pokemon_number']
   pokemon_record['name'] = pokemon['name']
 
   tables['pokemons'].push(pokemon_record)

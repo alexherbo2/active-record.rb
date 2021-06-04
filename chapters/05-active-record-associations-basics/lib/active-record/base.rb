@@ -33,7 +33,7 @@ class ActiveRecord::Base
   #
   # Example:
   #
-  # Pokemon.column_names ⇒ ["id", "index", "name"]
+  # Pokemon.column_names ⇒ ["id", "pokemon_number", "name"]
   #
   # https://api.rubyonrails.org/classes/ActiveRecord/ModelSchema/ClassMethods.html#method-i-column_names
   def self.column_names
@@ -49,7 +49,7 @@ class ActiveRecord::Base
   #
   # Example:
   #
-  # pokemon.attributes ⇒ { "id": 25, "index": 25, "name": "Pikachu" }
+  # pokemon.attributes ⇒ { "id": 25, "pokemon_number": 25, "name": "Pikachu" }
   #
   # https://api.rubyonrails.org/classes/ActiveRecord/AttributeMethods.html#method-i-attributes
   def attributes
@@ -62,7 +62,7 @@ class ActiveRecord::Base
   #
   # Example:
   #
-  # pokemon.assign_attributes(index: 25, name: 'Pikachu')
+  # pokemon.assign_attributes(pokemon_number: 25, name: 'Pikachu')
   #
   # https://api.rubyonrails.org/classes/ActiveModel/AttributeAssignment.html#method-i-assign_attributes
   def assign_attributes(**attributes)
@@ -91,12 +91,12 @@ class ActiveRecord::Base
   #
   # Example – Hash:
   #
-  # pikachu = Pokemon.new(index: 25, name: 'Pikachu')
+  # pikachu = Pokemon.new(pokemon_number: 25, name: 'Pikachu')
   #
   # Example – Block:
   #
   # pikachu = Pokemon.new do |pokemon|
-  #   pokemon.index = 25
+  #   pokemon.pokemon_number = 25
   #   pokemon.name = 'Pikachu'
   # end
   def initialize(**attributes, &block)
@@ -229,7 +229,7 @@ class ActiveRecord::Base
   #
   # Example – Create:
   #
-  # pikachu = Pokemon.new(index: 25, name: 'Pikachu')
+  # pikachu = Pokemon.new(pokemon_number: 25, name: 'Pikachu')
   # pikachu.save
   #
   # Example – Update:

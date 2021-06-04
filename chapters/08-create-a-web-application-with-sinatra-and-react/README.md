@@ -119,7 +119,7 @@ gem install byebug
 ``` ruby
 require 'byebug'
 
-get '/pokemons/:index' do
+get '/pokemons/:pokemon_number' do
   byebug # code will stop here; inspect params.
 end
 ```

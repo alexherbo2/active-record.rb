@@ -66,14 +66,14 @@ describe Pokemon do
   describe '.new' do
     context 'with parameters' do
       it 'is a Pokémon' do
-        expect(Pokemon.new(index: 25, name: 'Pikachu')).to be_a Pokemon
+        expect(Pokemon.new(pokemon_number: 25, name: 'Pikachu')).to be_a Pokemon
       end
     end
 
     context 'with block' do
       it 'is a Pokémon' do
         pokemon = Pokemon.new do |pokemon|
-          pokemon.index = 25
+          pokemon.pokemon_number = 25
           pokemon.name = 'Pikachu'
         end
 
@@ -98,12 +98,12 @@ require './app/models/pokemon'
 describe Pokemon do
   describe '.new' do
     # Attributes
-    let(:index) { 25 }
+    let(:pokemon_number) { 25 }
     let(:name) { 'Pikachu' }
 
     context 'with parameters' do
       subject(:pokemon) do
-        Pokemon.new(index: index, name: name)
+        Pokemon.new(pokemon_number: pokemon_number, name: name)
       end
 
       it 'is a Pokémon' do
@@ -114,7 +114,7 @@ describe Pokemon do
     context 'with block' do
       subject(:pokemon) do
         Pokemon.new do |pokemon|
-          pokemon.index = index
+          pokemon.pokemon_number = pokemon_number
           pokemon.name = name
         end
       end
@@ -142,8 +142,8 @@ describe Pokemon do
       expect(pokemon).to be_a Pokemon
     end
 
-    it 'has an index' do
-      expect(pokemon).to have_attributes index: index
+    it 'has a Pokémon number' do
+      expect(pokemon).to have_attributes pokemon_number: pokemon_number
     end
 
     it 'has a name' do
@@ -153,12 +153,12 @@ describe Pokemon do
 
   describe '.new' do
     # Attributes
-    let(:index) { 25 }
+    let(:pokemon_number) { 25 }
     let(:name) { 'Pikachu' }
 
     context 'with parameters' do
       subject(:pokemon) do
-        Pokemon.new(index: index, name: name)
+        Pokemon.new(pokemon_number: pokemon_number, name: name)
       end
 
       it_behaves_like 'a Pokémon'
@@ -167,7 +167,7 @@ describe Pokemon do
     context 'with block' do
       subject(:pokemon) do
         Pokemon.new do |pokemon|
-          pokemon.index = index
+          pokemon.pokemon_number = pokemon_number
           pokemon.name = name
         end
       end
@@ -229,12 +229,12 @@ describe Pokemon do
 
   describe '.create' do
     # Attributes
-    let(:index) { 152 }
+    let(:pokemon_number) { 152 }
     let(:name) { 'Chikorita' }
 
     context 'with parameters' do
       subject(:perform) do
-        Pokemon.create(index: index, name: name)
+        Pokemon.create(pokemon_number: pokemon_number, name: name)
       end
 
       include_examples 'creates a new Pokémon'
@@ -243,7 +243,7 @@ describe Pokemon do
     context 'with block' do
       subject(:perform) do
         Pokemon.create do |pokemon|
-          pokemon.index = index
+          pokemon.pokemon_number = pokemon_number
           pokemon.name = name
         end
       end

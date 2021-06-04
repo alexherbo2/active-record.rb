@@ -21,7 +21,7 @@ const main = async () => {
   const pokemons = []
 
   // Iterates the first 151 Pokémon
-  for (let index = 1; index <= 151; index++) {
+  for (let pokemon_number = 1; pokemon_number <= 151; pokemon_number++) {
     const { pokemon, nextPageURL } = await page.evaluate(() => {
       // Pokémon
       const pokemon = {}
@@ -63,7 +63,7 @@ const main = async () => {
       }
 
       // Collect data
-      pokemon.index = Number(document.querySelector('.pokedex-pokemon-pagination-title .pokemon-number').textContent.match(/#([0-9]+)/)[1])
+      pokemon.pokemon_number = Number(document.querySelector('.pokedex-pokemon-pagination-title .pokemon-number').textContent.match(/#([0-9]+)/)[1])
       pokemon.name = document.querySelector('.pokedex-pokemon-pagination-title div').firstChild.textContent.trim()
       pokemon.category = getAttributesByName('Category')[0]
       pokemon.abilities = getAttributesByName('Abilities')

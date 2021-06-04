@@ -27,7 +27,7 @@ class Pokemon < ActiveRecord::Base
 end
 
 pikachu = Pokemon.new do |pokemon|
-  pokemon.index = 25
+  pokemon.pokemon_number = 25
   pokemon.name = 'Pikachu'
 end
 

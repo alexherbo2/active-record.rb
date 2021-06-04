@@ -11,13 +11,13 @@
 Consider for example the following actions:
 
 ``` ruby
-Pokemon.create(name: 'Bulbasaur', index: 1) # ⇒ ok
-Pokemon.create(name: 'Ivysaur', index: 2) # ⇒ ok
-Pokemon.create(name: 'Venusaur', index: 3) # ⇒ ok
+Pokemon.create(name: 'Bulbasaur', pokemon_number: 1) # ⇒ ok
+Pokemon.create(name: 'Ivysaur', pokemon_number: 2) # ⇒ ok
+Pokemon.create(name: 'Venusaur', pokemon_number: 3) # ⇒ ok
 # ...
-Pokemon.create(name: 'Mew', index: 151) # ⇒ ok
-Pokemon.create(name: 'Mew', index: 151) # ⇒ not ok; already exists.
-Pokemon.create(name: nil, index: nil) # ⇒ not ok; name and index cannot be nil.
+Pokemon.create(name: 'Mew', pokemon_number: 151) # ⇒ ok
+Pokemon.create(name: 'Mew', pokemon_number: 151) # ⇒ not ok; already exists.
+Pokemon.create(name: nil, pokemon_number: nil) # ⇒ not ok; name and Pokémon number cannot be nil.
 ```
 
 ## How to avoid invalid data to be saved into the database?
@@ -97,7 +97,7 @@ Now, every time you save — create or update — an object, [`valid?`] will be 
 ``` ruby
 pokemon = Pokemon.new
 pokemon.name = 'Pikachu'
-pokemon.index = 25
+pokemon.pokemon_number = 25
 pokemon.save
 ```
 
@@ -108,7 +108,7 @@ The [`valid?`] method is not defined yet and will be [the objective of this chap
 ``` ruby
 pokemon = Pokemon.new
 pokemon.name = 'MissingNo'
-pokemon.index = nil
+pokemon.pokemon_number = nil
 pokemon.save(validate: false) # be cautious
 ```
 

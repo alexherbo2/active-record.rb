@@ -31,8 +31,8 @@ SQL
 
 # SQL statement to insert a Pokémon into the database.
 insert_pokemon_statement = DB.prepare <<~SQL
-  INSERT INTO "pokemons" ("index", "name")
-  VALUES (:index, :name)
+  INSERT INTO "pokemons" ("pokemon_number", "name")
+  VALUES (:pokemon_number, :name)
 SQL
 
 # Seed data

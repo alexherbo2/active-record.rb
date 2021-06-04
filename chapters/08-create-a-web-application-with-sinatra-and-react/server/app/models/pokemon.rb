@@ -38,11 +38,11 @@ class Pokemon < ActiveRecord::Base
   has_many :evolutions
 
   # Validations
-  validate :valid_index?
+  validate :valid_pokemon_number?
   validate :valid_name?
 
-  def valid_index?
-    index.is_a?(Integer) && index.positive? && uniq?(:index)
+  def valid_pokemon_number?
+    pokemon_number.is_a?(Integer) && pokemon_number.positive? && uniq?(:pokemon_number)
   end
 
   def valid_name?

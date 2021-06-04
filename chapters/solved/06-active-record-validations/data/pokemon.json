@@ -1,6 +1,6 @@
 [
   {
-    "index": 1,
+    "pokemon_number": 1,
     "name": "Bulbasaur",
     "category": "Seed",
     "abilities": [
@@ -29,7 +29,7 @@
     ]
   },
   {
-    "index": 2,
+    "pokemon_number": 2,
     "name": "Ivysaur",
     "category": "Seed",
     "abilities": [
@@ -58,7 +58,7 @@
     ]
   },
   {
-    "index": 3,
+    "pokemon_number": 3,
     "name": "Venusaur",
     "category": "Seed",
     "abilities": [
@@ -85,7 +85,7 @@
     "evolutions": []
   },
   {
-    "index": 4,
+    "pokemon_number": 4,
     "name": "Charmander",
     "category": "Lizard",
     "abilities": [
@@ -112,7 +112,7 @@
     ]
   },
   {
-    "index": 5,
+    "pokemon_number": 5,
     "name": "Charmeleon",
     "category": "Flame",
     "abilities": [
@@ -139,7 +139,7 @@
     ]
   },
   {
-    "index": 6,
+    "pokemon_number": 6,
     "name": "Charizard",
     "category": "Flame",
     "abilities": [
@@ -165,7 +165,7 @@
     "evolutions": []
   },
   {
-    "index": 7,
+    "pokemon_number": 7,
     "name": "Squirtle",
     "category": "Tiny Turtle",
     "abilities": [
@@ -191,7 +191,7 @@
     ]
   },
   {
-    "index": 8,
+    "pokemon_number": 8,
     "name": "Wartortle",
     "category": "Turtle",
     "abilities": [
@@ -217,7 +217,7 @@
     ]
   },
   {
-    "index": 9,
+    "pokemon_number": 9,
     "name": "Blastoise",
     "category": "Shellfish",
     "abilities": [
@@ -241,7 +241,7 @@
     "evolutions": []
   },
   {
-    "index": 10,
+    "pokemon_number": 10,
     "name": "Caterpie",
     "category": "Worm",
     "abilities": [
@@ -268,7 +268,7 @@
     ]
   },
   {
-    "index": 11,
+    "pokemon_number": 11,
     "name": "Metapod",
     "category": "Cocoon",
     "abilities": [
@@ -295,7 +295,7 @@
     ]
   },
   {
-    "index": 12,
+    "pokemon_number": 12,
     "name": "Butterfree",
     "category": "Butterfly",
     "abilities": [
@@ -323,7 +323,7 @@
     "evolutions": []
   },
   {
-    "index": 13,
+    "pokemon_number": 13,
     "name": "Weedle",
     "category": "Hairy Bug",
     "abilities": [
@@ -352,7 +352,7 @@
     ]
   },
   {
-    "index": 14,
+    "pokemon_number": 14,
     "name": "Kakuna",
     "category": "Cocoon",
     "abilities": [
@@ -381,7 +381,7 @@
     ]
   },
   {
-    "index": 15,
+    "pokemon_number": 15,
     "name": "Beedrill",
     "category": "Poison Bee",
     "abilities": [
@@ -408,7 +408,7 @@
     "evolutions": []
   },
   {
-    "index": 16,
+    "pokemon_number": 16,
     "name": "Pidgey",
     "category": "Tiny Bird",
     "abilities": [
@@ -437,7 +437,7 @@
     ]
   },
   {
-    "index": 17,
+    "pokemon_number": 17,
     "name": "Pidgeotto",
     "category": "Bird",
     "abilities": [
@@ -466,7 +466,7 @@
     ]
   },
   {
-    "index": 18,
+    "pokemon_number": 18,
     "name": "Pidgeot",
     "category": "Bird",
     "abilities": [
@@ -493,7 +493,7 @@
     "evolutions": []
   },
   {
-    "index": 19,
+    "pokemon_number": 19,
     "name": "Rattata",
     "category": "Mouse",
     "abilities": [
@@ -519,7 +519,7 @@
     ]
   },
   {
-    "index": 20,
+    "pokemon_number": 20,
     "name": "Raticate",
     "category": "Mouse",
     "abilities": [
@@ -543,7 +543,7 @@
     "evolutions": []
   },
   {
-    "index": 21,
+    "pokemon_number": 21,
     "name": "Spearow",
     "category": "Tiny Bird",
     "abilities": [
@@ -571,7 +571,7 @@
     ]
   },
   {
-    "index": 22,
+    "pokemon_number": 22,
     "name": "Fearow",
     "category": "Beak",
     "abilities": [
@@ -597,7 +597,7 @@
     "evolutions": []
   },
   {
-    "index": 23,
+    "pokemon_number": 23,
     "name": "Ekans",
     "category": "Snake",
     "abilities": [
@@ -624,7 +624,7 @@
     ]
   },
   {
-    "index": 24,
+    "pokemon_number": 24,
     "name": "Arbok",
     "category": "Cobra",
     "abilities": [
@@ -649,7 +649,7 @@
     "evolutions": []
   },
   {
-    "index": 25,
+    "pokemon_number": 25,
     "name": "Pikachu",
     "category": "Mouse",
     "abilities": [
@@ -674,7 +674,7 @@
     ]
   },
   {
-    "index": 26,
+    "pokemon_number": 26,
     "name": "Raichu",
     "category": "Mouse",
     "abilities": [
@@ -697,7 +697,7 @@
     "evolutions": []
   },
   {
-    "index": 27,
+    "pokemon_number": 27,
     "name": "Sandshrew",
     "category": "Mouse",
     "abilities": [
@@ -724,7 +724,7 @@
     ]
   },
   {
-    "index": 28,
+    "pokemon_number": 28,
     "name": "Sandslash",
     "category": "Mouse",
     "abilities": [
@@ -749,7 +749,7 @@
     "evolutions": []
   },
   {
-    "index": 29,
+    "pokemon_number": 29,
     "name": "Nidoran♀",
     "category": "Poison Pin",
     "abilities": [
@@ -776,7 +776,7 @@
     ]
   },
   {
-    "index": 30,
+    "pokemon_number": 30,
     "name": "Nidorina",
     "category": "Poison Pin",
     "abilities": [
@@ -803,7 +803,7 @@
     ]
   },
   {
-    "index": 31,
+    "pokemon_number": 31,
     "name": "Nidoqueen",
     "category": "Drill",
     "abilities": [
@@ -831,7 +831,7 @@
     "evolutions": []
   },
   {
-    "index": 32,
+    "pokemon_number": 32,
     "name": "Nidoran♂",
     "category": "Poison Pin",
     "abilities": [
@@ -858,7 +858,7 @@
     ]
   },
   {
-    "index": 33,
+    "pokemon_number": 33,
     "name": "Nidorino",
     "category": "Poison Pin",
     "abilities": [
@@ -885,7 +885,7 @@
     ]
   },
   {
-    "index": 34,
+    "pokemon_number": 34,
     "name": "Nidoking",
     "category": "Drill",
     "abilities": [
@@ -913,7 +913,7 @@
     "evolutions": []
   },
   {
-    "index": 35,
+    "pokemon_number": 35,
     "name": "Clefairy",
     "category": "Fairy",
     "abilities": [
@@ -940,7 +940,7 @@
     ]
   },
   {
-    "index": 36,
+    "pokemon_number": 36,
     "name": "Clefable",
     "category": "Fairy",
     "abilities": [
@@ -965,7 +965,7 @@
     "evolutions": []
   },
   {
-    "index": 37,
+    "pokemon_number": 37,
     "name": "Vulpix",
     "category": "Fox",
     "abilities": [
@@ -992,7 +992,7 @@
     ]
   },
   {
-    "index": 38,
+    "pokemon_number": 38,
     "name": "Ninetales",
     "category": "Fox",
     "abilities": [
@@ -1017,7 +1017,7 @@
     "evolutions": []
   },
   {
-    "index": 39,
+    "pokemon_number": 39,
     "name": "Jigglypuff",
     "category": "Balloon",
     "abilities": [
@@ -1045,7 +1045,7 @@
     ]
   },
   {
-    "index": 40,
+    "pokemon_number": 40,
     "name": "Wigglytuff",
     "category": "Balloon",
     "abilities": [
@@ -1071,7 +1071,7 @@
     "evolutions": []
   },
   {
-    "index": 41,
+    "pokemon_number": 41,
     "name": "Zubat",
     "category": "Bat",
     "abilities": [
@@ -1100,7 +1100,7 @@
     ]
   },
   {
-    "index": 42,
+    "pokemon_number": 42,
     "name": "Golbat",
     "category": "Bat",
     "abilities": [
@@ -1129,7 +1129,7 @@
     ]
   },
   {
-    "index": 43,
+    "pokemon_number": 43,
     "name": "Oddish",
     "category": "Weed",
     "abilities": [
@@ -1158,7 +1158,7 @@
     ]
   },
   {
-    "index": 44,
+    "pokemon_number": 44,
     "name": "Gloom",
     "category": "Weed",
     "abilities": [
@@ -1188,7 +1188,7 @@
     ]
   },
   {
-    "index": 45,
+    "pokemon_number": 45,
     "name": "Vileplume",
     "category": "Flower",
     "abilities": [
@@ -1217,7 +1217,7 @@
     ]
   },
   {
-    "index": 46,
+    "pokemon_number": 46,
     "name": "Paras",
     "category": "Mushroom",
     "abilities": [
@@ -1249,7 +1249,7 @@
     ]
   },
   {
-    "index": 47,
+    "pokemon_number": 47,
     "name": "Parasect",
     "category": "Mushroom",
     "abilities": [
@@ -1279,7 +1279,7 @@
     "evolutions": []
   },
   {
-    "index": 48,
+    "pokemon_number": 48,
     "name": "Venonat",
     "category": "Insect",
     "abilities": [
@@ -1309,7 +1309,7 @@
     ]
   },
   {
-    "index": 49,
+    "pokemon_number": 49,
     "name": "Venomoth",
     "category": "Poison Moth",
     "abilities": [
@@ -1337,7 +1337,7 @@
     "evolutions": []
   },
   {
-    "index": 50,
+    "pokemon_number": 50,
     "name": "Diglett",
     "category": "Mole",
     "abilities": [
@@ -1365,7 +1365,7 @@
     ]
   },
   {
-    "index": 51,
+    "pokemon_number": 51,
     "name": "Dugtrio",
     "category": "Mole",
     "abilities": [
@@ -1391,7 +1391,7 @@
     "evolutions": []
   },
   {
-    "index": 52,
+    "pokemon_number": 52,
     "name": "Meowth",
     "category": "Scratch Cat",
     "abilities": [
@@ -1417,7 +1417,7 @@
     ]
   },
   {
-    "index": 53,
+    "pokemon_number": 53,
     "name": "Persian",
     "category": "Classy Cat",
     "abilities": [
@@ -1441,7 +1441,7 @@
     "evolutions": []
   },
   {
-    "index": 54,
+    "pokemon_number": 54,
     "name": "Psyduck",
     "category": "Duck",
     "abilities": [
@@ -1468,7 +1468,7 @@
     ]
   },
   {
-    "index": 55,
+    "pokemon_number": 55,
     "name": "Golduck",
     "category": "Duck",
     "abilities": [
@@ -1493,7 +1493,7 @@
     "evolutions": []
   },
   {
-    "index": 56,
+    "pokemon_number": 56,
     "name": "Mankey",
     "category": "Pig Monkey",
     "abilities": [
@@ -1521,7 +1521,7 @@
     ]
   },
   {
-    "index": 57,
+    "pokemon_number": 57,
     "name": "Primeape",
     "category": "Pig Monkey",
     "abilities": [
@@ -1547,7 +1547,7 @@
     "evolutions": []
   },
   {
-    "index": 58,
+    "pokemon_number": 58,
     "name": "Growlithe",
     "category": "Puppy",
     "abilities": [
@@ -1575,7 +1575,7 @@
     ]
   },
   {
-    "index": 59,
+    "pokemon_number": 59,
     "name": "Arcanine",
     "category": "Legendary",
     "abilities": [
@@ -1601,7 +1601,7 @@
     "evolutions": []
   },
   {
-    "index": 60,
+    "pokemon_number": 60,
     "name": "Poliwag",
     "category": "Tadpole",
     "abilities": [
@@ -1628,7 +1628,7 @@
     ]
   },
   {
-    "index": 61,
+    "pokemon_number": 61,
     "name": "Poliwhirl",
     "category": "Tadpole",
     "abilities": [
@@ -1656,7 +1656,7 @@
     ]
   },
   {
-    "index": 62,
+    "pokemon_number": 62,
     "name": "Poliwrath",
     "category": "Tadpole",
     "abilities": [
@@ -1687,7 +1687,7 @@
     ]
   },
   {
-    "index": 63,
+    "pokemon_number": 63,
     "name": "Abra",
     "category": "Psi",
     "abilities": [
@@ -1715,7 +1715,7 @@
     ]
   },
   {
-    "index": 64,
+    "pokemon_number": 64,
     "name": "Kadabra",
     "category": "Psi",
     "abilities": [
@@ -1743,7 +1743,7 @@
     ]
   },
   {
-    "index": 65,
+    "pokemon_number": 65,
     "name": "Alakazam",
     "category": "Psi",
     "abilities": [
@@ -1769,7 +1769,7 @@
     "evolutions": []
   },
   {
-    "index": 66,
+    "pokemon_number": 66,
     "name": "Machop",
     "category": "Superpower",
     "abilities": [
@@ -1797,7 +1797,7 @@
     ]
   },
   {
-    "index": 67,
+    "pokemon_number": 67,
     "name": "Machoke",
     "category": "Superpower",
     "abilities": [
@@ -1825,7 +1825,7 @@
     ]
   },
   {
-    "index": 68,
+    "pokemon_number": 68,
     "name": "Machamp",
     "category": "Superpower",
     "abilities": [
@@ -1851,7 +1851,7 @@
     "evolutions": []
   },
   {
-    "index": 69,
+    "pokemon_number": 69,
     "name": "Bellsprout",
     "category": "Flower",
     "abilities": [
@@ -1880,7 +1880,7 @@
     ]
   },
   {
-    "index": 70,
+    "pokemon_number": 70,
     "name": "Weepinbell",
     "category": "Flycatcher",
     "abilities": [
@@ -1909,7 +1909,7 @@
     ]
   },
   {
-    "index": 71,
+    "pokemon_number": 71,
     "name": "Victreebel",
     "category": "Flycatcher",
     "abilities": [
@@ -1936,7 +1936,7 @@
     "evolutions": []
   },
   {
-    "index": 72,
+    "pokemon_number": 72,
     "name": "Tentacool",
     "category": "Jellyfish",
     "abilities": [
@@ -1965,7 +1965,7 @@
     ]
   },
   {
-    "index": 73,
+    "pokemon_number": 73,
     "name": "Tentacruel",
     "category": "Jellyfish",
     "abilities": [
@@ -1992,7 +1992,7 @@
     "evolutions": []
   },
   {
-    "index": 74,
+    "pokemon_number": 74,
     "name": "Geodude",
     "category": "Rock",
     "abilities": [
@@ -2024,7 +2024,7 @@
     ]
   },
   {
-    "index": 75,
+    "pokemon_number": 75,
     "name": "Graveler",
     "category": "Rock",
     "abilities": [
@@ -2056,7 +2056,7 @@
     ]
   },
   {
-    "index": 76,
+    "pokemon_number": 76,
     "name": "Golem",
     "category": "Megaton",
     "abilities": [
@@ -2086,7 +2086,7 @@
     "evolutions": []
   },
   {
-    "index": 77,
+    "pokemon_number": 77,
     "name": "Ponyta",
     "category": "Fire Horse",
     "abilities": [
@@ -2114,7 +2114,7 @@
     ]
   },
   {
-    "index": 78,
+    "pokemon_number": 78,
     "name": "Rapidash",
     "category": "Fire Horse",
     "abilities": [
@@ -2140,7 +2140,7 @@
     "evolutions": []
   },
   {
-    "index": 79,
+    "pokemon_number": 79,
     "name": "Slowpoke",
     "category": "Dopey",
     "abilities": [
@@ -2172,7 +2172,7 @@
     ]
   },
   {
-    "index": 80,
+    "pokemon_number": 80,
     "name": "Slowbro",
     "category": "Hermit Crab",
     "abilities": [
@@ -2203,7 +2203,7 @@
     ]
   },
   {
-    "index": 81,
+    "pokemon_number": 81,
     "name": "Magnemite",
     "category": "Magnet",
     "abilities": [
@@ -2232,7 +2232,7 @@
     ]
   },
   {
-    "index": 82,
+    "pokemon_number": 82,
     "name": "Magneton",
     "category": "Magnet",
     "abilities": [
@@ -2261,7 +2261,7 @@
     ]
   },
   {
-    "index": 83,
+    "pokemon_number": 83,
     "name": "Farfetch’d",
     "category": "Wild Duck",
     "abilities": [
@@ -2288,7 +2288,7 @@
     "evolutions": []
   },
   {
-    "index": 84,
+    "pokemon_number": 84,
     "name": "Doduo",
     "category": "Twin Bird",
     "abilities": [
@@ -2317,7 +2317,7 @@
     ]
   },
   {
-    "index": 85,
+    "pokemon_number": 85,
     "name": "Dodrio",
     "category": "Triple Bird",
     "abilities": [
@@ -2344,7 +2344,7 @@
     "evolutions": []
   },
   {
-    "index": 86,
+    "pokemon_number": 86,
     "name": "Seel",
     "category": "Sea Lion",
     "abilities": [
@@ -2371,7 +2371,7 @@
     ]
   },
   {
-    "index": 87,
+    "pokemon_number": 87,
     "name": "Dewgong",
     "category": "Sea Lion",
     "abilities": [
@@ -2399,7 +2399,7 @@
     "evolutions": []
   },
   {
-    "index": 88,
+    "pokemon_number": 88,
     "name": "Grimer",
     "category": "Sludge",
     "abilities": [
@@ -2426,7 +2426,7 @@
     ]
   },
   {
-    "index": 89,
+    "pokemon_number": 89,
     "name": "Muk",
     "category": "Sludge",
     "abilities": [
@@ -2451,7 +2451,7 @@
     "evolutions": []
   },
   {
-    "index": 90,
+    "pokemon_number": 90,
     "name": "Shellder",
     "category": "Bivalve",
     "abilities": [
@@ -2478,7 +2478,7 @@
     ]
   },
   {
-    "index": 91,
+    "pokemon_number": 91,
     "name": "Cloyster",
     "category": "Bivalve",
     "abilities": [
@@ -2506,7 +2506,7 @@
     "evolutions": []
   },
   {
-    "index": 92,
+    "pokemon_number": 92,
     "name": "Gastly",
     "category": "Gas",
     "abilities": [
@@ -2535,7 +2535,7 @@
     ]
   },
   {
-    "index": 93,
+    "pokemon_number": 93,
     "name": "Haunter",
     "category": "Gas",
     "abilities": [
@@ -2564,7 +2564,7 @@
     ]
   },
   {
-    "index": 94,
+    "pokemon_number": 94,
     "name": "Gengar",
     "category": "Shadow",
     "abilities": [
@@ -2591,7 +2591,7 @@
     "evolutions": []
   },
   {
-    "index": 95,
+    "pokemon_number": 95,
     "name": "Onix",
     "category": "Rock Snake",
     "abilities": [
@@ -2623,7 +2623,7 @@
     ]
   },
   {
-    "index": 96,
+    "pokemon_number": 96,
     "name": "Drowzee",
     "category": "Hypnosis",
     "abilities": [
@@ -2651,7 +2651,7 @@
     ]
   },
   {
-    "index": 97,
+    "pokemon_number": 97,
     "name": "Hypno",
     "category": "Hypnosis",
     "abilities": [
@@ -2677,7 +2677,7 @@
     "evolutions": []
   },
   {
-    "index": 98,
+    "pokemon_number": 98,
     "name": "Krabby",
     "category": "River Crab",
     "abilities": [
@@ -2704,7 +2704,7 @@
     ]
   },
   {
-    "index": 99,
+    "pokemon_number": 99,
     "name": "Kingler",
     "category": "Pincer",
     "abilities": [
@@ -2729,7 +2729,7 @@
     "evolutions": []
   },
   {
-    "index": 100,
+    "pokemon_number": 100,
     "name": "Voltorb",
     "category": "Ball",
     "abilities": [
@@ -2755,7 +2755,7 @@
     ]
   },
   {
-    "index": 101,
+    "pokemon_number": 101,
     "name": "Electrode",
     "category": "Ball",
     "abilities": [
@@ -2779,7 +2779,7 @@
     "evolutions": []
   },
   {
-    "index": 102,
+    "pokemon_number": 102,
     "name": "Exeggcute",
     "category": "Egg",
     "abilities": [
@@ -2811,7 +2811,7 @@
     ]
   },
   {
-    "index": 103,
+    "pokemon_number": 103,
     "name": "Exeggutor",
     "category": "Coconut",
     "abilities": [
@@ -2841,7 +2841,7 @@
     "evolutions": []
   },
   {
-    "index": 104,
+    "pokemon_number": 104,
     "name": "Cubone",
     "category": "Lonely",
     "abilities": [
@@ -2869,7 +2869,7 @@
     ]
   },
   {
-    "index": 105,
+    "pokemon_number": 105,
     "name": "Marowak",
     "category": "Bone Keeper",
     "abilities": [
@@ -2895,7 +2895,7 @@
     "evolutions": []
   },
   {
-    "index": 106,
+    "pokemon_number": 106,
     "name": "Hitmonlee",
     "category": "Kicking",
     "abilities": [
@@ -2923,7 +2923,7 @@
     ]
   },
   {
-    "index": 107,
+    "pokemon_number": 107,
     "name": "Hitmonchan",
     "category": "Punching",
     "abilities": [
@@ -2951,7 +2951,7 @@
     ]
   },
   {
-    "index": 108,
+    "pokemon_number": 108,
     "name": "Lickitung",
     "category": "Licking",
     "abilities": [
@@ -2977,7 +2977,7 @@
     ]
   },
   {
-    "index": 109,
+    "pokemon_number": 109,
     "name": "Koffing",
     "category": "Poison Gas",
     "abilities": [
@@ -3004,7 +3004,7 @@
     ]
   },
   {
-    "index": 110,
+    "pokemon_number": 110,
     "name": "Weezing",
     "category": "Poison Gas",
     "abilities": [
@@ -3029,7 +3029,7 @@
     "evolutions": []
   },
   {
-    "index": 111,
+    "pokemon_number": 111,
     "name": "Rhyhorn",
     "category": "Spikes",
     "abilities": [
@@ -3061,7 +3061,7 @@
     ]
   },
   {
-    "index": 112,
+    "pokemon_number": 112,
     "name": "Rhydon",
     "category": "Drill",
     "abilities": [
@@ -3093,7 +3093,7 @@
     ]
   },
   {
-    "index": 113,
+    "pokemon_number": 113,
     "name": "Chansey",
     "category": "Egg",
     "abilities": [
@@ -3119,7 +3119,7 @@
     ]
   },
   {
-    "index": 114,
+    "pokemon_number": 114,
     "name": "Tangela",
     "category": "Vine",
     "abilities": [
@@ -3149,7 +3149,7 @@
     ]
   },
   {
-    "index": 115,
+    "pokemon_number": 115,
     "name": "Kangaskhan",
     "category": "Parent",
     "abilities": [
@@ -3173,7 +3173,7 @@
     "evolutions": []
   },
   {
-    "index": 116,
+    "pokemon_number": 116,
     "name": "Horsea",
     "category": "Dragon",
     "abilities": [
@@ -3200,7 +3200,7 @@
     ]
   },
   {
-    "index": 117,
+    "pokemon_number": 117,
     "name": "Seadra",
     "category": "Dragon",
     "abilities": [
@@ -3227,7 +3227,7 @@
     ]
   },
   {
-    "index": 118,
+    "pokemon_number": 118,
     "name": "Goldeen",
     "category": "Goldfish",
     "abilities": [
@@ -3254,7 +3254,7 @@
     ]
   },
   {
-    "index": 119,
+    "pokemon_number": 119,
     "name": "Seaking",
     "category": "Goldfish",
     "abilities": [
@@ -3279,7 +3279,7 @@
     "evolutions": []
   },
   {
-    "index": 120,
+    "pokemon_number": 120,
     "name": "Staryu",
     "category": "Star Shape",
     "abilities": [
@@ -3306,7 +3306,7 @@
     ]
   },
   {
-    "index": 121,
+    "pokemon_number": 121,
     "name": "Starmie",
     "category": "Mysterious",
     "abilities": [
@@ -3335,7 +3335,7 @@
     "evolutions": []
   },
   {
-    "index": 122,
+    "pokemon_number": 122,
     "name": "Mr. Mime",
     "category": "Barrier",
     "abilities": [
@@ -3362,7 +3362,7 @@
     "evolutions": []
   },
   {
-    "index": 123,
+    "pokemon_number": 123,
     "name": "Scyther",
     "category": "Mantis",
     "abilities": [
@@ -3393,7 +3393,7 @@
     ]
   },
   {
-    "index": 124,
+    "pokemon_number": 124,
     "name": "Jynx",
     "category": "Human Shape",
     "abilities": [
@@ -3423,7 +3423,7 @@
     "evolutions": []
   },
   {
-    "index": 125,
+    "pokemon_number": 125,
     "name": "Electabuzz",
     "category": "Electric",
     "abilities": [
@@ -3448,7 +3448,7 @@
     ]
   },
   {
-    "index": 126,
+    "pokemon_number": 126,
     "name": "Magmar",
     "category": "Spitfire",
     "abilities": [
@@ -3475,7 +3475,7 @@
     ]
   },
   {
-    "index": 127,
+    "pokemon_number": 127,
     "name": "Pinsir",
     "category": "Stag Beetle",
     "abilities": [
@@ -3501,7 +3501,7 @@
     "evolutions": []
   },
   {
-    "index": 128,
+    "pokemon_number": 128,
     "name": "Tauros",
     "category": "Wild Bull",
     "abilities": [
@@ -3525,7 +3525,7 @@
     "evolutions": []
   },
   {
-    "index": 129,
+    "pokemon_number": 129,
     "name": "Magikarp",
     "category": "Fish",
     "abilities": [
@@ -3551,7 +3551,7 @@
     ]
   },
   {
-    "index": 130,
+    "pokemon_number": 130,
     "name": "Gyarados",
     "category": "Atrocious",
     "abilities": [
@@ -3576,7 +3576,7 @@
     "evolutions": []
   },
   {
-    "index": 131,
+    "pokemon_number": 131,
     "name": "Lapras",
     "category": "Transport",
     "abilities": [
@@ -3604,7 +3604,7 @@
     "evolutions": []
   },
   {
-    "index": 132,
+    "pokemon_number": 132,
     "name": "Ditto",
     "category": "Transform",
     "abilities": [
@@ -3627,7 +3627,7 @@
     "evolutions": []
   },
   {
-    "index": 133,
+    "pokemon_number": 133,
     "name": "Eevee",
     "category": "Evolution",
     "abilities": [
@@ -3660,7 +3660,7 @@
     ]
   },
   {
-    "index": 134,
+    "pokemon_number": 134,
     "name": "Vaporeon",
     "category": "Bubble Jet",
     "abilities": [
@@ -3686,7 +3686,7 @@
     ]
   },
   {
-    "index": 135,
+    "pokemon_number": 135,
     "name": "Jolteon",
     "category": "Lightning",
     "abilities": [
@@ -3711,7 +3711,7 @@
     ]
   },
   {
-    "index": 136,
+    "pokemon_number": 136,
     "name": "Flareon",
     "category": "Flame",
     "abilities": [
@@ -3738,7 +3738,7 @@
     ]
   },
   {
-    "index": 137,
+    "pokemon_number": 137,
     "name": "Porygon",
     "category": "Virtual",
     "abilities": [
@@ -3764,7 +3764,7 @@
     ]
   },
   {
-    "index": 138,
+    "pokemon_number": 138,
     "name": "Omanyte",
     "category": "Spiral",
     "abilities": [
@@ -3794,7 +3794,7 @@
     ]
   },
   {
-    "index": 139,
+    "pokemon_number": 139,
     "name": "Omastar",
     "category": "Spiral",
     "abilities": [
@@ -3822,7 +3822,7 @@
     "evolutions": []
   },
   {
-    "index": 140,
+    "pokemon_number": 140,
     "name": "Kabuto",
     "category": "Shellfish",
     "abilities": [
@@ -3852,7 +3852,7 @@
     ]
   },
   {
-    "index": 141,
+    "pokemon_number": 141,
     "name": "Kabutops",
     "category": "Shellfish",
     "abilities": [
@@ -3880,7 +3880,7 @@
     "evolutions": []
   },
   {
-    "index": 142,
+    "pokemon_number": 142,
     "name": "Aerodactyl",
     "category": "Fossil",
     "abilities": [
@@ -3909,7 +3909,7 @@
     "evolutions": []
   },
   {
-    "index": 143,
+    "pokemon_number": 143,
     "name": "Snorlax",
     "category": "Sleeping",
     "abilities": [
@@ -3933,7 +3933,7 @@
     "evolutions": []
   },
   {
-    "index": 144,
+    "pokemon_number": 144,
     "name": "Articuno",
     "category": "Freeze",
     "abilities": [
@@ -3960,7 +3960,7 @@
     "evolutions": []
   },
   {
-    "index": 145,
+    "pokemon_number": 145,
     "name": "Zapdos",
     "category": "Electric",
     "abilities": [
@@ -3985,7 +3985,7 @@
     "evolutions": []
   },
   {
-    "index": 146,
+    "pokemon_number": 146,
     "name": "Moltres",
     "category": "Flame",
     "abilities": [
@@ -4011,7 +4011,7 @@
     "evolutions": []
   },
   {
-    "index": 147,
+    "pokemon_number": 147,
     "name": "Dratini",
     "category": "Dragon",
     "abilities": [
@@ -4038,7 +4038,7 @@
     ]
   },
   {
-    "index": 148,
+    "pokemon_number": 148,
     "name": "Dragonair",
     "category": "Dragon",
     "abilities": [
@@ -4065,7 +4065,7 @@
     ]
   },
   {
-    "index": 149,
+    "pokemon_number": 149,
     "name": "Dragonite",
     "category": "Dragon",
     "abilities": [
@@ -4092,7 +4092,7 @@
     "evolutions": []
   },
   {
-    "index": 150,
+    "pokemon_number": 150,
     "name": "Mewtwo",
     "category": "Genetic",
     "abilities": [
@@ -4117,7 +4117,7 @@
     "evolutions": []
   },
   {
-    "index": 151,
+    "pokemon_number": 151,
     "name": "Mew",
     "category": "New Species",
     "abilities": [

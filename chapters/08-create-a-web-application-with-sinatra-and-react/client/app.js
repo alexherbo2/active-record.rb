@@ -14,14 +14,14 @@ const main = async () => {
       <tbody>
         {
           pokemons.map((pokemon) => {
-            const pokemonNumberDisplay = '#' + pokemon.index.toString().padStart(3, '0')
+            const pokemonNumberDisplay = '#' + pokemon.pokemon_number.toString().padStart(3, '0')
             const pokemonNameLowerCase = pokemon.name.toLowerCase()
 
             return (
               <tr>
                 <td>{ pokemonNumberDisplay }</td>
-                <td><a href={ `https://www.pokemon.com/us/pokedex/${pokemon.index}` }><img src={ `https://img.pokemondb.net/sprites/sun-moon/icon/${pokemonNameLowerCase}.png` }></img></a></td>
-                <td><a href={ `https://www.pokemon.com/us/pokedex/${pokemon.index}` }>{ pokemon.name }</a></td>
+                <td><a href={ `https://www.pokemon.com/us/pokedex/${pokemon.pokemon_number}` }><img src={ `https://img.pokemondb.net/sprites/sun-moon/icon/${pokemonNameLowerCase}.png` }></img></a></td>
+                <td><a href={ `https://www.pokemon.com/us/pokedex/${pokemon.pokemon_number}` }>{ pokemon.name }</a></td>
                 <td>
                   <ul>
                     {

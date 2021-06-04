@@ -39,7 +39,7 @@ class Pokemon < ActiveRecord::Base
 end
 
 pikachu = Pokemon.new do |pokemon|
-  pokemon.index = 25
+  pokemon.pokemon_number = 25
   pokemon.name = 'Pikachu'
 end
 
@@ -81,7 +81,7 @@ Replace every instance of the `pokemons` table with [`ActiveRecord::Support::Inf
 
 [`ActiveRecord::Support::Inflector`]: lib/active-record/support/inflector.rb
 
-Once you have your table, replace the `id`, `index` and `name` columns with safe SQL fragments – placeholders.
+Once you have your table, replace the `id`, `pokemon_number` and `name` columns with safe SQL fragments – placeholders.
 
 You can get the column names of a table with the following Ruby code:
 
@@ -91,7 +91,7 @@ statement = DB.prepare <<~SQL
   FROM "pokemons"
 SQL
 
-statement.columns # ["id", "index", "name"]
+statement.columns # ["id", "pokemon_number", "name"]
 ```
 
 ## Solution

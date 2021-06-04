@@ -3,7 +3,7 @@ require 'sqlite3'
 class Pokemon
   # Attributes
   attr_reader :id
-  attr_accessor :index
+  attr_accessor :pokemon_number
   attr_accessor :name
 
   # Returns a new instance.
@@ -12,18 +12,18 @@ class Pokemon
   #
   # Example – Hash:
   #
-  # pikachu = Pokemon.new(index: 25, name: 'Pikachu')
+  # pikachu = Pokemon.new(pokemon_number: 25, name: 'Pikachu')
   #
   # Example – Block:
   #
   # pikachu = Pokemon.new do |pokemon|
-  #   pokemon.index = 25
+  #   pokemon.pokemon_number = 25
   #   pokemon.name = 'Pikachu'
   # end
-  def initialize(id: nil, index: nil, name: nil, &block)
+  def initialize(id: nil, pokemon_number: nil, name: nil, &block)
     # Properties
     @id = id
-    @index = index
+    @pokemon_number = pokemon_number
     @name = name
 
     # Accepts a block
@@ -151,7 +151,7 @@ class Pokemon
   #
   # Example – Create:
   #
-  # pikachu = Pokemon.new(index: 25, name: 'Pikachu')
+  # pikachu = Pokemon.new(pokemon_number: 25, name: 'Pikachu')
   # pikachu.save
   #
   # Example – Update:
@@ -169,9 +169,9 @@ class Pokemon
   # Updates attributes and saves the record.
   #
   # Updates and .save.
-  def update(index: @index, name: @name)
+  def update(pokemon_number: @pokemon_number, name: @name)
     # Properties
-    @index = index
+    @pokemon_number = pokemon_number
     @name = name
 
     save
@@ -189,11 +189,11 @@ class Pokemon
   # Private method called on #save.
   private def save_new_record
     statement = DB.prepare <<~SQL
-      INSERT INTO "pokemons" ("index", "name")
-      VALUES (:index, :name)
+      INSERT INTO "pokemons" ("pokemon_number", "name")
+      VALUES (:pokemon_number, :name)
     SQL
 
-    statement.execute(index: @index, name: @name)
+    statement.execute(pokemon_number: @pokemon_number, name: @name)
 
     # Assign the ID set by SQLite
     @id = DB.last_insert_row_id
@@ -205,11 +205,11 @@ class Pokemon
   private def save_record
     statement = DB.prepare <<~SQL
       UPDATE "pokemons"
-      SET "index" = :index, "name" = :name
+      SET "pokemon_number" = :pokemon_number, "name" = :name
       WHERE "id" = :id
     SQL
 
-    statement.execute(id: @id, index: @index, name: @name)
+    statement.execute(id: @id, pokemon_number: @pokemon_number, name: @name)
   end
 
   # Deletes the record from the database.

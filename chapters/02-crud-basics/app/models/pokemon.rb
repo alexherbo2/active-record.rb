@@ -3,7 +3,7 @@ require 'sqlite3'
 class Pokemon
   # Attributes
   attr_reader :id
-  attr_accessor :index
+  attr_accessor :pokemon_number
   attr_accessor :name
 
   # Returns a new instance.
@@ -12,15 +12,15 @@ class Pokemon
   #
   # Example – Hash:
   #
-  # pikachu = Pokemon.new(index: 25, name: 'Pikachu')
+  # pikachu = Pokemon.new(pokemon_number: 25, name: 'Pikachu')
   #
   # Example – Block:
   #
   # pikachu = Pokemon.new do |pokemon|
-  #   pokemon.index = 25
+  #   pokemon.pokemon_number = 25
   #   pokemon.name = 'Pikachu'
   # end
-  def initialize(id: nil, index: nil, name: nil, &block)
+  def initialize(id: nil, pokemon_number: nil, name: nil, &block)
   end
 
   # Creates and saves a new record into the database.
@@ -92,7 +92,7 @@ class Pokemon
   #
   # Example – Create:
   #
-  # pikachu = Pokemon.new(index: 25, name: 'Pikachu')
+  # pikachu = Pokemon.new(pokemon_number: 25, name: 'Pikachu')
   # pikachu.save
   #
   # Example – Update:
@@ -105,7 +105,7 @@ class Pokemon
   # Updates attributes and saves the record.
   #
   # Updates and .save.
-  def update(index: @index, name: @name)
+  def update(pokemon_number: @pokemon_number, name: @name)
   end
 
   # Returns true if this object hasn’t been saved yet.

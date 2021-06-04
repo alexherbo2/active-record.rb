@@ -13,14 +13,14 @@ describe Pokemon do
   end
 
   # The `pokemon` subject is a `Pokemon`.
-  # It has an `index` and a `name`.
+  # It has a `pokemon_number` and a `name`.
   shared_examples 'a Pokémon' do
     it 'is a Pokémon' do
       expect(pokemon).to be_a Pokemon
     end
 
-    it 'has an index' do
-      expect(pokemon).to have_attributes index: index
+    it 'has a Pokémon number' do
+      expect(pokemon).to have_attributes pokemon_number: pokemon_number
     end
 
     it 'has a name' do
@@ -38,12 +38,12 @@ describe Pokemon do
 
   describe '.new' do
     # Attributes
-    let(:index) { 25 }
+    let(:pokemon_number) { 25 }
     let(:name) { 'Pikachu' }
 
     context 'with parameters' do
       subject(:pokemon) do
-        Pokemon.new(index: index, name: name)
+        Pokemon.new(pokemon_number: pokemon_number, name: name)
       end
 
       it_behaves_like 'a Pokémon'
@@ -52,7 +52,7 @@ describe Pokemon do
     context 'with block' do
       subject(:pokemon) do
         Pokemon.new do |pokemon|
-          pokemon.index = index
+          pokemon.pokemon_number = pokemon_number
           pokemon.name = name
         end
       end
@@ -63,12 +63,12 @@ describe Pokemon do
 
   describe '.create' do
     # Attributes
-    let(:index) { 152 }
+    let(:pokemon_number) { 152 }
     let(:name) { 'Chikorita' }
 
     context 'with parameters' do
       subject(:perform) do
-        Pokemon.create(index: index, name: name)
+        Pokemon.create(pokemon_number: pokemon_number, name: name)
       end
 
       include_examples 'creates a new Pokémon'
@@ -77,7 +77,7 @@ describe Pokemon do
     context 'with block' do
       subject(:perform) do
         Pokemon.create do |pokemon|
-          pokemon.index = index
+          pokemon.pokemon_number = pokemon_number
           pokemon.name = name
         end
       end
@@ -90,7 +90,7 @@ describe Pokemon do
     context 'when found' do
       # Attributes
       let(:id) { 25 }
-      let(:index) { 25 }
+      let(:pokemon_number) { 25 }
       let(:name) { 'Pikachu' }
 
       subject(:pokemon) do
@@ -149,7 +149,7 @@ describe Pokemon do
   describe '.find_by' do
     # Attributes
     let(:id) { 25 }
-    let(:index) { 25 }
+    let(:pokemon_number) { 25 }
     let(:name) { 'Pikachu' }
 
     context 'when found' do
@@ -180,11 +180,11 @@ describe Pokemon do
   describe '#save' do
     context 'with a new Pokémon' do
       # Attributes
-      let(:index) { 152 }
+      let(:pokemon_number) { 152 }
       let(:name) { 'Chikorita' }
 
       subject(:pokemon) do
-        Pokemon.new(index: index, name: name)
+        Pokemon.new(pokemon_number: pokemon_number, name: name)
       end
 
       subject(:perform) do
@@ -260,11 +260,11 @@ describe Pokemon do
 
     context 'with a new Pokémon' do
       # Attributes
-      let(:index) { 152 }
+      let(:pokemon_number) { 152 }
       let(:name) { 'Chikorita' }
 
       subject(:pokemon) do
-        Pokemon.new(index: index, name: name)
+        Pokemon.new(pokemon_number: pokemon_number, name: name)
       end
 
       subject(:perform) do
@@ -342,11 +342,11 @@ describe Pokemon do
 
     context 'when not found' do
       # Attributes
-      let(:index) { 25 }
+      let(:pokemon_number) { 25 }
       let(:name) { 'Pikachu' }
 
       subject(:pokemon) do
-        Pokemon.new(index: index, name: name)
+        Pokemon.new(pokemon_number: pokemon_number, name: name)
       end
 
       let(:response) do
